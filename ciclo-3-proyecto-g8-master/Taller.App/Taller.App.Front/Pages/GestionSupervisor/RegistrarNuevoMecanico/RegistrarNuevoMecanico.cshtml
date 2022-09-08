@@ -33,7 +33,7 @@
                     </svg>
         </div>
     </div>
-    <div><h3>Registrar nuevo mecanico</h3></div>
+    
     <p>
 
     
@@ -44,36 +44,45 @@
         <div class="row">
         
         <div class="col-sm-6 border">
+            <div><h4>Registrar nuevo mecanico</h4></div>
             <p>
             <form class="needs-validation" novalidate>
                     <div class="row">
                         <div class="col">
                             
-                            <label for="validationCustom01" class="form-label">Tipo de Documento:</label>
+                        <label for="validationCustom01" class="form-label">Tipo de Documento:</label>
                         </div>
+                        
                         <div class="col">
-                            <input type="text" class="form-control" id="validationCustom01" required>
-                            <div class="invalid-feedback">
-                                Campo requerido
-                            </div>
-                        </div>
-                        <div class="col">
-                            <select class="form-select" id="validationCustom02" required>
-                                <option selected disabled value="">Marque una opción.</option>
-                                <option>Cedula ciudadania</option>
-                                <option>Cedula extrageria</option>
+                           <select class="form-select" id="validationCustom01" required>
+                              <option selected disabled value="">Marque una opción.</option>
+                              <option>Cedula ciudadanía</option>
+                              <option>Cedula extragería</option>
                                 
                             </select>
                             <div class="invalid-feedback">
                                 Este campo es obligatorio
                             </div>
                         </div>
+
                     <div class="row">
                         <div class="col">
-                            <label for="validationCustom02" class="form-label">Nombre y Apellido:</label>
+                            <label for="validationCustom04" class="form-label">Numero de Identificación:</label>
                         </div>
                         <div class="col">
-                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <input type="text" class="form-control" id="validationCustom04" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+                        
+                    </div>    
+                    <div class="row">
+                        <div class="col">
+                            <label for="validationCustom04" class="form-label">Nombre y Apellido:</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="validationCustom04" required>
                             <div class="invalid-feedback">
                                 Campo requerido
                             </div>
@@ -83,115 +92,88 @@
 
                     <div class="row">
                         <div class="col">
-                            <label for="validationCustom03" class="form-label">Tipo de vehículo?:</label>
+                            <label for="validationCustom05" class="form-label">Teléfono:</label>
                         </div>
                         <div class="col">
-                            <select class="form-select" id="validationCustom03" required>
-                                <option selected disabled value="">Marque una opción.</option>
-                                <option>Buseta</option>
-                                <option>Microbus</option>
-                                <option>Campero</option>
-                                <option>Camion</option>
-                                <option>Otros</option>
-                                <option>Mayor a 6</option>
-                            </select>
+                            <input type="text" class="form-control" id="validationCustom05" required>
                             <div class="invalid-feedback">
-                                Este campo es obligatorio
+                                Campo requerido
                             </div>
                         </div>
-
-                        <div class="col">
-                            <label for="validationCustom04" class="form-label">Modelo del vehículo:</label>
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" id="validationCustom04" required>
-                            <div class="invalid-feedback">
-                                este campo es obligatorio
-                            </div>
-                        </div>
+                        
                     </div>
 
                     <div class="row">
                         <div class="col">
-                            <label for="validationCustom05" class="form-label">N° pasajeros:</label>
+                            <label for="validationCustom06" class="form-label">Fecha de Nacimiento:</label>
                         </div>
                         <div class="col">
-                        <select class="form-select" id="validationCustom05" required>
-                                <option selected disabled value="">Marque una opción.</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>Mayor a 6</option>
-                            </select>
+                            <input type="text" class="form-control" id="validationCustom06" required>
                             <div class="invalid-feedback">
-                                Este campo es obligatorio
+                                Campo requerido
                             </div>
                         </div>
+                        
+                    </div>
+
+                    <div class="row">
                         <div class="col">
-                            <label for="validationCustom05" class="form-label">Cilindraje:</label>
+                            <label for="validationCustom07" class="form-label">Correo Electrónico:</label>
                         </div>
                         <div class="col">
-                        <select class="form-select" id="validationCustom06" required>
+                            <input type="text" class="form-control" id="validationCustom07" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="validationCustom08" class="form-label">Nivel de Estudio:</label>
+                        </div>
+                        <div class="col">
+                        <select class="form-select" id="validationCustom08" required>
                                 <option selected disabled value="">Marque una opción.</option>
-                                <option>100</option>
-                                <option>115</option>
-                                <option>200</option>
-                                <option>220</option>
+                                <option>Bachiller</option>
+                                <option>Técnico</option>
+                                <option>Tecnólogo</option>
+                                <option>Profesional</option>
+                                <option>Especialista</option>
                                 <option>Otros</option>
                             </select>
                             <div class="invalid-feedback">
                                 Este campo es obligatorio
                             </div>
                         </div>
-                    </div>
-            
+                    </div>   
+
                     <div class="row">
                         <div class="col">
-                            <label for="validationCustom07" class="form-label">Pais de Origen:</label>
+                            <label for="validationCustom07" class="form-label">Especialidad:</label>
                         </div>
                         <div class="col">
-                        <select class="form-select" id="validationCustom07" required>
-                                <option selected disabled value="">Marque una opción.</option>
-                                <option>Colombia</option>
-                                <option>EEUU</option>
-                                <option>Venezuela</option>
-                                <option>Mexico</option>
-                                <option>Brasil</option>
-                                <option>Otros</option>
-                        </select>
+                            <input type="text" class="form-control" id="validationCustom07" required>
                             <div class="invalid-feedback">
-                                Este campo es obligatorio
+                                Campo requerido
                             </div>
                         </div>
-
-                        <div class="col">
-                            <label for="validationCustom08" class="form-label">¿Tiene accesorios el vehículo?:</label>
-                        </div>
-                        <div class="col">
-                            <select class="form-select" id="validationCustom08">
-                            <option selected disabled value="">No obligatorio.</option>
-                            <option>Si</option>
-                            <option>No</option>
-                            </select>
-                            <div class="invalid-feedback">
-                            </div>
-                        </div>
+                        
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-2">
-                            <label for="validationCustom09" class="form-label">¿Cúales?:</label>
+                        <div class="col">
+                            <label for="validationCustom07" class="form-label">Dirección Física:</label>
                         </div>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" value="No obligatorio" id="validationCustom09">
+                        <div class="col">
+                            <input type="text" class="form-control" id="validationCustom07" required>
                             <div class="invalid-feedback">
-                                Este campo es obligatorio
+                                Campo requerido
                             </div>
                         </div>
+                        
                     </div>
-
+                    
                     <div class="row">
                         <div class="col-12">
                             <div class="form-check">
@@ -215,38 +197,61 @@
             </form>
             <p>
         </div>
+    </div>
 
-        <div class="col border" >
+        <div class="col border">
             <table class="table">
-                    <h6>Vehículos registrados</h6>
+                    <h6>Mecánicos registrados</h6>
                     <thead>
                         <tr>
-                            <th scope="col">Marca</th>
-                            <th scope="col">Modelo</th>
-                            <th scope="col">Placa</th>
-                            <th scope="col">Cilindraje</th>
-                        </tr>
+                            <th scope="col">Tipo de Documento</th>
+                            <th scope="col">Número de Identificación</th>
+                            <th scope="col">Nombre y Apellido</th>
+                            <th scope="col">Teléfono</th>
+                            <th scope="col">Fecha de Nacimiento</th>
+                            <th scope="col">Correo Electrónico</th>
+                            <th scope="col">nivel de Estudio</th>
+                            <th scope="col">Especialidad</th>
+                            <th scope="col">Dirección Física</th>
                     </thead>
+                   
                     <tbody>
                         <tr>
-                            <td>Mazda</td>
-                            <td>2019</td>
-                            <td>SDF485</td>
-                            <td>200</td>
+                            <td>CC</td>
+                            <td>458965</td>
+                            <td>Raul Mesa</td>
+                            <td>315263478</td>
+                            <td>20/10/65</td>
+                            <td>Raulmesa@gmail.com</td>
+                            <td>tecnico</td>
+                            <td>Latonería</td>
+                            <td>calle 20 # 5-6</td>
 
                         </tr>
                         <tr>
-                            <td>Chevrolet</td>
-                            <td>2001</td>
-                            <td>QWE585</td>
-                            <td>500</td>
+                            <td>CC</td>
+                            <td>120452895</td>
+                            <td>Juan Restrepo</td>
+                            <td>3162634785</td>
+                            <td>13/08/70</td>
+                            <td>juanrestrepo@gmail.com</td>
+                            <td>Profesional</td>
+                            <td>Electricidad</td>
+                            <td>calle 8 # 10-6</td>
+
 
                         </tr>
                         <tr>
-                            <td>Ford</td>
-                            <td>2022</td>
-                            <td>SGT875</td>
-                            <td>600</td>
+                            <td>CE</td>
+                            <td>1548794615158451</td>
+                            <td>Pepe Sierra</td>
+                            <td>3104568971</td>
+                            <td>12/10/68</td>
+                            <td>pepes@gmail.com</td>
+                            <td>Tecnólogo</td>
+                            <td>Sistema hidráulico</td>
+                            <td>carrera 11 # 5-26</td>
+
                         </tr>
                     </tbody>
             </table>
