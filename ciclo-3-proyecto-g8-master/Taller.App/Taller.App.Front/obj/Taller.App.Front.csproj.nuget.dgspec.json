@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\leine\\Desktop\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leine\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "C:\\Users\\HP\\OneDrive\\Escritorio\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\HP\\OneDrive\\Escritorio\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Escritorio\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj",
+        "projectName": "Taller.App.Front",
+        "projectPath": "C:\\Users\\HP\\OneDrive\\Escritorio\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\OneDrive\\Escritorio\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> d3de12f0fbf19bd6ecb1d57e7677c160bccc75ab
         ],
         "originalTargetFrameworks": [
           "net6.0"
