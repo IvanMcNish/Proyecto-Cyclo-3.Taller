@@ -3,6 +3,22 @@
 @{
 }
 
+<style>
+    .table{
+        text-align: center;
+    }
+
+    .notas{
+        margin-top: 300px;
+    }
+
+    .ediguar{
+        margin-top:150px;
+    }
+
+
+</style>
+
 
 <div class="d-flex flex-row-reverse">
     <div class="p-2">
@@ -186,20 +202,14 @@
                     <div class="row">
                         <p>
                         <div class="col-12">
-                            <button class="btn btn-primary" type="submit">Registrar</button>
+                            <button class="btn btn-primary" id="liveAlertBtn" type="submit">Registrar</button>
                         </div>
                     </div>   
             </form>
             <p>
         </div>
 
-        <div class="col borde">
-
-        </div>
-
-
-
-        <div class="col border">
+        <div class="col border" >
             <table class="table">
                     <h6>Vehículos registrados</h6>
                     <thead>
@@ -233,8 +243,33 @@
                         </tr>
                     </tbody>
             </table>
+            <div class="ediguar">
+                <button class="btn btn-primary" type="submit">Editar</button> 
+                <button class="btn btn-primary" type="submit">Eliminar</button>
+            </div>
+            
         </div>
+
+        <div class="col borde ">
+            <div class="row-sm-5 border">
+                <div class="needs-validation" novalidate>
+                    <h6>Fecha de registro</h6>
+                    <input type="date" class="form-control" id="validationCustom01"  required>
+                    <div class="invalid-feedback">
+                        Campo requerido
+                    </div>
+                </div>
+
+                <div class="border notas">
+                    <div id="liveAlertPlaceholder"></div>
+           
+                </div>
+            </div>
+            
         </div>
+
+
+
     </div>
 </div>
 
@@ -264,5 +299,28 @@
                 }, false)
             })
         })()
+
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+            const alert = (message, type) => {
+            const wrapper = document.createElement('div')
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                '</div>'
+            ].join('')
+
+            alertPlaceholder.append(wrapper)
+            }
+
+            const alertTrigger = document.getElementById('liveAlertBtn')
+            if (alertTrigger) {
+            alertTrigger.addEventListener('click', () => {
+                alert('Vehículo registrado con exito', 'success')
+            })
+            }    
+
+
     </script>
 <!--------------------- fin formulario --------------------------------------------------------------->
