@@ -8,69 +8,69 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Taller.App.Front
 build_property.RootNamespace = Taller.App.Front
-build_property.ProjectDir = C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\ciclo-3-proyecto-g8-master\Taller.App\Taller.App.Front\
+build_property.ProjectDir = C:\Users\leine\Desktop\Proyecto-Cyclo-3.Taller\ciclo-3-proyecto-g8-master\Taller.App\Taller.App.Front\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\ciclo-3-proyecto-g8-master\Taller.App\Taller.App.Front
+build_property.MSBuildProjectDirectory = C:\Users\leine\Desktop\Proyecto-Cyclo-3.Taller\ciclo-3-proyecto-g8-master\Taller.App\Taller.App.Front
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/cesar/Documents/proyecto git/Proyecto/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/Error.cshtml]
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cesar/Documents/proyecto git/Proyecto/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/GestionMecanico/GestionMecanico.cshtml]
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/GestionMecanico/GestionMecanico.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvbk1lY2FuaWNvXEdlc3Rpb25NZWNhbmljby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cesar/Documents/proyecto git/Proyecto/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/GestionSupervisor/GestionSupervisor.cshtml]
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/GestionSupervisor/GestionSupervisor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvblN1cGVydmlzb3JcR2VzdGlvblN1cGVydmlzb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cesar/Documents/proyecto git/Proyecto/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/GestionSupervisor/Pages/GestionSupervisor/RegistrarNuevoMecanico/RegistrarNuevoMecanico.cshtml]
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/GestionSupervisor/Pages/GestionSupervisor/RegistrarNuevoMecanico/RegistrarNuevoMecanico.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvblN1cGVydmlzb3JcUGFnZXNcR2VzdGlvblN1cGVydmlzb3JcUmVnaXN0cmFyTnVldm9NZWNhbmljb1xSZWdpc3RyYXJOdWV2b01lY2FuaWNvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cesar/Documents/proyecto git/Proyecto/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/GestorVehiculos/GestorVehiculos.cshtml]
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/GestorVehiculos/GestorVehiculos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdG9yVmVoaWN1bG9zXEdlc3RvclZlaGljdWxvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cesar/Documents/proyecto git/Proyecto/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/Index.cshtml]
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cesar/Documents/proyecto git/Proyecto/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/OrdenesPendientes/OrdenesPendientes.cshtml]
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/OrdenesPendientes/OrdenesPendientes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZW5lc1BlbmRpZW50ZXNcT3JkZW5lc1BlbmRpZW50ZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cesar/Documents/proyecto git/Proyecto/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/Privacy.cshtml]
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cesar/Documents/proyecto git/Proyecto/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/Propietario/RegistroPropietario.cshtml]
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/Propietario/RegistroPropietario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvcGlldGFyaW9cUmVnaXN0cm9Qcm9waWV0YXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cesar/Documents/proyecto git/Proyecto/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/Resgiclievehi/Resgiclievehi.cshtml]
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/Resgiclievehi/Resgiclievehi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZ2ljbGlldmVoaVxSZXNnaWNsaWV2ZWhpLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cesar/Documents/proyecto git/Proyecto/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cesar/Documents/proyecto git/Proyecto/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/Usuario/GestionUsuario/GestionUsuario.cshtml]
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/Usuario/GestionUsuario/GestionUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xHZXN0aW9uVXN1YXJpb1xHZXN0aW9uVXN1YXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cesar/Documents/proyecto git/Proyecto/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/_ViewImports.cshtml]
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cesar/Documents/proyecto git/Proyecto/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/_ViewStart.cshtml]
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cesar/Documents/proyecto git/Proyecto/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/Shared/_Layout.cshtml]
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hvx31kelq3
