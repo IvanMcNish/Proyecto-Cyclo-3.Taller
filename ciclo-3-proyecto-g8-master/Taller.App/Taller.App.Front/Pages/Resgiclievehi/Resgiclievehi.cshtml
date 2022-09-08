@@ -13,7 +13,7 @@
     }
 
     .ediguar{
-        margin-top:150px;
+        margin-top:100px;
     }
 
 
@@ -38,15 +38,17 @@
     
 <!--------------------- inicio formulario --------------------------------------------------------------->
 
-    <div class="container-border">
+    <div class="container">
     
         <div class="row">
         
-        <div class="col-sm-6 border">
-            <p>
+        <div class="col-sm-6">
+            
             <form class="needs-validation" novalidate>
                     <div class="row">
+                    <h6>Registro de vehículo</h6>
                         <div class="col">
+                            
                             <label for="validationCustom01" class="form-label">Placa:</label>
                         </div>
                         <div class="col">
@@ -60,7 +62,7 @@
                         </div>
                         <div class="col">
                             <select class="form-select" id="validationCustom02" required>
-                                <option selected disabled value="">Marque una opción.</option>
+                                <option selected disabled value="">selección.</option>
                                 <option>Mazda</option>
                                 <option>Jeep</option>
                                 <option>Ferrary</option>
@@ -80,13 +82,12 @@
                         </div>
                         <div class="col">
                             <select class="form-select" id="validationCustom03" required>
-                                <option selected disabled value="">Marque una opción.</option>
+                                <option selected disabled value="">selección.</option>
                                 <option>Buseta</option>
                                 <option>Microbus</option>
                                 <option>Campero</option>
                                 <option>Camion</option>
                                 <option>Otros</option>
-                                <option>Mayor a 6</option>
                             </select>
                             <div class="invalid-feedback">
                                 Este campo es obligatorio
@@ -110,7 +111,7 @@
                         </div>
                         <div class="col">
                         <select class="form-select" id="validationCustom05" required>
-                                <option selected disabled value="">Marque una opción.</option>
+                                <option selected disabled value="">selección.</option>
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
@@ -127,7 +128,7 @@
                         </div>
                         <div class="col">
                         <select class="form-select" id="validationCustom06" required>
-                                <option selected disabled value="">Marque una opción.</option>
+                                <option selected disabled value="">selección.</option>
                                 <option>100</option>
                                 <option>115</option>
                                 <option>200</option>
@@ -146,7 +147,7 @@
                         </div>
                         <div class="col">
                         <select class="form-select" id="validationCustom07" required>
-                                <option selected disabled value="">Marque una opción.</option>
+                                <option selected disabled value="">selección.</option>
                                 <option>Colombia</option>
                                 <option>EEUU</option>
                                 <option>Venezuela</option>
@@ -164,7 +165,7 @@
                         </div>
                         <div class="col">
                             <select class="form-select" id="validationCustom08">
-                            <option selected disabled value="">No obligatorio.</option>
+                            <option selected disabled></span></option>
                             <option>Si</option>
                             <option>No</option>
                             </select>
@@ -178,7 +179,7 @@
                             <label for="validationCustom09" class="form-label">¿Cúales?:</label>
                         </div>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" value="No obligatorio" id="validationCustom09">
+                            <input type="text" class="form-control" id="validationCustom09">
                             <div class="invalid-feedback">
                                 Este campo es obligatorio
                             </div>
@@ -209,8 +210,8 @@
             <p>
         </div>
 
-        <div class="col border" >
-            <table class="table">
+        <div class="col " >
+            <table class="table border">
                     <h6>Vehículos registrados</h6>
                     <thead>
                         <tr>
@@ -243,16 +244,18 @@
                         </tr>
                     </tbody>
             </table>
+            
             <div class="ediguar">
                 <button class="btn btn-primary" type="submit">Editar</button> 
                 <button class="btn btn-primary" type="submit">Eliminar</button>
             </div>
+            <p>
             
         </div>
 
-        <div class="col borde ">
-            <div class="row-sm-5 border">
-                <div class="needs-validation" novalidate>
+        <div class="col  ">
+            <div class="row-sm-5" novalidate>
+                <div>
                     <h6>Fecha de registro</h6>
                     <input type="date" class="form-control" id="validationCustom01"  required>
                     <div class="invalid-feedback">
@@ -260,7 +263,7 @@
                     </div>
                 </div>
 
-                <div class="border notas">
+                <div class=" notas">
                     <div id="liveAlertPlaceholder"></div>
            
                 </div>
@@ -291,35 +294,47 @@
             Array.from(forms).forEach(form => {
                 form.addEventListener('submit', event => {
                     if (!form.checkValidity()) {
+
                         event.preventDefault()
-                        event.stopPropagation()
+                        
+
+
+                        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+                            const alert = (message, type) => {
+                            const wrapper = document.createElement('div')
+                                wrapper.innerHTML = [
+                                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                                `   <div>${message}</div>`,
+                                '   <button type="button" id="closes" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                                '</div>'
+                                ].join('')
+
+                                alertPlaceholder.append(wrapper)
+                            }
+                            const alertTrigger = document.getElementById('liveAlertBtn')
+                                if (alertTrigger) {
+                                alertTrigger.addEventListener('click', () => {
+                                alert('Vehículo registrado con exito', 'success')
+                                })
+                        }
+
+                                        
                     }
+                    
+
 
                     form.classList.add('was-validated')
+
+                    
+
+
                 }, false)
+
+                
             })
         })()
 
-        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-
-            const alert = (message, type) => {
-            const wrapper = document.createElement('div')
-            wrapper.innerHTML = [
-                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-                `   <div>${message}</div>`,
-                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-                '</div>'
-            ].join('')
-
-            alertPlaceholder.append(wrapper)
-            }
-
-            const alertTrigger = document.getElementById('liveAlertBtn')
-            if (alertTrigger) {
-            alertTrigger.addEventListener('click', () => {
-                alert('Vehículo registrado con exito', 'success')
-            })
-            }    
+  
 
 
     </script>
