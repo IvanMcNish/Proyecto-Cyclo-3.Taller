@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leine\\Desktop\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj": {}
+    "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leine\\Desktop\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj": {
+    "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leine\\Desktop\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj",
+        "projectUniqueName": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj",
         "projectName": "Taller.App.Front",
-        "projectPath": "C:\\Users\\leine\\Desktop\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj",
-        "packagesPath": "C:\\Users\\leine\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leine\\Desktop\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\obj\\",
+        "projectPath": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj",
+        "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\leine\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\cesar\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
