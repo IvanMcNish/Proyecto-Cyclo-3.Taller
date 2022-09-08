@@ -23,12 +23,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvbk1lY2FuaWNvXEdlc3Rpb25NZWNhbmljby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/GestionSupervisor/GestionSupervisor.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvblN1cGVydmlzb3JcR2VzdGlvblN1cGVydmlzb3IuY3NodG1s
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/GestionSupervisor/ConsultaInfoVehiculoReg/ConsultaInfoVehiculoReg.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvblN1cGVydmlzb3JcQ29uc3VsdGFJbmZvVmVoaWN1bG9SZWdcQ29uc3VsdGFJbmZvVmVoaWN1bG9SZWcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/GestionSupervisor/Pages/GestionSupervisor/RegistrarNuevoMecanico/RegistrarNuevoMecanico.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvblN1cGVydmlzb3JcUGFnZXNcR2VzdGlvblN1cGVydmlzb3JcUmVnaXN0cmFyTnVldm9NZWNhbmljb1xSZWdpc3RyYXJOdWV2b01lY2FuaWNvLmNzaHRtbA==
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/GestionSupervisor/ConsultaInfoVehiculo/ConsultaInfoVehiculo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvblN1cGVydmlzb3JcQ29uc3VsdGFJbmZvVmVoaWN1bG9cQ29uc3VsdGFJbmZvVmVoaWN1bG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/GestionSupervisor/RegistrarInfoNuevoUsuario/RegistrarInfoNuevoUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvblN1cGVydmlzb3JcUmVnaXN0cmFySW5mb051ZXZvVXN1YXJpb1xSZWdpc3RyYXJJbmZvTnVldm9Vc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/GestionSupervisor/RegistrarNuevoMecanico/RegistrarNuevoMecanico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvblN1cGVydmlzb3JcUmVnaXN0cmFyTnVldm9NZWNhbmljb1xSZWdpc3RyYXJOdWV2b01lY2FuaWNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/GestionSupervisor/RegistrarNuevoVehiculo/RegistrarNuevoVehiculo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvblN1cGVydmlzb3JcUmVnaXN0cmFyTnVldm9WZWhpY3Vsb1xSZWdpc3RyYXJOdWV2b1ZlaGljdWxvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/leine/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master/Taller.App/Taller.App.Front/Pages/GestorVehiculos/GestorVehiculos.cshtml]
