@@ -1,4 +1,75 @@
-﻿@page
-@model Taller.App.Front.Pages.RegistrarNuevoMecanicoModel
-@{
-}
+﻿<div class="container">
+        
+        <div class="row border">
+            <div class="col-sm-12 border">
+                <div class="ColregistrarMecanico">
+                    <h3 >Registrar Mecánico</h3>
+                    <p>
+                    <form>
+                    <div class="row border ">
+                        <div class="col border">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Tipo de documento</option>
+                                <option value="CC">Cedula de ciudadania</option>
+                                <option value="CE">Cedula de extranjeria</option>
+                            </select>
+                        </div>
+                        <div class="col border" >
+
+                                    <label for="exampleInputNumeroDeDocumento" class="col">Número de Documento</label>
+                                    <input type ="NúmeroDeDocumento" class="col" id="" Value="">
+                                                    
+                        </div>
+                    </div>
+                    <div class="row border ">
+                        <div class="col border">
+                                    <label for="exampleInputNombreyApellido" class="col">Nombre y Apellido</label>
+                                    <input type="NombreyApellido" class="col" id="" Value="">
+                        </div>
+                        <div class="col border" >
+
+                                    <label for="exampleInputModelodelvehiculo" class="col">Modelo</label>
+                                    <input type="Modelodelvehiculo" class="col" id="" Value="">
+                        </div>
+                    <div class="row border ">
+                        <div class="col border">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Capacidad de pasajeros </option>
+                                <option value="">2</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                        <div class="col border">
+
+                                    <label for="exampleInputCilindrajedelvehiculo" class="col">Cilindraje</label>
+                                    <input type="Cilindrajedelvehiculo" class="col" id="" Value="">
+                        </div>
+                    </div>
+                    <div class="row border ">
+                        <div class="col border">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Accesorios Adicionales </option>
+                                <option value="SI">SI</option>
+                                <option value="NO">NO</option>
+                            </select>
+                        </div>
+                        <div class="col border" >
+
+                                   <label for="exampleInputPropietario" class="col">Propietario</label>
+                                   <form class="form-search form-inline">
+                                      <input type="text" class="search-query" placeholder="Search..." />
+                                   </form>
+                        </div>
+                    </div>
+                    
+                </form>
+                    <div class="row">
+                        <div class="botonActualizar">
+                            <p><button type="button">Eliminar</button> <button type="button">Guardar</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
