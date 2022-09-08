@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Taller.app.Front.Pages
+namespace Taller.App.Front.Pages
 {
-    public class GestionSupervisorModel : PageModel
+    public class RegistrarInfoNuevoUsuarioModel : PageModel
     {
         public void OnGet()
         {
