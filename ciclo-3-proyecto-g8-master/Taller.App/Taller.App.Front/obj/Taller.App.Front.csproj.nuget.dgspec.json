@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mary\\Desktop\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj": {}
+    "C:\\Users\\HP\\OneDrive\\Escritorio\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mary\\Desktop\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj": {
+    "C:\\Users\\HP\\OneDrive\\Escritorio\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mary\\Desktop\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Escritorio\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj",
         "projectName": "Taller.App.Front",
-        "projectPath": "C:\\Users\\Mary\\Desktop\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj",
-        "packagesPath": "C:\\Users\\Mary\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mary\\Desktop\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\obj\\",
+        "projectPath": "C:\\Users\\HP\\OneDrive\\Escritorio\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\Taller.App.Front.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\OneDrive\\Escritorio\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master\\Taller.App\\Taller.App.Front\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mary\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -43,7 +43,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -55,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
