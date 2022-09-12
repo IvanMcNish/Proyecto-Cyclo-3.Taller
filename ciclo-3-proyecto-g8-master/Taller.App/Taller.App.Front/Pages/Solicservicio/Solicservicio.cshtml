@@ -1,0 +1,222 @@
+﻿@page
+@model Taller.App.Front.Pages.SolicservicioModel
+@{
+}
+
+
+<!---------------------------Html-User preventiva------------------------------------------------>
+    <div class="d-flex flex-row-reverse">
+        <div class="p-2">
+            <span>Cliente</span> <label>José José</label>
+        </div>
+        <div class="p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="bi bi-person-square" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path
+                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z" />
+            </svg>
+        </div>
+    </div>
+    <p>
+<!---------------------------Html-User preventiva------------------------------------------------>
+    
+<!---------------------------Html preventiva-----------------------------------------------------> 
+    <div class="row">
+        <div class="col-sm-9 border">
+            <form class="needs-validation" novalidate>
+                <div class="row border">
+                    <label>Solicitud servicio</label>
+                </div>
+                <div class="row">
+                    <p>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label for="validationCustom01" class="form-label">Tipo se revisio:</label>
+                            </div>
+                            <div class="col">
+                                <select class="form-select" id="validationCustom01" required>
+                                    <option selected disabled value="">buscar.</option>
+                                    <option>Servicio preventivo</option>
+                                    <option>Servicio correctivo</option>
+                                </select>
+                            </div> 
+                        </div>
+                        <p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label for="validationCustom01" class="form-label">Placa:</label>
+                            </div>
+                            <div class="col">
+                                <select class="form-select" id="validationCustom02" required>
+                                    <option selected disabled value="">buscar.</option>
+                                    <option>Mazda</option>
+                                    <option>Jeep</option>
+                                </select>
+                            </div> 
+                        </div>
+                        <p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label for="validationCustom01" class="form-label">Tipo:</label>
+                            </div>
+                            <div class="col">
+                                <label for="validationCustom01" class="form-label">Aquí tipo</label>
+                            </div> 
+                        </div>
+                        <p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label for="validationCustom01" class="form-label">Marca:</label>
+                            </div>
+                            <div class="col">
+                                <label for="validationCustom01" class="form-label">Aquí Marca</label>
+                            </div> 
+                        </div>
+                        <p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label for="validationCustom01" class="form-label">Modelo:</label>
+                            </div>
+                            <div class="col">
+                                <label for="validationCustom01" class="form-label">Aquí Modelo</label>
+                            </div> 
+                        </div>
+                        <p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label for="validationCustom01" class="form-label">Capacidad:</label>
+                            </div>
+                            <div class="col">
+                                <label for="validationCustom01" class="form-label">Aquí capacidad</label>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="col ">
+                        <div class="row">
+                            <input placeholder="00-00-0000" type="date"  class="form-control" id="validationCustom03">
+                        </div>
+                    </div>
+
+                    <div id="botonguardar" class="row">
+                        <div id="botonagendar" class="row">
+                            <button class="btn btn-primary" type="submit">Agendar</button> 
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div> 
+        <div class="col">
+                <div class="row border">  
+                    <label>Historial de citas</label>
+                </div>
+                <div class="row">
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Placa</th>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Servicio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SDF475</td>
+                                    <td>22/08/2021</td>
+                                    <td>Preventivo</td>
+                                </tr>
+                                <tr>
+                                    <td>SED225</td>
+                                    <td>23/08/2022</td>
+                                    <td>Preventivo</td>
+
+                                </tr>
+                                <tr>
+                                    <td>SDF785</td>
+                                    <td>09/09/2022</td>
+                                    <td>Correctivo</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="notas">
+                        <div id="liveAlertPlaceholder"></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!---------------------------Html preventiva----------------------------------------------------->
+
+<!---------------------------Css preventiva------------------------------------------------------>
+    <style>
+        #botonagendar{
+            margin-top:50px;
+            width:20%;
+            margin-bottom:25px;
+        }
+
+        #botonguardar{
+            justify-content:center;
+        }
+
+        .table{
+            text-align: center;
+        }
+        .notas{
+            margin-top: 300px;
+        }
+    </style>
+<!---------------------------Css preventiva------------------------------------------------------>
+
+<!---------------------------javascript preventiva----------------------------------------------->
+    <script>
+
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+
+                        event.preventDefault()
+                        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+                            const alert = (message, type) => {
+                            const wrapper = document.createElement('div')
+                                wrapper.innerHTML = [
+                                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                                `   <div>${message}</div>`,
+                                '   <button type="button" id="closes" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                                '</div>'
+                                ].join('')
+
+                                alertPlaceholder.append(wrapper)
+                            }
+                            const alertTrigger = document.getElementById('liveAlertBtn')
+                                if (alertTrigger) {
+                                alertTrigger.addEventListener('click', () => {
+                                alert('Vehículo registrado con exito', 'success')
+                                })
+                        }                 
+                    }
+                    form.classList.add('was-validated')
+
+                }, false)
+
+                
+            })
+        })()
+
+    </script>
+<!---------------------------javascript preventiva----------------------------------------------->
+
+

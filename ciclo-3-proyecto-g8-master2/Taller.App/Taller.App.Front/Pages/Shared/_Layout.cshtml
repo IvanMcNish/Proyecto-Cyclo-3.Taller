@@ -21,49 +21,82 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                            <li class="nav-item">
+                            @*<li class="nav-item">
 
                                 <a class="nav-link text-light" asp-area="" asp-page="/OrdenesPendientes/OrdenesPendientes">Ordenes Pendientes</a>
                             </li>
                             <li class="nav-item">
 
                                 <a class="nav-link text-light" asp-area="" asp-page="">Gestion Inventario</a>
-                            </li>
+                            </li>*@
+<!---------------------USUARIO --------------------------------------------------------------->
                             <ul class="navbar-nav">
                                 <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Herramientas
+                                    Usuario
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" asp-page="/GestionSupervisor/RegistrarNuevoVehiculo/RegistrarNuevoVehiculo">Registrar Vehiculo</a></li>
-                                    <li><a class="dropdown-item" asp-page="/GestorVehiculos/GestorVehiculos">Gestor de Vehiculos</a></li>
-                                    <li><a class="dropdown-item" asp-page="/GestionSupervisor/ConsultaInfoVehiculo/ConsultaInfoVehiculo">Consultar info Vehiculo</a></li>
-                                    <li><a class="dropdown-item" asp-page="/GestionSupervisor/ConsultaInfoVehiculoReg/ConsultaInfoVehiculoReg">Consultar vehiculos registrados</a></li>
-                                    <li><a class="dropdown-item" asp-page="/GestionSupervisor/RegistrarNuevoMecanico/RegistrarNuevoMecanico">Registrar Mecanico</a></li>
-                                    <li><a class="dropdown-item" asp-page="/GestionSupervisor/RegistrarInfoNuevoUsuario/RegistrarInfoNuevoUsuario">Registrar Nuevo Usuario (Supervisor)</a></li>
+                                    <li><a class="dropdown-item" asp-page="/Usuario/IniciarSesion/IniciarSesion">Iniciar Sesion</a></li>
+                                    <li><a class="dropdown-item" asp-page="/Usuario/RegistroCliente/RegistroCliente">Registrarse</a></li>
+                                    <li><a class="dropdown-item" asp-page="/Usuario/Solicservicio/Solicservicio">Solicitar Servicio</a></li>
+                                    <li><a class="dropdown-item" asp-page="/Usuario/Propietario/RegistroPropietario">Consultar Vehiculo</a></li>
+                                    <li><a class="dropdown-item" asp-page="/Usuario/ActualizarDatos/ActualizarDatos">Actualizar Datos</a></li>
                                 </ul>
                                 </li>
                             </ul>
+<!---------------------MECANICO --------------------------------------------------------------->
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mecanico
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" asp-page="/Mecanico/Ordenparatecnico/Ordenparatecnico">Ordenes Asignadas</a></li>
+                                    <li><a class="dropdown-item" asp-page="/Mecanico/ManejoInventario/ManejoInventario">Manejo de Inventario</a></li>
+                                    <li><a class="dropdown-item" asp-page="/Mecanico/HistorialTrabajo/HistorialTrabajo">Historial de Trabajo</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+<!---------------------SUPERVISOR --------------------------------------------------------------->
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Supervisor
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" asp-page="/Supervisor/RegistrarInfoNuevoUsuario/RegistrarInfoNuevoUsuario">Registrar Cliente</a></li>
+                                    <li><a class="dropdown-item" asp-page="/Supervisor/SolicitudServicios/SolicitudServicios">Solicitud Servicios</a></li>
+                                    <li><a class="dropdown-item" asp-page="/Supervisor/RegistrarNuevoMecanico/RegistrarNuevoMecanico">Registro de Mecanicos</a></li>
+                                    <li><a class="dropdown-item" asp-page="/Supervisor/RegistrarNuevoVehiculo/RegistrarNuevoVehiculo">Registrar Vehiculos</a></li>
+                                    <li><a class="dropdown-item" asp-page="/Supervisor/CitaPrioritaria/CitaPrioritaria">Cita Prioritaria</a></li>
+                                    <li><a class="dropdown-item" asp-page="/Supervisor/HistorialOrdenes/HistorialOrdenes">Historial de Ordenes</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                            @*
                             <li class="nav-item">
 
                                 <a class="nav-link text-light" asp-area="" asp-page="/Resgiclievehi/Resgiclievehi">Gestor Cliente</a>
-                            </li>
-                   
-                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-page="/RegistroCliente/RegistroCliente">Registro Cliente</a>
-                            </li>
-                             @*
+                            </li>                  
                             <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                                <a class="nav-link text-light" asp-area="" asp-page="/RegistroCliente/RegistroCliente">Registro Cliente</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-page="/Solicservicio/Solicservicio">Solicitar servio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-page="/Ordenparatecnico/Ordenparatecnico">Trabajos pendientes</a>
+                            </li>*@
 
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Mecanico/GestionMecanico">Mecánicos</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area=""
-                            asp-page="/Propietario/RegistroPropietario">Propietario</a>
-                            </li> *@
+
+
+
+
+
+
+
+
+
                     </ul>
                 </div>
             </div>

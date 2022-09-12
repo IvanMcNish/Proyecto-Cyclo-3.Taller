@@ -34,11 +34,11 @@
         </div>
     </div>
     <p>
-
+</div>
     
 <!--------------------- inicio formulario --------------------------------------------------------------->
 
-    <div class="container">
+<div class="container">
     
         <div class="row">
         
@@ -273,8 +273,8 @@
 
 
 
-    </div>
 </div>
+
 
 
 
@@ -296,9 +296,6 @@
                     if (!form.checkValidity()) {
 
                         event.preventDefault()
-                        
-
-
                         const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
                             const alert = (message, type) => {
                             const wrapper = document.createElement('div')
@@ -316,17 +313,9 @@
                                 alertTrigger.addEventListener('click', () => {
                                 alert('Vehículo registrado con exito', 'success')
                                 })
-                        }
-
-                                        
+                        }                 
                     }
-                    
-
-
                     form.classList.add('was-validated')
-
-                    
-
 
                 }, false)
 
