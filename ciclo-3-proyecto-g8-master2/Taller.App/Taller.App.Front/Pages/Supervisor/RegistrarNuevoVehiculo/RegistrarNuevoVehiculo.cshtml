@@ -16,6 +16,7 @@
     }
 
 
+
 </style>
 
 
@@ -209,67 +210,81 @@
             <p>
         </div>
 
-        <div class="col border" >
+        <div class="col-sm-6 border ">
+                <div class="needs-validation" novalidate>
+                    <h4>Fecha de registro</h4>
+                    <input type="date" class="form-control" id="validationCustom01"  required>
+                    <div class="invalid-feedback">
+                        Campo requerido
+                    </div>
+                </div>
+                <div class="border notas">
+                    <div id="liveAlertPlaceholder"></div>
+           
+                </div>
+            </div>
+        </div>
+
+        <div class="col border">
+            <p>
             <table class="table">
-                    <h4>Vehículos registrados</h4>
-                    <thead>
-                        <tr>
-                            <th scope="col">Marca</th>
-                            <th scope="col">Modelo</th>
-                            <th scope="col">Placa</th>
-                            <th scope="col">Cilindraje</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Mazda</td>
-                            <td>2019</td>
-                            <td>SDF485</td>
-                            <td>200</td>
+             <h4>Vehículos registrados</h4>
 
-                        </tr>
-                        <tr>
-                            <td>Chevrolet</td>
-                            <td>2001</td>
-                            <td>QWE585</td>
-                            <td>500</td>
+            <div class="d-flex justify-content-center h-100">
+            <div class="search">
+            <input type="text" class="search-input" placeholder="Buscar por placa..." name="">
+            <a href="#" class="search-icon">
+                <i class="fa fa-search"></i>
+            </a>
+            </div>
+            </div>
+        </div>        
+        </div>
+            <thead>
+                <tr>
+                    <th scope="col">Placa</th>
+                    <th scope="col">Marca</th>
+                    <th scope="col">Modelo</th>
+                    <th scope="col">Tipo de vehículo</th>
+                    <th scope="col">N° pasajeros</th>
+                    <th scope="col">Cilindraje</th>
+                    <th scope="col">Pais de Origen</th>
+                    <th scope="col">Accesorios adicionales</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>TPC593</td>
+                    <td>Mazda</td>
+                    <td>2010</td>
+                    <td>Camioneta</td>
+                    <td>5</td>
+                    <td>2000</td>
+                    <td>China</td>
+                    <td>Rines de lujo</td>
+                </tr>
+                <tr>
+                    <td>KZE456</td>
+                    <td>Ford fiesta</td>
+                    <td>2019</td>
+                    <td>Automovil</td>
+                    <td>5</td>
+                    <td>1800</td>
+                    <td>EEUU</td>
+                    <td>Tapetes de lujo</td>
+                </tr>
+                
 
-                        </tr>
-                        <tr>
-                            <td>Ford</td>
-                            <td>2022</td>
-                            <td>SGT875</td>
-                            <td>600</td>
-                        </tr>
-                    </tbody>
-            </table>
+                
+            </tbody>
+    </table>
             <div class="ediguar">
                 <button class="btn btn-primary" type="submit">Editar</button> 
                 <button class="btn btn-primary" type="submit">Eliminar</button>
             </div>
             
         </div>
-
-        <div class="col borde ">
-            <div class="row-sm-5 border">
-                <div class="needs-validation" novalidate>
-                    <h6>Fecha de registro</h6>
-                    <input type="date" class="form-control" id="validationCustom01"  required>
-                    <div class="invalid-feedback">
-                        Campo requerido
-                    </div>
-                </div>
-
-                <div class="border notas">
-                    <div id="liveAlertPlaceholder"></div>
-           
-                </div>
-            </div>
-            
-        </div>
-
-
-
     </div>
 </div>
 
@@ -323,4 +338,8 @@
 
 
     </script>
+
+
+
+ 
 <!--------------------- fin formulario --------------------------------------------------------------->

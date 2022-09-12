@@ -2,3 +2,202 @@
 @model Taller.app.Front.Pages.GestionUsuarioModel
 @{
 }
+
+<style>
+    .table{
+        text-align: center;
+    }
+
+    .notas{
+        margin-top: 300px;
+    }
+
+    .ediguar{
+        margin-top:150px;
+    }
+
+
+</style>
+
+
+<div class="bg-primary d-flex flex-row-reverse"> 
+        <div class="p-2"> 
+            <span>Usuario</span> 
+            <label></label>             
+        </div>         
+        <div class="p-2"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16"> 
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/> 
+                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/> 
+            </svg>             
+        </div>         
+    </div>     
+    <body> 
+        <div class="container-border">
+            <div class="row">
+                <div class="col-sm-6 border">
+                    <div>
+                        <h4>Actualizar datos personales</h4>
+                    </div>
+                    <p>   
+                    <form class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="validationCustom01" class="form-label">Tipo de Documento:</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <select class="form-select" id="validationCustom08" required>
+                                    <option selected disabled value="">Marque una opcion</option>
+                                    <option>Cedula ciudadanía</option>
+                                    <option>Cedula Extranjería</option>
+                                    <option>Otros</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Este campo es obligatorio
+</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <label for="validationCustom04" class="form-label">Numero de Identificación:</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="validationCustom04" required>
+                                <div class="invalid-feedback">
+                                    Campo requerido
+</div>
+                            </div>
+                        </div>                         
+                        <br> 
+                        <div class="row">
+                            <div class="col">
+                                <label for="validationCustom05" class="form-label">Teléfono:</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="validationCustom05" required>
+                                <div class="invalid-feedback">
+                                    Campo requerido
+</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <label for="validationCustom06" class="form-label">Fecha de Nacimiento:</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="validationCustom06" required>
+                                <div class="invalid-feedback">
+                                    Campo requerido
+</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <label for="validationCustom07" class="form-label">Correo Electrónico:</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="validationCustom07" required>
+                                <div class="invalid-feedback">
+                                    Campo requerido
+</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <label for="validationCustom07" class="form-label">Dirección Física:</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="validationCustom07" required>
+                                <div class="invalid-feedback">
+                                    Campo requerido
+</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Acepto los terminos y condiciones
+</label>
+                                    <div class="invalid-feedback">
+                                        Debe aceptar los términos y condiciones para continuar.
+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p> <div class="col-12">
+                                    <button class="btn btn-primary" id="liveAlertBtn" type="submit">Actualizar</button>
+                                </div>  
+                        </div>                         
+                    </form>
+                    <p>  
+                </div>
+                <div class="col-sm-6 border ">
+                    <div class="needs-validation" novalidate>
+                        <h4>Fecha de Actualización</h4>
+                        <input type="date" class="form-control" id="validationCustom01" required>
+                        <div class="invalid-feedback">
+                            Campo requerido
+</div>
+                    </div>
+                    <div class="border notas">
+                        <div id="liveAlertPlaceholder"></div>
+                    </div>
+                    <img src="../../../../../Users/Mary/Desktop/TallerMecanico/img/actualdatos.png" height="10%"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+
+    </style>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+            const alert = (message, type) => {
+            const wrapper = document.createElement('div')
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                '</div>'
+            ].join('')
+
+            alertPlaceholder.append(wrapper)
+            }
+
+            const alertTrigger = document.getElementById('liveAlertBtn')
+            if (alertTrigger) {
+            alertTrigger.addEventListener('click', () => {
+                alert('Vehículo registrado con exito', 'success')
+            })
+            }    
+
+<!--------------------- fin formulario --------------------------------------------------------------->
