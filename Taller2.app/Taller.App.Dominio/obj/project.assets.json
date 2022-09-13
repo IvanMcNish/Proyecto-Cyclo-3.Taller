@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\lineas\\.nuget\\packages\\": {}
+    "C:\\Users\\cesar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\Taller.App.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master2\\Taller.App\\Taller.App.Dominio\\Taller.App.Dominio.csproj",
       "projectName": "Taller.App.Dominio",
-      "projectPath": "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\Taller.App.Dominio.csproj",
-      "packagesPath": "C:\\Users\\lineas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\obj\\",
+      "projectPath": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master2\\Taller.App\\Taller.App.Dominio\\Taller.App.Dominio.csproj",
+      "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\ciclo-3-proyecto-g8-master2\\Taller.App\\Taller.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lineas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\cesar\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"

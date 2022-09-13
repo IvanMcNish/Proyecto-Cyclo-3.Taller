@@ -2,9 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Taller.App.Dominio.Entidades;
+using Taller.App.Dominio.Mecanico;
 
-namespace Taller.App.Persistencia.AppRepositorios
+
+namespace Taller.App.Persistencia.Repositorios
 {
     public class RepositorioMecanico
     {
