@@ -1,5 +1,0 @@
-C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\ciclo-3-proyecto-g8-master2\Taller.App\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.csproj.AssemblyReference.cache
-C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\ciclo-3-proyecto-g8-master2\Taller.App\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\ciclo-3-proyecto-g8-master2\Taller.App\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.AssemblyInfoInputs.cache
-C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\ciclo-3-proyecto-g8-master2\Taller.App\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.AssemblyInfo.cs
-C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\ciclo-3-proyecto-g8-master2\Taller.App\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.csproj.CoreCompileInputs.cache
