@@ -1,0 +1,112 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Taller.App.Front
+build_property.RootNamespace = Taller.App.Front
+build_property.ProjectDir = C:\Users\Mary\Desktop\Proyecto-Cyclo-3.Taller\ciclo-3-proyecto-g8-master2\Taller.App\Taller.App.Front\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Mary\Desktop\Proyecto-Cyclo-3.Taller\ciclo-3-proyecto-g8-master2\Taller.App\Taller.App.Front
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Mecanico/HistorialTrabajo/HistorialTrabajo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVjYW5pY29cSGlzdG9yaWFsVHJhYmFqb1xIaXN0b3JpYWxUcmFiYWpvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Mecanico/ManejoInventario/ManejoInventario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVjYW5pY29cTWFuZWpvSW52ZW50YXJpb1xNYW5lam9JbnZlbnRhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Mecanico/Ordenparatecnico/Ordenparatecnico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVjYW5pY29cT3JkZW5wYXJhdGVjbmljb1xPcmRlbnBhcmF0ZWNuaWNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Ordenparatecnico/Ordenparatecnico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZW5wYXJhdGVjbmljb1xPcmRlbnBhcmF0ZWNuaWNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Supervisor/CitaPrioritaria/CitaPrioritaria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwZXJ2aXNvclxDaXRhUHJpb3JpdGFyaWFcQ2l0YVByaW9yaXRhcmlhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Supervisor/GestorVehiculos/GestorVehiculos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwZXJ2aXNvclxHZXN0b3JWZWhpY3Vsb3NcR2VzdG9yVmVoaWN1bG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Supervisor/HistorialOrdenes/HistorialOrdenes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwZXJ2aXNvclxIaXN0b3JpYWxPcmRlbmVzXEhpc3RvcmlhbE9yZGVuZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Supervisor/RegistrarInfoNuevoUsuario/RegistrarInfoNuevoUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwZXJ2aXNvclxSZWdpc3RyYXJJbmZvTnVldm9Vc3VhcmlvXFJlZ2lzdHJhckluZm9OdWV2b1VzdWFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Supervisor/RegistrarNuevoMecanico/RegistrarNuevoMecanico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwZXJ2aXNvclxSZWdpc3RyYXJOdWV2b01lY2FuaWNvXFJlZ2lzdHJhck51ZXZvTWVjYW5pY28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Supervisor/RegistrarNuevoVehiculo/RegistrarNuevoVehiculo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwZXJ2aXNvclxSZWdpc3RyYXJOdWV2b1ZlaGljdWxvXFJlZ2lzdHJhck51ZXZvVmVoaWN1bG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Supervisor/SolicitudServicios/SolicitudServicios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwZXJ2aXNvclxTb2xpY2l0dWRTZXJ2aWNpb3NcU29saWNpdHVkU2VydmljaW9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Usuario/ActualizarDatos/ActualizarDatos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xBY3R1YWxpemFyRGF0b3NcQWN0dWFsaXphckRhdG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Usuario/IniciarSesion/IniciarSesion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xJbmljaWFyU2VzaW9uXEluaWNpYXJTZXNpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Usuario/Propietario/RegistroPropietario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xQcm9waWV0YXJpb1xSZWdpc3Ryb1Byb3BpZXRhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Usuario/RegistroCliente/RegistroCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xSZWdpc3Ryb0NsaWVudGVcUmVnaXN0cm9DbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Usuario/Resgiclievehi/Resgiclievehi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xSZXNnaWNsaWV2ZWhpXFJlc2dpY2xpZXZlaGkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Usuario/Solicservicio/Solicservicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xTb2xpY3NlcnZpY2lvXFNvbGljc2VydmljaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mary/Desktop/Proyecto-Cyclo-3.Taller/ciclo-3-proyecto-g8-master2/Taller.App/Taller.App.Front/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-hvx31kelq3
