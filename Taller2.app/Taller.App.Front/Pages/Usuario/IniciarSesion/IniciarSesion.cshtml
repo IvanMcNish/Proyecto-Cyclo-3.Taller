@@ -15,7 +15,7 @@
     position: relative;
 }
 .login_box {
-    width: 1050px;
+    width: 1200px;
     height: 600px;
     position: absolute;
     top: 50%;
@@ -56,16 +56,17 @@
 .left h3{
   text-align: center;
   margin-bottom: 40px;
+  color: darkblue;
 }
 .left input {
     border: none;
     width: 80%;
     margin: 15px 0px;
-    border-bottom: 1px solid #4f30677d;
+    border-bottom: 1px solid blue;
     padding: 7px 9px;
     width: 100%;
     overflow: hidden;
-    background: transparent;
+    background: white;
     font-weight: 600;
     font-size: 14px;
 }
@@ -74,13 +75,28 @@
 }
 .submit {
     border: none;
-    padding: 15px 70px;
+    padding: 10px 50px;
     border-radius: 8px;
     display: block;
     margin: auto;
-    margin-top: 120px;
-    background: #583672;
-    color: #fff;
+    margin-top: 50px;
+    background: blue;
+    color: white;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+}
+
+.register {
+    border: none;
+    padding: 10px 60px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    background: white;
+    color: blue;
     font-weight: bold;
     -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
     -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
@@ -88,9 +104,8 @@
 }
 
 
-
 .right {
-	background: url(https://cdn.dribbble.com/users/118246/screenshots/5343519/wifi.gif);
+	background: url(https://siempreauto.com/wp-content/uploads/sites/9/2022/06/Taller-meca%CC%81nico-confiable.jpg?quality=60&strip=all&w=1200&h=800&crop=1);
 	color: #fff;
 	position: relative;
 }
@@ -108,11 +123,16 @@
   font-weight: 500;
 }
 .right-text h5{
+  background-color: blue;
+  border-radius: 4px;
+  border-color: white;
   display: block;
-  width: 100%;
+  width: 60%;
   text-align: center;
-  font-size: 19px;
-  font-weight: 400;
+  font-size: 17px;
+  font-weight: 350;
+  margin-left: 140px;
+  margin-bottom: 1500px;
 }
 
 .right .right-inductor{
@@ -134,20 +154,20 @@
 <section class="login">
 		<div class="login_box">
 			<div class="left">
-				<div class="top_link"><a href="#"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Return home</a></div>
+				<div class="top_link"><a href="#"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Volver a inicio</a></div>
 				<div class="contact">
 					<form action="">
 						<h3>INICIO DE SESION</h3>
 						<input type="text" placeholder="USUARIO">
 						<input type="text" placeholder="CONTRASEÑA">
-						<button class="submit">INGRESAR</button>
+						<button type="button" class="submit">INGRESAR</button>
+            <button type="button" class="register">REGISTRARSE</button>
 					</form>
 				</div>
 			</div>
 			<div class="right">
 				<div class="right-text">
-					<h2>LOGO</h2>
-					<h5>A great company to work with!</h5>
+					<h5>Trabajamos pensando en tu bienestar y el de tu vehiculo</h5>
 				</div>
 				<div class="right-inductor"><img src="" alt=""></div>
 			</div>
