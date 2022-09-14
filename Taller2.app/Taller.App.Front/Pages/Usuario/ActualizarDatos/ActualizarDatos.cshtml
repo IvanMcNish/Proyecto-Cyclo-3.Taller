@@ -27,6 +27,12 @@
     .ediguar {
         margin-top: 150px;
     }
+
+    .foto{
+        background: url(https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_960_720.jpg);
+        color: #fff;
+        position: relative;
+    }
 </style>
 <head>
 <div class="bg-primary d-flex flex-row-reverse">
@@ -50,8 +56,10 @@
         <div class="row">
             <div class="col-sm-6 border">
                 <div>
+                    <br>
                     <h4>Actualizar datos personales</h4>
                 </div>
+                <br>
                 <p>
                 <form class="needs-validation" novalidate>
                     <div class="row">
@@ -155,20 +163,23 @@
             </div>
             <div class="col-sm-6 border ">
                 <div class="needs-validation" novalidate>
+                    <br>
                     <h4>Fecha de Actualización</h4>
                     <input type="date" class="form-control" id="validationCustom01" required>
                     <br>
-                    <br>
-                    <img src="Images\Registro1.jpg" class="ms-5">
-                    <br>
-                    <br>
-                    <div class="invalid-feedback">
+
+                <div class="invalid-feedback">
                         Campo requerido
+                </div>
+                        
+                    <div class="col-sm-12">
+                    <div class="d-xl-flex foto mh-100 mt-auto user-select-all vh-100 w-100">
+                         <img src="" alt="">
                     </div>
-                </div>
-                <div class="border notas">
-                    <div id="liveAlertPlaceholder"></div>
-                </div>
+                    <br>
+                    </div>                         
+                    </div>
+                    <div class="container pg-empty-placeholder"></div>
             </div>
         </div>
     </div>
