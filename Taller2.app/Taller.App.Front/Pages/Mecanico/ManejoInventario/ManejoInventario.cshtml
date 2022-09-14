@@ -16,9 +16,6 @@
         margin-top: 150px;
     }
 
-    .table table-bordered {
-        margin top: 300px;
-    }
 </style>
 
 
@@ -42,11 +39,10 @@
 
     <!---------------------------Html preventiva----------------------------------------------------->
 
-<div class="row">
-    <div class="col-sm-12"></div>
-    <h1>Manejo de inventario</h1>
-    <div class="col-sm-4 ">
-        <div class="container mt-3">
+<div class="container>
+    <div class="row">
+            <h1>Manejo de inventario</h1>
+        <div class="col-sm-4">
             <h4>Productos disponibles</h4>
             <table class="table table-bordered">
                 <thead>
@@ -68,83 +64,66 @@
                         <td>Filtro de aceite</td>
                         <td>50</td>
                     </tr>
+
+                    <tr>
+                        <td>2015</td>
+                        <td>Neumatico</td>
+                        <td>60</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
-
-        <div class="col-sm-4 ">
-            <div class="container mt-3">
-                <div class="row">
-                    <h4>Productos solicitados</h4>
-                </div>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Codigo del Producto</th>
-                            <th>Producto</th>
-                            <th>Cantidad</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1213</td>
-                            <td>Filtro de aire</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>1214</td>
-                            <td>Filtro de aceite</td>
-                            <td>1</td>
-                        </tr>
-
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="col-sm-3 border ">
+        <div class="Row"></div>
+        <div class="col">
+                <h4>Productos a solicitar </h4>
+                <div class="col-sm-4"></div>
+                        <label for="validationCustom04" class="form-label"> Codigo del Producto:</label>
+                    <div class="col">
+                        <input type="text" class="form-control" id="validationCustom04" required>
+                        <div class="invalid-feedback">
+                            este campo es obligatorio
+                        </div>
+                    </div>
+                    <br>
+                   <div class="col">
+                        <label for="validationCustom04" class="form-label"> Producto:</label>
+                    </div>
+                        <select class="form-select" id="validationCustom03" required>
+                            <option selected disabled value=""></option>
+                            <option>Filtro Aceite</option>
+                            <option>Filtro de aire</option>
+                            <option>Neumatico</option>
+                            <option>Pastas de freno</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="col">
+                        <label for="validationCustom04" class="form-label"> Cantidad:</label>
+                    </div>
+                    <div class="col">
+                        <input type="number" class="form-control" id="validationCustom04" required>
+                    </div>
+                    
+                    <div class="ediguar">
+                    <button class="btn btn-primary" type="submit">Solicitar</button>
+                    <button class="btn btn-primary" type="submit">Eliminar</button>
+              
+                </table>    
+        </div>
+        
+        <div class="col-sm-3 border">
                 <div class="needs-validation" novalidate>
                     <br>
-                    <h4>Fecha de registro</h4>
+                    <h4>Fecha de Solicitud</h4>
                     <input type="date" class="form-control" id="validationCustom01" required>
-                    <div class="invalid-feedback">
-                        Campo requerido
                     </div>
                 </div>
-            </div>
+        </div>
+    </div>
+</div>
 
-
-            <style>
-                #chat2 .form-control {
-                    border-color: transparent;
-                }
-
-                #chat2 .form-control:focus {
-                    border-color: transparent;
-                    box-shadow: inset 0px 0px 0px 1px transparent;
-                }
-
-                .divider:after,
-                .divider:before {
-                    content: "";
-                    flex: 1;
-                    height: 1px;
-                    background: #eee;
-                }
-
-                .table {
-                    text-align: center;
-                }
-
-                #inventario {
-                    text-align: left;
-                }
-
-                .cerrarguardar {
-                    margin-top: 150px;
-                    margin-left: 140px;
-                }
-            </style>
-            <!---------------------------Css preventiva------------------------------------------------------>
+          
 
             <!---------------------------javascript preventiva----------------------------------------------->
             <script>
