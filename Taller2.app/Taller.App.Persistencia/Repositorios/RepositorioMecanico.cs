@@ -24,5 +24,11 @@ namespace Taller.App.Persistencia.Repositorios
             return mecanicoNuevo.Entity;
 
         }
+
+        IEnumerable<Mecanico> ObtenerMecanicos()
+        {
+            return this.dbContext.Mecanicos;
+        }
+        
     }
 }
