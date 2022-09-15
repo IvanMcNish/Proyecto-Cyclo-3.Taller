@@ -2,27 +2,188 @@
 @model Taller.app.Front.Pages.RegistroPropietarioModel
 @{
 }
-<form action="">
-<h3>Datos Propietario</h3>
 
-<div class="d-inline-flex p-2">   
-    <div class="mb-3 me-3" >
-        <label for="exampleFormControlInput1" class="form-label">Cedula</label>
-        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Nombre</label>
-        <input class="form-control" id="exampleFormControlTextarea1" rows="3"></input>
-    </div>
-</div>
+<!-----------------------------HTML INICIO---------------------------------------------------------->
 
-<h3>Datos Vehiculo</h3>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Placa</label>
-  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Modelo</label>
-  <input class="form-control" id="exampleFormControlTextarea1" rows="3"></input>
-</div>
-</form>
+  <div class="row general">
+
+    <div class="col">
+      <div class="row ">
+        <label for="">Ordenes pendientes</label>
+      </div>
+      <p>
+      <div class="row border">
+        <table id="inventario" class="table table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Marca</th>
+              <th scope="col">Placa</th>
+              <th scope="col">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mazda</td>
+              <td>DER631</td>
+              <td>Aprobada</td>
+            </tr>
+            <tr>
+              <td>Ford</td>
+              <td>DEF145</td>
+              <td>Pendiente por aprobar</td>
+            </tr>
+            <tr>
+              <td>Chevrolet</td>
+              <td>FSD251</td>
+              <td>Rechazada</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+      <div class="row border">
+        <div class="row">
+          <div class="col-sm-2">
+            <label for="">Orden</label>
+          </div>
+          <div class="col">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Mazda</td>
+                  <td>/</td>
+                  <td>SAS521</td>
+                  <td>/</td>
+                  <td>Rechazada</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+            <label for="">Caso</label>
+          </div>
+          <div class="col">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Comments</label>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col">
+
+        </div>
+      </div>
+      <p>
+      <div class="row" id="boton">
+        <button id="button1" type="button" class="btn btn-primary">Aceptar</button>
+        <button id="button" type="button" class="btn btn-danger">Cancelar</button>
+      </div>
+    </div>
+
+    <div class="col" id="video">
+      <div class="row">
+        <iframe width="260" height="215" src="https://www.youtube.com/embed/EDSTDHU6oFI" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+      <br>
+
+      <div class="row ">
+        <label for="">Reagendar</label>
+        <input type="date" name="" id="" >
+      </div>
+      <br>
+      <div class="row" id="orden">
+        <label for="">Orden a trabajar</label>
+        <div class="row">
+            <table class="table table-dark table-hover">
+              <tbody>
+                <tr>
+                  <td>Mazda</td>
+                  <td>/</td>
+                  <td>SAS521</td>
+                  <td>/</td>
+                  <td>Rechazada</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+
+
+    </div>
+
+    <div class="col">
+      <div class="row">
+        <div class="row border" id="soat">
+          <img onclick="location.href='https://www.wesura.com/?utm_source=segurossura&utm_medium=banner&utm_campaign=canales-venta-wesura&utm_content=wesura-canales-venta'" width="300" height="215" src="https://th.bing.com/th/id/R.7fe19b30cf5ab62d775c41a5a6396574?rik=U8KvPXYVYvqAMg&riu=http%3a%2f%2fclinicadelosandesips.com%2fwp-content%2fuploads%2f2013%2f04%2fSURA_soat.jpg&ehk=l1DMV1rD1vglDEMTC0toKDNeqzBzLYkhDLHjDtp3srU%3d&risl=&pid=ImgRaw&r=0" alt="soat">
+        </div>
+      </div>
+
+      <div class="row alert">
+      
+      </div>
+
+    </div>
+    
+  </div>
+
+<!-----------------------------HTML FIN------------------------------------------------------------->
+
+
+<!-----------------------------CSS INICIO----------------------------------------------------------->
+  <style>
+
+    #button1{
+      width: 30%;
+      margin-left: 50px;
+      bac
+    }
+    
+    #button{
+      width: 30%;
+      margin-left: 40px;
+    }    
+
+    .table{
+      text-align: center;
+      margin-left: 15px;
+    }
+
+    #orden{
+      margin-top: 35px;
+    }
+
+    img{
+      cursor: pointer;
+    }
+
+    #soat{
+      margin-left: 25px;
+
+    }
+
+    #btnsoat{
+      width: 150px;
+      margin-left: 90px;
+    }
+
+    #video{
+      margin-left: 10px;
+    }
+
+    #inventario{
+      width: 93%;
+    }
+  </style>
+<!-----------------------------CSS FIN-------------------------------------------------------------->
+
+
+<!-----------------------------Js INICIO------------------------------------------------------------>
+
+<!-----------------------------Js FIN--------------------------------------------------------------->
