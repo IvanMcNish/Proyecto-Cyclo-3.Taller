@@ -1,4 +1,4 @@
-.<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
     <ProjectReference Include="..\Taller.App.Persistencia\Taller.App.Persistencia.csproj" />
