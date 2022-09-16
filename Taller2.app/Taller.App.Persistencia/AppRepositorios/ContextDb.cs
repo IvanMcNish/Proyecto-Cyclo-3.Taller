@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Taller.App.Dominio.Mecanico;
+using Taller.App.Dominio.Entidades;
 using Microsoft.EntityFrameworkCore;
 
 namespace Taller.App.Persistencia.AppRepositorios
