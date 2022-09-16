@@ -14,9 +14,9 @@ namespace Taller.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("");
-           // AgregarMecanico();
-           //ObtenerMecanicos();
-           BuscarMecanico();
+           //AgregarMecanico();
+           ObtenerMecanicos();
+           //BuscarMecanico();
         }
 
         static void AgregarMecanico()
@@ -44,10 +44,31 @@ namespace Taller.App.Consola
             {
                 //Response.Write();
                 Console.WriteLine(mecanico.Nombre.ToString());
+                Console.WriteLine(mecanico.Telefono.ToString());
+                Console.WriteLine(mecanico.Contraseña.ToString());
+                Console.WriteLine(mecanico.Rol.ToString());
             }
         }
         static void BuscarMecanico(){
-           repoMecanico.BuscarMecanico("26");
+           var mecanico = repoMecanico.BuscarMecanico("23");
+           Console.WriteLine("Prueba: " + mecanico.Nombre);
+        }
+
+        static void EditarMecanico(){
+            var mecanico = new Mecanico
+            {
+                Id = "",
+                Nombre = "carlos",
+                FechaNacimiento = "15",
+                NivelEstudio = "bachiller",
+                Telefono = "123",
+                Contraseña = "123",
+                Rol = "jefeoperaciones",
+            };
+
+
+
+            repoMecanico.EditarMecanico(mecanico);
         }
     }
 

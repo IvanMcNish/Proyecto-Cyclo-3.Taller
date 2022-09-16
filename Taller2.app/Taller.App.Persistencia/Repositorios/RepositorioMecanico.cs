@@ -38,7 +38,7 @@ namespace Taller.App.Persistencia
         
         public void EditarMecanico(Mecanico mecanicoNuevo)
         {
-           var mecanicoActual= this.dbContext.Mecanicos.FirstOrDefault(m=>m.Id== idMecanico);
+           var mecanicoActual= this.dbContext.Mecanicos.FirstOrDefault(m=>m.Id== mecanicoNuevo.Id);
            if (mecanicoActual != null){
                 mecanicoActual.Nombre= mecanicoNuevo.Nombre;
                 mecanicoActual.FechaNacimiento= mecanicoNuevo.FechaNacimiento;
@@ -46,6 +46,19 @@ namespace Taller.App.Persistencia
                 mecanicoActual.Contraseña= mecanicoNuevo.Contraseña;
                 mecanicoActual.Rol= mecanicoNuevo.Rol;
            }
-           this.dbContext.Mecanicos.SaveChanges();        }
+           this.dbContext.SaveChanges(); 
+          }
+
+           public void EliminarMecanico(string idMecanico)
+        {
+            
+            var mecanicoEncontrado = this.dbContext.Mecanicos.FirstOrDefault(m=>m.Id== idMecanico);
+             if (mecanicoEncontrado != null){
+
+                this.dbContext.Remove(mecanicoEncontrado);
+                this.dbContext.SaveChanges();
+
+             }
+        }
     }
 }
