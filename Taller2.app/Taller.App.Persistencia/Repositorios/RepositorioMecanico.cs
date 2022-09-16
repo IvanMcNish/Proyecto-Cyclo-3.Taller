@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Taller.App.Dominio.Mecanico;
+using Taller.App.Dominio.Entidades;
 
 
-namespace Taller.App.Persistencia.Repositorios
+namespace Taller.App.Persistencia.AppRepositorios
 {
     public class RepositorioMecanico
     {
@@ -24,5 +24,11 @@ namespace Taller.App.Persistencia.Repositorios
             return mecanicoNuevo.Entity;
 
         }
+
+        IEnumerable<Mecanico> ObtenerMecanicos()
+        {
+            return this.dbContext.Mecanicos;
+        }
+        
     }
 }
