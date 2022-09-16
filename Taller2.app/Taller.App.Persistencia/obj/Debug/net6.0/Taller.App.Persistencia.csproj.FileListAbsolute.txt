@@ -8,3 +8,20 @@ C:\Users\lineas\Desktop\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.
 C:\Users\lineas\Desktop\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.AssemblyInfoInputs.cache
 C:\Users\lineas\Desktop\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.AssemblyInfo.cs
 C:\Users\lineas\Desktop\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.csproj.AssemblyReference.cache
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.AssemblyInfo.cs
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\bin\Debug\net6.0\Taller.App.Persistencia.deps.json
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\bin\Debug\net6.0\Taller.App.Persistencia.runtimeconfig.json
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\bin\Debug\net6.0\Taller.App.Persistencia.dll
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\bin\Debug\net6.0\Taller.App.Persistencia.pdb
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\bin\Debug\net6.0\Taller.App.Dominio.dll
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\bin\Debug\net6.0\Taller.App.Dominio.pdb
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.csproj.CopyComplete
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.dll
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\obj\Debug\net6.0\refint\Taller.App.Persistencia.dll
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.pdb
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\obj\Debug\net6.0\Taller.App.Persistencia.genruntimeconfig.cache
+C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Persistencia\obj\Debug\net6.0\ref\Taller.App.Persistencia.dll
