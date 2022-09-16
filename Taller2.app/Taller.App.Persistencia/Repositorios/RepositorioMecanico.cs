@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Taller.App.Dominio.Entidades;
 
 
-namespace Taller.App.Persistencia.AppRepositorios
+namespace Taller.App.Persistencia
 {
     public class RepositorioMecanico
     {
@@ -25,7 +25,7 @@ namespace Taller.App.Persistencia.AppRepositorios
 
         }
 
-        IEnumerable<Mecanico> ObtenerMecanicos()
+        public IEnumerable<Mecanico> ObtenerMecanicos()
         {
             return this.dbContext.Mecanicos;
         }

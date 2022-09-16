@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Taller.App.Dominio.Entidades;
 using Microsoft.EntityFrameworkCore;
 
-namespace Taller.App.Persistencia.AppRepositorios
+namespace Taller.App.Persistencia
 {
     public class ContextDb :DbContext
     {
