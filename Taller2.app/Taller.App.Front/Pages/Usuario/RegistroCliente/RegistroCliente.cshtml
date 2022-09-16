@@ -4,75 +4,60 @@
 }
 
 <style>
-    .table {
-        text-align: center;
+    body{
+        background: blue;
+        background: linear-gradient(to right, #949AF3, #EBEBF6);
     }
 
-    .notas {
-        margin-top: 300px;
+    .container{
+        border: 10px;
+        border-color: #949AF3;
+        border-radius: 10px;
     }
 
-    .ediguar {
-        margin-top: 150px;
-    }
 
-    <style>.table {
-        text-align: center;
-    }
+    .bg{
+        background-image: url(https://www.lubricantesenvenezuela.com/wp-content/uploads/2020/01/mantenimiento-de-vehiculos.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: 1px;
+        
 
-    .notas {
-        margin-top: 300px;
     }
-
-    .ediguar {
-        margin-top: 150px;
-    }
-
-    .foto{
-        background: url(https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_960_720.jpg);
-        color: #fff;
-        position: relative;
-    }
+.button{
+    padding: 20px;
+}
+    
 </style>
-<head>
-<div class="bg-primary d-flex flex-row-reverse">
-    <div class="p-2">
-        <span>Usuario</span>
-        <label></label>
-    </div>
-    <div class="p-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-square"
-            viewBox="0 0 16 16">
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-            <path
-                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z" />
-        </svg>
-    </div>
-</div>
-</head>
 
 <body>
-    <div class="container-border">
+    <div class="container w-95 bg-light">
         <div class="row">
-            <div class="col-sm-6 border">
-                <div>
-                    <br>
-                    <h4>Actualizar datos personales</h4>
+            <div class="col bg">
+                  </div>
+
+            <div class="col">
+                <div class="text-end">
+                    <img src="" alt="">
                 </div>
-                <br>
-                <p>
-                <form class="needs-validation" novalidate>
-                    <div class="row">
+
+
+                <!--Registro-->
+
+                <form action="#" class="Registro">
+                     <h4 class="fw-bold text-center">REGISTRO DE USUARIO</h4>
+                     <div class="row">
                         <div class="col-sm-6">
-                            <label for="validationCustom01" class="form-label">Tipo de Documento:</label>
+                            <label for="validationCustom01" class="form-label">Tipo de Documento</label>
                         </div>
                         <div class="col-sm-6">
                             <select class="form-select" id="validationCustom08" required>
-                                <option selected disabled value="">Marque una opcion</option>
-                                <option>Cedula ciudadanía</option>
+                                <option selected disabled value="">Seleccione una opción</option>
+                                <option>Cedula de Ciudadanía</option>
                                 <option>Cedula Extranjería</option>
+                                <option>Pasaporte</option>
                                 <option>Otros</option>
-                            </select>
                             <div class="invalid-feedback">
                                 Este campo es obligatorio
                             </div>
@@ -81,7 +66,7 @@
                     <br>
                     <div class="row">
                         <div class="col">
-                            <label for="validationCustom04" class="form-label">Numero de Identificación:</label>
+                            <label for="validationCustom02" class="form-label">Numero de Documento</label>
                         </div>
                         <div class="col">
                             <input type="text" class="form-control" id="validationCustom04" required>
@@ -93,10 +78,10 @@
                     <br>
                     <div class="row">
                         <div class="col">
-                            <label for="validationCustom05" class="form-label">Teléfono:</label>
+                            <label for="validationCustom03" class="form-label">Nombres</label>
                         </div>
                         <div class="col">
-                            <input type="tel" class="form-control" id="validationCustom05" required>
+                            <input type="text" class="form-control" id="validationCustom05" required>
                             <div class="invalid-feedback">
                                 Campo requerido
                             </div>
@@ -105,10 +90,10 @@
                     <br>
                     <div class="row">
                         <div class="col">
-                            <label for="validationCustom06" class="form-label">Fecha de Nacimiento:</label>
+                            <label for="validationCustom06" class="form-label">Apellidos</label>
                         </div>
                         <div class="col">
-                            <input type="date" class="form-control" id="validationCustom06" required>
+                            <input type="text" class="form-control" id="validationCustom06" required>
                             <div class="invalid-feedback">
                                 Campo requerido
                             </div>
@@ -117,7 +102,7 @@
                     <br>
                     <div class="row">
                         <div class="col">
-                            <label for="validationCustom07" class="form-label">Correo Electrónico:</label>
+                            <label for="validationCustom07" class="form-label">Correo Electrónico</label>
                         </div>
                         <div class="col">
                             <input type="email" class="form-control" id="validationCustom07" required>
@@ -129,7 +114,7 @@
                     <br>
                     <div class="row">
                         <div class="col">
-                            <label for="validationCustom07" class="form-label">Dirección Física:</label>
+                            <label for="validationCustom07" class="form-label">Celular</label>
                         </div>
                         <div class="col">
                             <input type="text" class="form-control" id="validationCustom07" required>
@@ -138,50 +123,63 @@
                             </div>
                         </div>
                     </div>
-                    <br>
+                    <br>  
                     <div class="row">
-                        <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                <label class="form-check-label" for="invalidCheck">
-                                    Acepto los terminos y condiciones
-                                </label>
-                                <div class="invalid-feedback">
-                                    Debe aceptar los términos y condiciones para continuar.
-                                </div>
+                        <div class="col">
+                            <label for="validationCustom07" class="form-label">Direccion de Residencia</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="validationCustom07" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
                             </div>
                         </div>
                     </div>
+                    <br> 
                     <div class="row">
-                        <p>
-                        <div class="col-12">
-                            <button class="btn btn-primary" id="liveAlertBtn" type="submit">Actualizar</button>
+                        <div class="col">
+                            <label for="validationCustom07" class="form-label">Ciudad</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="validationCustom07" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
+                            </div>
                         </div>
                     </div>
+                    <br>    
+                     <div class="row">
+                        <div class="col">
+                            <label for="validationCustom07" class="form-label">Contraseña</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="validationCustom07" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+                    </div>
+                    <br>  
+                    <div class="row">
+                        <div class="col">
+                            <label for="validationCustom07" class="form-label">Confirmacion de Contraseña</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="validationCustom07" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+                    </div>
+                    <br> 
+                    <div class="button col-sm-12 text-center">
+                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                    <button type="submit" class="btn btn-link">Volver</button>
+                    </div>
                 </form>
-                <p>
-            </div>
-            <div class="col-sm-6 border ">
-                <div class="needs-validation" novalidate>
-                    <br>
-                    <h4>Fecha de Actualización</h4>
-                    <input type="date" class="form-control" id="validationCustom01" required>
-                    <br>
 
-                <div class="invalid-feedback">
-                        Campo requerido
-                </div>
-                        
-                    <div class="col-sm-12">
-                    <div class="d-xl-flex foto mh-100 mt-auto user-select-all vh-100 w-100">
-                         <img src="" alt="">
-                    </div>
-                    <br>
-                    </div>                         
-                    </div>
-                    <div class="container pg-empty-placeholder"></div>
             </div>
         </div>
     </div>
-    </div>
+
 </body>
