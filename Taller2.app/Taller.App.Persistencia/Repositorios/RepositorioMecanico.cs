@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Taller.App.Dominio.Entidades;
 
 
-namespace Taller.App.Persistencia.Repositorios
+namespace Taller.App.Persistencia.AppRepositorios
 {
     public class RepositorioMecanico
     {
