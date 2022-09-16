@@ -11,7 +11,7 @@
                 <label for="">Historial de ordenes</label>
             </div>
             
-            <div class="row">
+            <div class="row cabeza border">
                 <div class="col ">
                     <div class="row">
                         <div class="col">
@@ -33,7 +33,7 @@
                     </div>
                 </div>
 
-                <div class="col ">
+                <div class="col">
                     <div class="row">
                         <div class="col">
                             <div class="row">
@@ -73,11 +73,11 @@
                 </div>
             </div>
             <br>
-            <div class="row">
+            <div class="row base">
                 <div id="tabla" class="container border">
-                    <table  id="testTable" class="table table-hover table-sm align-middle caption-top">
+                    <table  id="testTable" class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
                         <caption>Base de datos</caption>
-                        <thead>
+                        <thead class="bg-primary">
                             <tr>
                                 <th scope="col">N° Cliente</th>
                                 <th scope="col">Cliente</th>
@@ -94,7 +94,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">1524</th>
+                                <td>1524</td>
                                 <td>Mark</td>
                                 <td>Jeep</td>
                                 <td>SDF524</td>
@@ -107,7 +107,7 @@
                                 <td>Se cambia aceite por Ml100</td>
                             </tr>
                             <tr>
-                                <th scope="row">5785</th>
+                                <td>86867</td>
                                 <td>Tom</td>
                                 <td>Chevrolet</td>
                                 <td>DFE524</td>
@@ -120,7 +120,7 @@
                                 <td>Se cambia todo el motor carro ok</td>
                             </tr>
                             <tr>
-                                <th scope="row">1524</th>
+                                <td>4758</td>
                                 <td>Fredi Mercury</td>
                                 <td>Mazda</td>
                                 <td>QWE321</td>
@@ -133,7 +133,7 @@
                                 <td>Se pinta en color miel</td>
                             </tr>
                             <tr>
-                                <th scope="row">1524</th>
+                                <td>4852</td>
                                 <td>Fredi Mercury</td>
                                 <td>Mazda</td>
                                 <td>QWE321</td>
@@ -146,7 +146,7 @@
                                 <td>Se pinta en color miel</td>
                             </tr>
                             <tr>
-                                <th scope="row">1524</th>
+                                <td>14587</td>
                                 <td>Fredi Mercury</td>
                                 <td>Mazda</td>
                                 <td>QWE321</td>
@@ -159,7 +159,7 @@
                                 <td>Se pinta en color miel</td>
                             </tr>
                             <tr>
-                                <th scope="row">1524</th>
+                                <td>58963</td>
                                 <td>Fredi Mercury</td>
                                 <td>Mazda</td>
                                 <td>QWE321</td>
@@ -172,7 +172,7 @@
                                 <td>Se pinta en color miel</td>
                             </tr>
                             <tr>
-                                <th scope="row">1524</th>
+                                <td>747</td>
                                 <td>Fredi Mercury</td>
                                 <td>Mazda</td>
                                 <td>QWE321</td>
@@ -185,7 +185,7 @@
                                 <td>Se pinta en color miel</td>
                             </tr>
                             <tr>
-                                <th scope="row">1524</th>
+                                <td>585858</td>
                                 <td>Fredi Mercury</td>
                                 <td>Mazda</td>
                                 <td>QWE321</td>
@@ -198,7 +198,7 @@
                                 <td>Se pinta en color miel</td>
                             </tr>
                             <tr>
-                                <th scope="row">1524</th>
+                                <td>1524</td>
                                 <td>Fredi Mercury</td>
                                 <td>Mazda</td>
                                 <td>QWE321</td>
@@ -211,7 +211,7 @@
                                 <td>Se pinta en color miel</td>
                             </tr>
                             <tr>
-                                <th scope="row">1524</th>
+                                <td>1524</td>
                                 <td>Fredi Mercury</td>
                                 <td>Mazda</td>
                                 <td>QWE321</td>
@@ -224,7 +224,7 @@
                                 <td>Se pinta en color miel</td>
                             </tr>
                             <tr>
-                                <th scope="row">1524</th>
+                                <td>4747</td>
                                 <td>Fredi Mercury</td>
                                 <td>Mazda</td>
                                 <td>QWE321</td>
@@ -255,27 +255,43 @@
 <!-----------Htmlfin-------------------------------------------------------------------------------->
 
 <!-----------Cssinicio------------------------------------------------------------------------------>
-<style>
-    .imagen{
-        margin-left: ;
-        width: 90px;
-        height: 40px;
-        margin-top: 440px;
-        cursor: pointer;
-    }
+    <style>
 
-    #tabla{
-        height: 400px;
-        overflow-y: auto;
-    }
+        body{
+            background:linear-gradient(to right, #F0FAFC, #EBEBF6);
+        }
 
-    table{
-        text-align: center;
-        font-size: 13px;
+        .imagen{
+            margin-left: ;
+            width: 90px;
+            height: 40px;
+            margin-top: 440px;
+            cursor: pointer;
+        }
 
-    }
+        #tabla{
+            height: 400px;
+            overflow-y: auto;
+            background:linear-gradient(to right, #FFE8C7, #EBEBF6);
+            border-radius: 10px 10px;
+        }
 
-</style>
+        table{
+            text-align: center;
+            font-size: 13px;
+        }
+
+        th{
+            color: white;
+        }
+
+        .cabeza{
+            background:linear-gradient(to right, #FFE8C7, #EBEBF6);
+            border-radius: 10px 10px;
+        }
+
+
+    </style>
 <!-----------Cssfin--------------------------------------------------------------------------------->
 
 <!-----------Jslinicio------------------------------------------------------------------------------>
