@@ -7,12 +7,12 @@ namespace Taller.App.Dominio.Entidades
 {
     public class Persona
     {
-        public string id {get;set;}
-        public string nombre {get;set;}
-        public string telefono {get;set;}
-        public string fechaNacimiento {get;set;}
-        public string contraseña {get;set;}
-        public string rol {get;set;}
+        public string Id {get;set;}
+        public string Nombre {get;set;}
+        public string Telefono {get;set;}
+        public string FechaNacimiento {get;set;}
+        public string Contraseña {get;set;}
+        public string Rol {get;set;}
 
     }
 }

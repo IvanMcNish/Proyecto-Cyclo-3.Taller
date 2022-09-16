@@ -29,6 +29,23 @@ namespace Taller.App.Persistencia
         {
             return this.dbContext.Mecanicos;
         }
+
+        public Mecanico BuscarMecanico(string idMecanico)
+        {
+            
+            return this.dbContext.Mecanicos.FirstOrDefault(m=>m.Id== idMecanico);
+        }
         
+        public void EditarMecanico(Mecanico mecanicoNuevo)
+        {
+           var mecanicoActual= this.dbContext.Mecanicos.FirstOrDefault(m=>m.Id== idMecanico);
+           if (mecanicoActual != null){
+                mecanicoActual.Nombre= mecanicoNuevo.Nombre;
+                mecanicoActual.FechaNacimiento= mecanicoNuevo.FechaNacimiento;
+                mecanicoActual.Telefono= mecanicoNuevo.Telefono;
+                mecanicoActual.Contraseña= mecanicoNuevo.Contraseña;
+                mecanicoActual.Rol= mecanicoNuevo.Rol;
+           }
+           this.dbContext.Mecanicos.SaveChanges();        }
     }
 }

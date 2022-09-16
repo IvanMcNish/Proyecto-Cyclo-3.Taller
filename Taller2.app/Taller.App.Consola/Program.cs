@@ -15,20 +15,21 @@ namespace Taller.App.Consola
         {
             Console.WriteLine("");
            // AgregarMecanico();
-           ObtenerMecanicos();
+           //ObtenerMecanicos();
+           BuscarMecanico();
         }
 
         static void AgregarMecanico()
         {
             var mecanico = new Mecanico
             {
-                id = "23",
-                nombre = "juan",
-                fechaNacimiento = "",
-                nivelEstudio = "bachiller",
-                telefono = "123",
-                contraseña = "123",
-                rol = "jefeoperaciones",
+                Id = "23",
+                Nombre = "juan",
+                FechaNacimiento = "",
+                NivelEstudio = "bachiller",
+                Telefono = "123",
+                Contraseña = "123",
+                Rol = "jefeoperaciones",
             };
             repoMecanico.AgregarMecanico(mecanico);
         }
@@ -42,8 +43,11 @@ namespace Taller.App.Consola
             foreach (Mecanico mecanico in repoMecanico.ObtenerMecanicos())
             {
                 //Response.Write();
-                Console.WriteLine(mecanico.nombre.ToString());
+                Console.WriteLine(mecanico.Nombre.ToString());
             }
+        }
+        static void BuscarMecanico(){
+           repoMecanico.BuscarMecanico("26");
         }
     }
 
