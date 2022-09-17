@@ -6,6 +6,10 @@
 <style>
     .table{
         text-align: center;
+        height: 400px;
+        overflow-y: auto Scroll;
+        background:linear-gradient(to right, #FFE8C7, #EBEBF6);
+        border-radius: 10px 10px;
     }
 
     .notas{
@@ -64,9 +68,7 @@
                                 <div class="invalid-feedback">
                                     Este campo es obligatorio
                                 </div>
-
                             </div>
-                        
                         </div>
                         <div class="row">
                             <div class="col">
@@ -81,7 +83,6 @@
                                 </div>
                             </div>
                         </div>    
-                        
                         <div class="row">
                             <div class="col">
                                 <label for="validationCustom03" class="form-label">Celular:</label>
@@ -95,7 +96,6 @@
                             <br>
                             <br>
                         </div>
-
                         <div class="row">
                             <div class="col">
                                 <label for="validationCustom04" class="form-label">Fecha de Nacimiento:</label>
@@ -107,10 +107,8 @@
                                 </div>
                             </div>
                             <br>
-                            <br>
-                            
+                            <br>  
                         </div>
-
                         <div class="row">
                             <div class="col">
                                 <label for="validationCustom05" class="form-label">Correo Electrónico:</label>
@@ -122,8 +120,7 @@
                                 </div>
                             </div>
                             <br>
-                            <br>
-                            
+                            <br> 
                         </div>
                         <div class="row">
                             <div class="col">
@@ -146,7 +143,6 @@
                             <br>
                             <br>
                         </div>   
-
                         <div class="row">
                             <div class="col">
                                 <label for="validationCustom07" class="form-label">Especialidad:</label>
@@ -158,10 +154,8 @@
                                 </div>
                             </div>
                             <br>
-                            <br>
-                            
+                            <br> 
                         </div>
-
                         <div class="row">
                             <div class="col">
                                 <label for="validationCustom08" class="form-label">Dirección Física:</label>
@@ -176,7 +170,6 @@
                             <br>
                             <br>
                         </div>
-                        
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-check">
@@ -192,7 +185,6 @@
                             <br>
                             <br>
                         </div>
-                        
                         <div class="row">
                             <p>
                             <div class="col-12">
@@ -220,82 +212,85 @@
                     </div> 
             </div>
         </div>
-
-        <div class="col-sm-12 border">
-            <p>
-            <table class="table">
-                    <h6>Mecánicos registrados</h6>
-                    <thead>
-                    <div class="d-flex h-5 justify-content-center min-vh-0 user-select-none">
-                                <div class="h-25 search">
-                                    <input type="text" class="search-input" placeholder="Buscar por Número..." name="">
-                                    <a href="#" class="search-icon"> <i class="fa fa-search"></i> </a>
+        <div class="row base" >
+            <div id="tabla" class="responsive-border">
+                <div class="overflow-auto">y</div>
+                    <table  id="testTable" class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
+                        <thead class="bg-primary"> 
+                        <br>
+                        <h4>Mecánicos registrados</h4>               
+                        <div class="d-flex h-5 justify-content-center min-vh-0 user-select-none">
+                                    <div class="h-25 search">
+                                        <input type="text" class="search-input" placeholder="Buscar por Número..." name="">
+                                        <a href="#" class="search-icon"> <i class="fa fa-search"></i> </a>
+                                    </div>
                                 </div>
-                            </div>
-                        <tr>
-                            <th scope="col">Tipo de Documento</th>
-                            <th scope="col">Número de Identificación</th>
-                            <th scope="col">Nombre y Apellido</th>
-                            <th scope="col">Teléfono</th>
-                            <th scope="col">Fecha de Nacimiento</th>
-                            <th scope="col">Correo Electrónico</th>
-                            <th scope="col">nivel de Estudio</th>
-                            <th scope="col">Especialidad</th>
-                            <th scope="col">Dirección Física</th>
-                        </tr>
-                    </thead>
-                   
-                    <tbody>
-                        <tr>
-                            <td>CC</td>
-                            <td>458965</td>
-                            <td>Raul Mesa</td>
-                            <td>315263478</td>
-                            <td>20/10/65</td>
-                            <td>Raulmesa@gmail.com</td>
-                            <td>tecnico</td>
-                            <td>Latonería</td>
-                            <td>calle 20 # 5-6</td>
-                        </tr>
-                        <tr>
-                            <td>CC</td>
-                            <td>120452895</td>
-                            <td>Juan Restrepo</td>
-                            <td>3162634785</td>
-                            <td>13/08/70</td>
-                            <td>juanrestrepo@gmail.com</td>
-                            <td>Profesional</td>
-                            <td>Electricidad</td>
-                            <td>calle 8 # 10-6</td>
-                        </tr>
-                        <tr>
-                            <td>CE</td>
-                            <td>1548794615158451</td>
-                            <td>Pepe Sierra</td>
-                            <td>3104568971</td>
-                            <td>12/10/68</td>
-                            <td>pepes@gmail.com</td>
-                            <td>Tecnólogo</td>
-                            <td>Sistema hidráulico</td>
-                            <td>carrera 11 # 5-26</td>
+                                <br>
+                                <br>
+                            <tr>
+                                <th scope="col">Tipo de Documento</th>
+                                <th scope="col">Número de Identificación</th>
+                                <th scope="col">Nombre y Apellido</th>
+                                <th scope="col">Teléfono</th>
+                                <th scope="col">Fecha de Nacimiento</th>
+                                <th scope="col">Correo Electrónico</th>
+                                <th scope="col">nivel de Estudio</th>
+                                <th scope="col">Especialidad</th>
+                                <th scope="col">Dirección Física</th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                            <tr>
+                                <td>CC</td>
+                                <td>458965</td>
+                                <td>Raul Mesa</td>
+                                <td>315263478</td>
+                                <td>20/10/65</td>
+                                <td>Raulmesa@gmail.com</td>
+                                <td>tecnico</td>
+                                <td>Latonería</td>
+                                <td>calle 20 # 5-6</td>
+                            </tr>
+                            <tr>
+                                <td>CC</td>
+                                <td>120452895</td>
+                                <td>Juan Restrepo</td>
+                                <td>3162634785</td>
+                                <td>13/08/70</td>
+                                <td>juanrestrepo@gmail.com</td>
+                                <td>Profesional</td>
+                                <td>Electricidad</td>
+                                <td>calle 8 # 10-6</td>
+                            </tr>
+                            <tr>
+                                <td>CE</td>
+                                <td>154879461</td>
+                                <td>Pepe Sierra</td>
+                                <td>3104568971</td>
+                                <td>12/10/68</td>
+                                <td>pepes@gmail.com</td>
+                                <td>Tecnólogo</td>
+                                <td>Sistema hidráulico</td>
+                                <td>carrera 11 # 5-26</td>
 
-                        </tr>
-                    </tbody>
-            </table>
-            <div class="ediguar">
-                <button class="btn btn-primary" type="submit">Editar</button> 
-                <button class="btn btn-primary" type="submit">Eliminar</button>
+                            </tr>
+                        </tbody>
+                </table>
+                <div class="ediguar">
+                    <button class="btn btn-primary" type="submit">Editar</button> 
+                    <button class="btn btn-primary" type="submit">Eliminar</button>
+                </div>
+                
             </div>
+
             
+
+
+
         </div>
 
-        
-
-
-
     </div>
-
-
 
 
     <style>
