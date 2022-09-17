@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Consola\\Taller.App.Consola.csproj": {}
+    "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Consola\\Taller.App.Consola.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Consola\\Taller.App.Consola.csproj": {
+    "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Consola\\Taller.App.Consola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Consola\\Taller.App.Consola.csproj",
+        "projectUniqueName": "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Consola\\Taller.App.Consola.csproj",
         "projectName": "Taller.App.Consola",
-        "projectPath": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Consola\\Taller.App.Consola.csproj",
-        "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Consola\\obj\\",
+        "projectPath": "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Consola\\Taller.App.Consola.csproj",
+        "packagesPath": "C:\\Users\\lineas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Consola\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\cesar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lineas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -26,11 +26,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\Taller.App.Dominio.csproj": {
-                "projectPath": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\Taller.App.Dominio.csproj"
+              "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\Taller.App.Dominio.csproj": {
+                "projectPath": "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\Taller.App.Dominio.csproj"
               },
-              "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Persistencia\\Taller.App.Persistencia.csproj": {
-                "projectPath": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Persistencia\\Taller.App.Persistencia.csproj"
+              "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Persistencia\\Taller.App.Persistencia.csproj": {
+                "projectPath": "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Persistencia\\Taller.App.Persistencia.csproj"
               }
             }
           }
@@ -80,17 +80,17 @@
         }
       }
     },
-    "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\Taller.App.Dominio.csproj": {
+    "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\Taller.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\Taller.App.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\Taller.App.Dominio.csproj",
         "projectName": "Taller.App.Dominio",
-        "projectPath": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\Taller.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\obj\\",
+        "projectPath": "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\Taller.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\lineas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\cesar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lineas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -133,17 +133,17 @@
         }
       }
     },
-    "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Persistencia\\Taller.App.Persistencia.csproj": {
+    "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Persistencia\\Taller.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Persistencia\\Taller.App.Persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Persistencia\\Taller.App.Persistencia.csproj",
         "projectName": "Taller.App.Persistencia",
-        "projectPath": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Persistencia\\Taller.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Persistencia\\obj\\",
+        "projectPath": "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Persistencia\\Taller.App.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\lineas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\cesar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lineas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -155,8 +155,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\Taller.App.Dominio.csproj": {
-                "projectPath": "C:\\Users\\cesar\\Documents\\proyecto git\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\Taller.App.Dominio.csproj"
+              "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\Taller.App.Dominio.csproj": {
+                "projectPath": "C:\\Users\\lineas\\Desktop\\Proyecto\\Proyecto-Cyclo-3.Taller\\Taller2.app\\Taller.App.Dominio\\Taller.App.Dominio.csproj"
               }
             }
           }
