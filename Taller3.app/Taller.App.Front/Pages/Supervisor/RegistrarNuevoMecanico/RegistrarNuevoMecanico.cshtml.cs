@@ -17,7 +17,7 @@ namespace Taller.App.Front.Pages
 
 
         //lista de la tabla mecanicos
-        public List<Mecani2> listaMecanicos = new List<Mecani2>()  ;
+        public List<Mecanico> listaMecanicos = new List<Mecanico>()  ;
           
           
         
@@ -26,6 +26,12 @@ namespace Taller.App.Front.Pages
             //carga la tabla del repositorio automaticamente llamando el metodo, obtener mecanicos 
              this.ObtenerMecanicos();
         }
+
+        public void OnPostAdd(Mecanico mecanico ){
+            repoMecanico.AgregarMecanico(mecanico);
+            this.ObtenerMecanicos();
+        }
+
         private void ObtenerMecanicos()
         {
 
@@ -34,26 +40,33 @@ namespace Taller.App.Front.Pages
 
             foreach (Mecanico mecanico in repoMecanico.ObtenerMecanicos())
             {
-                this.listaMecanicos.Add(new Mecani2(){Cedula=mecanico.Id,NombreMec=mecanico.Nombre,fecha= mecanico.FechaNacimiento, Telefono= mecanico.Telefono, NivelDeEstudio= mecanico.Rol, Especialidad=mecanico.Contraseña});
-                
+                this.listaMecanicos.Add(new Mecanico()
+                {
+                    Id=mecanico.Id,
+                    Nombre=mecanico.Nombre,
+                    FechaNacimiento= mecanico.FechaNacimiento,
+                    Telefono= mecanico.Telefono, 
+                    Rol= mecanico.Rol, 
+                    Contraseña=mecanico.Contraseña
+                    });                
             }
         }
     }
         
         //clase que se agrega en la tabla
-        public class Mecani2 {
-            public string NombreMec {get;set;}
-            public string Cedula {get;set;}
-            public string Telefono {get;set;}
-            public string fecha {get;set;}
-            public string NivelDeEstudio {get;set;}
-            public string Especialidad {get;set;}
+       //public class Mecani2 {
+           // public string NombreMec {get;set;}
+            //public string Cedula {get;set;}
+           // public string Telefono {get;set;}
+           // public string fecha {get;set;}
+           // public string NivelDeEstudio {get;set;}
+          //  public string Especialidad {get;set;}
 
-            public Mecani2()
-            {
+          //  public Mecani2()
+          //  {
 
-            }
+            //}
             
-        }
+       // }
 }
 
