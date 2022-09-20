@@ -34,3 +34,15 @@ C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.a
 C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Dominio\obj\Debug\net6.0\refint\Taller.App.Dominio.dll
 C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Dominio\obj\Debug\net6.0\Taller.App.Dominio.pdb
 C:\Users\cesar\Documents\proyecto git\Proyecto\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Dominio\obj\Debug\net6.0\ref\Taller.App.Dominio.dll
+C:\Users\leine\Desktop\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Dominio\bin\Debug\net6.0\Taller.App.Dominio.deps.json
+C:\Users\leine\Desktop\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Dominio\bin\Debug\net6.0\Taller.App.Dominio.dll
+C:\Users\leine\Desktop\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Dominio\bin\Debug\net6.0\Taller.App.Dominio.pdb
+C:\Users\leine\Desktop\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Dominio\obj\Debug\net6.0\Taller.App.Dominio.csproj.AssemblyReference.cache
+C:\Users\leine\Desktop\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Dominio\obj\Debug\net6.0\Taller.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leine\Desktop\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Dominio\obj\Debug\net6.0\Taller.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\leine\Desktop\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Dominio\obj\Debug\net6.0\Taller.App.Dominio.AssemblyInfo.cs
+C:\Users\leine\Desktop\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Dominio\obj\Debug\net6.0\Taller.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\leine\Desktop\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Dominio\obj\Debug\net6.0\Taller.App.Dominio.dll
+C:\Users\leine\Desktop\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Dominio\obj\Debug\net6.0\refint\Taller.App.Dominio.dll
+C:\Users\leine\Desktop\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Dominio\obj\Debug\net6.0\Taller.App.Dominio.pdb
+C:\Users\leine\Desktop\Proyecto-Cyclo-3.Taller\Taller2.app\Taller.App.Dominio\obj\Debug\net6.0\ref\Taller.App.Dominio.dll
