@@ -2,6 +2,9 @@
 using System;
 using Taller.App.Persistencia;
 using Taller.App.Dominio.Entidades;
+
+
+
 namespace Taller.App.Consola
 {
 
@@ -14,24 +17,24 @@ namespace Taller.App.Consola
         static void Main(string[] args)
         {
             
-           //AgregarMecanico();
+           AgregarMecanico();
            //ObtenerMecanicos();
            //BuscarMecanico();
            //EditarMecanico("23");
-           EliminarMecanico("25");
+           //EliminarMecanico("25");
         }
 
         static void AgregarMecanico()
         {
             var mecanico = new Mecanico
             {
-                Id = "29",
-                Nombre = "carlos",
-                FechaNacimiento = "",
-                NivelEstudio = "bachiller",
-                Telefono = "78987",
+                Id = "1456789",
+                Nombre = "kate",
+                FechaNacimiento = "10/05/2021",
+                NivelEstudio = "tecnico latoneria",
+                Telefono = "12456789",
                 Contraseña = "42345",
-                Rol = "je-feo-peraciones2",
+                Rol = "jefe operaciones2",
             };
             repoMecanico.AgregarMecanico(mecanico);
         }

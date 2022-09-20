@@ -228,53 +228,36 @@
                                 <br>
                                 <br>
                             <tr>
-                                <th scope="col">Tipo de Documento</th>
+                              
                                 <th scope="col">Número de Identificación</th>
                                 <th scope="col">Nombre y Apellido</th>
                                 <th scope="col">Teléfono</th>
                                 <th scope="col">Fecha de Nacimiento</th>
-                                <th scope="col">Correo Electrónico</th>
                                 <th scope="col">nivel de Estudio</th>
                                 <th scope="col">Especialidad</th>
-                                <th scope="col">Dirección Física</th>
+                                <th scope="col">Accion</th>
+                                
                             </tr>
                         </thead>
                     
                         <tbody>
-                            <tr>
-                                <td>CC</td>
-                                <td>458965</td>
-                                <td>Raul Mesa</td>
-                                <td>315263478</td>
-                                <td>20/10/65</td>
-                                <td>Raulmesa@gmail.com</td>
-                                <td>tecnico</td>
-                                <td>Latonería</td>
-                                <td>calle 20 # 5-6</td>
-                            </tr>
-                            <tr>
-                                <td>CC</td>
-                                <td>120452895</td>
-                                <td>Juan Restrepo</td>
-                                <td>3162634785</td>
-                                <td>13/08/70</td>
-                                <td>juanrestrepo@gmail.com</td>
-                                <td>Profesional</td>
-                                <td>Electricidad</td>
-                                <td>calle 8 # 10-6</td>
-                            </tr>
-                            <tr>
-                                <td>CE</td>
-                                <td>154879461</td>
-                                <td>Pepe Sierra</td>
-                                <td>3104568971</td>
-                                <td>12/10/68</td>
-                                <td>pepes@gmail.com</td>
-                                <td>Tecnólogo</td>
-                                <td>Sistema hidráulico</td>
-                                <td>carrera 11 # 5-26</td>
+                                @for (int i = 0; i < Model.listaMecanicos.Count; i++)
+                    {
+                        <tr>
+                            <td>@Model.listaMecanicos[i].Cedula</td>
+                            <td>@Model.listaMecanicos[i].NombreMec</td>
+                            <td>@Model.listaMecanicos[i].Telefono</td>
+                            <td>@Model.listaMecanicos[i].fecha</td>
+                            <td>@Model.listaMecanicos[i].NivelDeEstudio</td>
+                            <td>@Model.listaMecanicos[i].Especialidad</td>
+                            <td>
+                                <button class="action">Agregar</button>
+                                <button class="action">Eliminar</button>
+                            </td>
 
-                            </tr>
+                        </tr>
+
+                    }
                         </tbody>
                 </table>
                 <div class="ediguar">
