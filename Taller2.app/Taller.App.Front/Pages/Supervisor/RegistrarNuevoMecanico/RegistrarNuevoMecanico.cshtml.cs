@@ -34,7 +34,7 @@ namespace Taller.App.Front.Pages
 
             foreach (Mecanico mecanico in repoMecanico.ObtenerMecanicos())
             {
-                this.listaMecanicos.Add(new Mecanico(){Cedula=mecanico.Id,NombreMec=mecanico.Nombre,fecha= mecanico.FechaNacimiento, Telefono= mecanico.Telefono, NivelDeEstudio= mecanico.Rol, Especialidad=mecanico.Contraseña});
+                this.listaMecanicos.Add(new Mecani2(){Cedula=mecanico.Id,NombreMec=mecanico.Nombre,fecha= mecanico.FechaNacimiento, Telefono= mecanico.Telefono, NivelDeEstudio= mecanico.Rol, Especialidad=mecanico.Contraseña});
                 
             }
         }
