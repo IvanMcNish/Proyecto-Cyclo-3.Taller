@@ -2,33 +2,306 @@
 @model Taller.app.Front.Pages.CitaPrioritariaModel
 @{
 }
-<div class="container border">
-    <div class="row border">
- <!---------columna 1 ------------------->
-        <div class="col border">
-            <div class="row border align-items-center">
-                <span>Cita Prioritaria</span>
+
+<!--------------------------Html-------------------------------------------------------------------->
+
+    <div class="row">
+        <div class="col-sm-6 ">
+            <div class="col">
+                <div class="row border">
+                    <label for="">Cita prioritaria</label>
+                </div>
+                <br>
+                <div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Placa</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" id="validationCustom01" required>
+                                <option selected disabled value="">Buscar</option>
+                                <option>SWD489</option>
+                                <option>DER625</option>
+                                <option>SDE968</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Cliente</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Nombre" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Tipo</label>
+                        </div>
+                        <div class="col">
+                            <label class="form-control" placeholder="Tipo de cehículo" for="">tipo de vehículo</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Marca</label>
+                        </div>
+                        <div class="col">
+                            <label class="form-control" placeholder="Tipo de cehículo" for="">Marca del vehículo</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Modelo</label>
+                        </div>
+                        <div class="col">
+                            <label class="form-control" placeholder="Tipo de cehículo" for="">Moodelo del vehículo</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Capacidad</label>
+                        </div>
+                        <div class="col">
+                            <label class="form-control" placeholder="Tipo de cehículo" for="">Capacidad del vehículo</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Cede</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" id="validationCustom01" required>
+                                <option selected disabled value="">Marque una opción</option>
+                                <option>Medellin / Cr56c n°85-115</option>
+                                <option>Bogotá / Cr85 n°96-888</option>
+                                <option>Barranquilla / Cll 78 n°85-10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Técnico asignado</label>
+                        </div>
+                        <div class="col">
+                            <label class="form-control" placeholder="Tipo de cehículo" for="">N° del técnico
+                                asignado</label>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <div class="row">
+                <label for="">Caso</label>
+                <div class="container">
+                    
+                    <textarea name="" id="" cols="70" rows="3"></textarea>
 
-
+                </div>
 
             </div>
 
         </div>
-<!---------columna 2 ------------------->
-        <div class="col border">
 
-            <div class="col border">
+        <div id="data" class="col">
+            <div class="row tecnico">
+                <div class="row">
+                    <div class="row base">
+                        <div id="tabla" class="container border">
+                            <table id="testTable"
+                                class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
+                                <caption>Técnicos disponibles</caption>
+                                <thead class="bg-primary">
+                                    <tr>
+                                        <th scope="col">N° Empleado</th>
+                                        <th scope="col">Nombre y apellido</th>
+                                        <th scope="col">Turno programado</th>
+                                        <th scope="col">Escpecialidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>QA5425353</td>
+                                        <td>Marc Antoni de jesús</td>
+                                        <td>8:30am - 5:30pm</td>
+                                        <td>Latoneria y pintura</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WE8574773</td>
+                                        <td>José Luis Pelaez</td>
+                                        <td>11:30am - 8:30pm</td>
+                                        <td>Elétrico</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RT54875102</td>
+                                        <td>José Luis Pelaez</td>
+                                        <td>6:30am - 3:30pm</td>
+                                        <td>General</td>
+                                    </tr>
+                                    <tr>
+                                        <td>QA5425353</td>
+                                        <td>Marc Antoni de jesús</td>
+                                        <td>8:30am - 5:30pm</td>
+                                        <td>Latoneria y pintura</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WE8574773</td>
+                                        <td>José Luis Pelaez</td>
+                                        <td>11:30am - 8:30pm</td>
+                                        <td>Elétrico</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RT54875102</td>
+                                        <td>José Luis Pelaez</td>
+                                        <td>6:30am - 3:30pm</td>
+                                        <td>General</td>
+                                    </tr>
+                                    <tr>
+                                        <td>QA5425353</td>
+                                        <td>Marc Antoni de jesús</td>
+                                        <td>8:30am - 5:30pm</td>
+                                        <td>Latoneria y pintura</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WE8574773</td>
+                                        <td>José Luis Pelaez</td>
+                                        <td>11:30am - 8:30pm</td>
+                                        <td>Elétrico</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RT54875102</td>
+                                        <td>José Luis Pelaez</td>
+                                        <td>6:30am - 3:30pm</td>
+                                        <td>General</td>
+                                    </tr>
+                                    <tr>
+                                        <td>QA5425353</td>
+                                        <td>Marc Antoni de jesús</td>
+                                        <td>8:30am - 5:30pm</td>
+                                        <td>Latoneria y pintura</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WE8574773</td>
+                                        <td>José Luis Pelaez</td>
+                                        <td>11:30am - 8:30pm</td>
+                                        <td>Elétrico</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RT54875102</td>
+                                        <td>José Luis Pelaez</td>
+                                        <td>6:30am - 3:30pm</td>
+                                        <td>General</td>
+                                    </tr>
+                                    <tr>
+                                        <td>QA5425353</td>
+                                        <td>Marc Antoni de jesús</td>
+                                        <td>8:30am - 5:30pm</td>
+                                        <td>Latoneria y pintura</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WE8574773</td>
+                                        <td>José Luis Pelaez</td>
+                                        <td>11:30am - 8:30pm</td>
+                                        <td>Elétrico</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RT54875102</td>
+                                        <td>José Luis Pelaez</td>
+                                        <td>6:30am - 3:30pm</td>
+                                        <td>General</td>
+                                    </tr>
+                                    <tr>
+                                        <td>QA5425353</td>
+                                        <td>Marc Antoni de jesús</td>
+                                        <td>8:30am - 5:30pm</td>
+                                        <td>Latoneria y pintura</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WE8574773</td>
+                                        <td>José Luis Pelaez</td>
+                                        <td>11:30am - 8:30pm</td>
+                                        <td>Elétrico</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RT54875102</td>
+                                        <td>José Luis Pelaez</td>
+                                        <td>6:30am - 3:30pm</td>
+                                        <td>General</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                <label for="">Cliente</label>
+                    </div>
+
+                </div>
 
             </div>
-            <div class="col border">
-
-            </div>
-
         </div>
 
+        <div class="row-sm-6">
+            <button id="aceptar" type="button" class="btn btn-primary">Agendar</button>
+        </div>
     </div>
-</div>
+
+<!---------------------Fin--Html-------------------------------------------------------------------->
+
+<!--------------------------Css--------------------------------------------------------------------->
+
+    <style>
+        #aceptar {
+            width: 40%;
+            margin-left: 30%;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .tecnico {}
+
+        body {
+            background: linear-gradient(to right, #F0FAFC, #EBEBF6);
+        }
+
+        .imagen {
+            margin-left: ;
+            width: 90px;
+            height: 40px;
+            margin-top: 440px;
+            cursor: pointer;
+        }
+
+        #tabla {
+            height: 460px;
+            overflow-y: auto;
+            background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+            border-radius: 10px 10px;
+        }
+
+        table {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        th {
+            color: white;
+        }
+
+        .cabeza {
+            background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+            border-radius: 10px 10px;
+        }
+
+        #data {
+            margin-left: 20px;
+        }
+    </style>
+
+<!---------------------Fin--Css--------------------------------------------------------------------->
+
+<!--------------------------Js---------------------------------------------------------------------->
+<!---------------------Fin--Js---------------------------------------------------------------------->

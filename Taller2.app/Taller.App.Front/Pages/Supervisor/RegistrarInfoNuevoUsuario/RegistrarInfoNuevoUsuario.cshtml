@@ -15,6 +15,10 @@
         border-radius: 10px;
     }
 
+    h4{
+        color: blue;
+    }
+
 
     .bg{
         background-image: url(https://www.revistaautocrash.com/wp-content/uploads/2018/05/capacitacion-1-taller48.jpg);
@@ -23,12 +27,11 @@
         background-size: cover;
         background-position: -350px;
         border-radius: 5px;
-        
-
     }
-.button{
-    padding: 20px;
-}
+
+    .button{
+        padding: 20px;
+    }
     
 </style>
 
@@ -45,16 +48,17 @@
                 <form action="#" class="Registro">
                      <h4 class="fw-bold text-center">REGISTRO DE USUARIO</h4>
                      <div class="row">
-                        <div class="col-sm-6">
-                            <label for="validationCustom01" class="form-label">Tipo de Documento</label>
+                       <div class="col-sm-6">
+                            <label for="validationCustom01" class="form-label">Tipo de Documento:</label>
                         </div>
                         <div class="col-sm-6">
-                            <select class="form-select" id="validationCustom08" required>
-                                <option selected disabled value="">Seleccione una opción</option>
+                            <select class="form-select" id="validationCustom01" required>
+                                <option selected disabled value="">Marque una opción</option>
                                 <option>Cedula de Ciudadanía</option>
                                 <option>Cedula Extranjería</option>
                                 <option>Pasaporte</option>
                                 <option>Otros</option>
+                            </select>
                             <div class="invalid-feedback">
                                 Este campo es obligatorio
                             </div>
@@ -63,10 +67,10 @@
                     <br>
                     <div class="row">
                         <div class="col">
-                            <label for="validationCustom02" class="form-label">Numero de Documento</label>
+                            <label for="validationCustom02" class="form-label">Número de Identificación:</label>
                         </div>
                         <div class="col">
-                            <input type="text" class="form-control" id="validationCustom04" required>
+                            <input type="text" class="form-control" id="validationCustom02" required>
                             <div class="invalid-feedback">
                                 Campo requerido
                             </div>
@@ -146,8 +150,8 @@
                     </div>
                     <br>    
                     <div class="button col-sm-12 text-center">
-                    <button type="submit" class="btn btn-primary">Registrarse</button>
-                    <button type="submit" class="btn btn-link">Volver</button>
+                    <a class="btn btn-primary" href="#" role="button">Registrarse</a>
+                    <a class="btn btn-secondary" href="#" role="button">Volver</a>
                     </div>
                 </form>
             </div>

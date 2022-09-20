@@ -36,7 +36,7 @@
                     @for (int i = 0; i < Model.listaMecanicos.Count; i++)
                     {
                         <tr>
-                            <th scope="row">@(i+1)</th>
+                            <td>@Model.listaMecanicos[i].TRol</td>
                             <td>@Model.listaMecanicos[i].infoOrden</td>
                             <td>@Model.listaMecanicos[i].fecha</td>
                             <td>@Model.listaMecanicos[i].tipo</td>
