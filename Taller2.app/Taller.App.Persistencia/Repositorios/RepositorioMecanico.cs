@@ -36,17 +36,17 @@ namespace Taller.App.Persistencia
             return this.dbContext.Mecanicos.FirstOrDefault(m=>m.Id== idMecanico);
         }
         
-        public void EditarMecanico(Mecanico mecanicoNuevo)
+        public void EditarMecanico(Mecanico mecanicoNuevo, string Id)
         {
-           var mecanicoActual= this.dbContext.Mecanicos.FirstOrDefault(m=>m.Id== mecanicoNuevo.Id);
+           var mecanicoActual= this.dbContext.Mecanicos.FirstOrDefault(m=>m.Id== Id);
            if (mecanicoActual != null){
                 mecanicoActual.Nombre= mecanicoNuevo.Nombre;
                 mecanicoActual.FechaNacimiento= mecanicoNuevo.FechaNacimiento;
                 mecanicoActual.Telefono= mecanicoNuevo.Telefono;
                 mecanicoActual.Contraseña= mecanicoNuevo.Contraseña;
                 mecanicoActual.Rol= mecanicoNuevo.Rol;
+                this.dbContext.SaveChanges(); 
            }
-           this.dbContext.SaveChanges(); 
           }
 
            public void EliminarMecanico(string idMecanico)
