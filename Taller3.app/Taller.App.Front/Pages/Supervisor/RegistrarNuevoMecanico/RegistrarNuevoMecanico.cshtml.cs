@@ -27,9 +27,30 @@ namespace Taller.App.Front.Pages
              this.ObtenerMecanicos();
         }
 
-        public void OnPostAdd(Mecanico mecanico ){
+        public void OnPostAdd(Mecanico mecanico )
+        {   try
+            {
+
             repoMecanico.AgregarMecanico(mecanico);
             this.ObtenerMecanicos();
+            }
+            catch(System.Exception)
+            {
+                throw;
+            }
+        }
+
+        public void OnPostDelete(string Id )
+        {   try
+            {
+
+            repoMecanico.EliminarMecanico(Id);
+            this.ObtenerMecanicos();
+            }
+            catch(System.Exception)
+            {
+                throw;
+            }
         }
 
         private void ObtenerMecanicos()

@@ -266,7 +266,10 @@
                             <td>@m.Contraseña</td>
                             <td>
                                 <button class="action">Editar</button>
-                                <button class="action">Eliminar</button>
+                                <form method="POST">
+                                    <button class="action" asp-page-handler="Delete" asp-route-id="@m.Id">Eliminar</button>
+                                </form>
+                                
                             </td>
 
                         </tr>
