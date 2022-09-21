@@ -28,7 +28,7 @@ namespace Taller.App.Consola
         {
             var mecanico = new Mecanico
             {
-                Id = "1456789",
+                MecanicoId = "1456789",
                 Nombre = "kate",
                 FechaNacimiento = "10/05/2021",
                 NivelEstudio = "tecnico latoneria",
@@ -62,7 +62,7 @@ namespace Taller.App.Consola
         static void EditarMecanico(string Id){
             var mecanico = new Mecanico
             {
-                Id = "",
+                MecanicoId = "",
                 Nombre = "carlos",
                 FechaNacimiento = "15",
                 NivelEstudio = "bachiller",

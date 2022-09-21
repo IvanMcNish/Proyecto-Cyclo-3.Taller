@@ -258,7 +258,7 @@
                             @*(int i = 0; i < Model.listaMecanicos.Count; i++)*@
 
                         <tr>
-                            <td>@m.Id</td>
+                            <td>@m.MecanicoId</td>
                             <td>@m.Nombre</td>
                             <td>@m.Telefono</td>
                             <td>@m.FechaNacimiento</td>
@@ -267,7 +267,7 @@
                             <td>
                                 <button class="action">Editar</button>
                                 <form method="POST">
-                                    <button class="action" asp-page-handler="Delete" asp-route-id="@m.Id">Eliminar</button>
+                                    <button class="action" asp-page-handler="Delete" asp-route-MecanicoId="@m.MecanicoId">Eliminar</button>
                                 </form>
                                 
                             </td>
@@ -300,7 +300,7 @@
                 <form method="post">
                     <div class="  mb-3">
                         <label for="idMecanico" class="col-form-label">Id:</label>
-                        <input type="text" class="form-control" id="IdMecanico" name="Id">
+                        <input type="text" class="form-control" id="IdMecanico" name="MecanicoId">
                     </div>
                     <div class="  mb-3">
                         <label for="MecanicoNombre" class="col-form-label">Nombre:</label>

@@ -33,12 +33,12 @@ namespace Taller.App.Persistencia
         public Mecanico BuscarMecanico(string idMecanico)
         {
             
-            return this.dbContext.Mecanicos.FirstOrDefault(m=>m.Id== idMecanico);
+            return this.dbContext.Mecanicos.FirstOrDefault(m=>m.MecanicoId== idMecanico);
         }
         
         public void EditarMecanico(Mecanico mecanicoNuevo, string Id)
         {
-           var mecanicoActual= this.dbContext.Mecanicos.FirstOrDefault(m=>m.Id== Id);
+           var mecanicoActual= this.dbContext.Mecanicos.FirstOrDefault(m=>m.MecanicoId== Id);
            if (mecanicoActual != null){
                 mecanicoActual.Nombre= mecanicoNuevo.Nombre;
                 mecanicoActual.FechaNacimiento= mecanicoNuevo.FechaNacimiento;
@@ -52,7 +52,7 @@ namespace Taller.App.Persistencia
            public void EliminarMecanico(string idMecanico)
         {
             
-            var mecanicoEncontrado = this.dbContext.Mecanicos.FirstOrDefault(m=>m.Id== idMecanico);
+            var mecanicoEncontrado = this.dbContext.Mecanicos.FirstOrDefault(m=>m.MecanicoId== idMecanico);
              if (mecanicoEncontrado != null){
 
                 this.dbContext.Remove(mecanicoEncontrado);

@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Taller.App.Persistencia;
 
+#nullable disable
+
 namespace Taller.App.Persistencia.Migrations
 {
     [DbContext(typeof(ContextDb))]
@@ -14,13 +16,14 @@ namespace Taller.App.Persistencia.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .UseIdentityColumns()
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.0");
+                .HasAnnotation("ProductVersion", "6.0.9")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("Taller.App.Dominio.Entidades.Mecanico", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<string>("MecanicoId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Contraseña")
@@ -47,9 +50,44 @@ namespace Taller.App.Persistencia.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("MecanicoId");
 
                     b.ToTable("Mecanicos");
+                });
+
+            modelBuilder.Entity("Taller.App.Dominio.Entidades.Revision", b =>
+                {
+                    b.Property<string>("RevisionId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Fecha")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MecacnicoId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MecanicoId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("RevisionId");
+
+                    b.HasIndex("MecanicoId");
+
+                    b.ToTable("Revisiones");
+                });
+
+            modelBuilder.Entity("Taller.App.Dominio.Entidades.Revision", b =>
+                {
+                    b.HasOne("Taller.App.Dominio.Entidades.Mecanico", "mecanico")
+                        .WithMany()
+                        .HasForeignKey("MecanicoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("mecanico");
                 });
 #pragma warning restore 612, 618
         }

@@ -10,6 +10,8 @@ namespace Taller.App.Persistencia
     public class ContextDb :DbContext
     {
         public virtual DbSet<Mecanico> Mecanicos {get;set;}
+
+        public virtual DbSet<Revision> Revisiones {get;set;}
          protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             try{

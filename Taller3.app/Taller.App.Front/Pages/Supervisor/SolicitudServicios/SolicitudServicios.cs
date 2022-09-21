@@ -38,7 +38,7 @@ namespace Taller.App.Front.Pages
 
             foreach (Mecanico mecanico in repoMecanico.ObtenerMecanicos())
             {
-                this.listaMecanicos.Add(new Mecani(){TRol=mecanico.Id,infoOrden=mecanico.Nombre, fecha= mecanico.Telefono, tipo= mecanico.Rol});
+                this.listaMecanicos.Add(new Mecani(){TRol=mecanico.MecanicoId,infoOrden=mecanico.Nombre, fecha= mecanico.Telefono, tipo= mecanico.Rol});
                 
             }
         }

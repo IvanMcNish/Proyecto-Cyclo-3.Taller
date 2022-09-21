@@ -40,11 +40,11 @@ namespace Taller.App.Front.Pages
             }
         }
 
-        public void OnPostDelete(string Id )
+        public void OnPostDelete(string MecanicoId )
         {   try
             {
 
-            repoMecanico.EliminarMecanico(Id);
+            repoMecanico.EliminarMecanico(MecanicoId);
             this.ObtenerMecanicos();
             }
             catch(System.Exception)
@@ -63,7 +63,7 @@ namespace Taller.App.Front.Pages
             {
                 this.listaMecanicos.Add(new Mecanico()
                 {
-                    Id=mecanico.Id,
+                    MecanicoId=mecanico.MecanicoId,
                     Nombre=mecanico.Nombre,
                     FechaNacimiento= mecanico.FechaNacimiento,
                     Telefono= mecanico.Telefono, 
