@@ -4,19 +4,17 @@
 }
 
 <style>
-    .table{
+    .table {
         text-align: center;
     }
 
-    .notas{
+    .notas {
         margin-top: 300px;
     }
 
-    .ediguar{
-        margin-top:100px;
+    .ediguar {
+        margin-top: 100px;
     }
-
-
 </style>
 
 <div class="bg-primary d-flex flex-row-reverse">
@@ -35,189 +33,193 @@
 </div>
 <p>
 
-<!--------------------- inicio formulario --------------------------------------------------------------->
+    <!--------------------- inicio formulario --------------------------------------------------------------->
 
 <div class="container">
-    
-        <div class="row">
-        
+
+    <div class="row">
+
         <div class="col-sm-6">
-            
+
             <form class="needs-validation" novalidate>
-                    <div class="row">
+                <div class="row">
                     <h6>Registro de vehículo</h6>
-                        <div class="col">
-                            
-                            <label for="validationCustom01" class="form-label">Placa:</label>
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" id="validationCustom01" required>
-                            <div class="invalid-feedback">
-                                Campo requerido
-                            </div>
-                        </div>
-                        <div class="col">
-                            <label for="validationCustom02" class="form-label">Marca de vehículo:</label>
-                        </div>
-                        <div class="col">
-                            <select class="form-select" id="validationCustom02" required>
-                                <option selected disabled value="">selección.</option>
-                                <option>Mazda</option>
-                                <option>Jeep</option>
-                                <option>Ferrary</option>
-                                <option>Ford</option>
-                                <option>Chevrolet</option>
-                                <option>Otros</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Este campo es obligatorio
-                            </div>
+                    <div class="col">
+
+                        <label for="validationCustom01" class="form-label">Placa:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                        <div class="invalid-feedback">
+                            Campo requerido
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col">
-                            <label for="validationCustom03" class="form-label">Tipo de vehículo?:</label>
-                        </div>
-                        <div class="col">
-                            <select class="form-select" id="validationCustom03" required>
-                                <option selected disabled value="">selección.</option>
-                                <option>Buseta</option>
-                                <option>Microbus</option>
-                                <option>Campero</option>
-                                <option>Camion</option>
-                                <option>Otros</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Este campo es obligatorio
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <label for="validationCustom04" class="form-label">Modelo del vehículo:</label>
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" id="validationCustom04" required>
-                            <div class="invalid-feedback">
-                                este campo es obligatorio
-                            </div>
-                        </div>
+                    <div class="col">
+                        <label for="validationCustom02" class="form-label">Marca de vehículo:</label>
                     </div>
-
-                    <div class="row">
-                        <div class="col">
-                            <label for="validationCustom05" class="form-label">N° pasajeros:</label>
-                        </div>
-                        <div class="col">
-                        <select class="form-select" id="validationCustom05" required>
-                                <option selected disabled value="">selección.</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>Mayor a 6</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Este campo es obligatorio
-                            </div>
-                        </div>
-                        <div class="col">
-                            <label for="validationCustom05" class="form-label">Cilindraje:</label>
-                        </div>
-                        <div class="col">
-                        <select class="form-select" id="validationCustom06" required>
-                                <option selected disabled value="">selección.</option>
-                                <option>100</option>
-                                <option>115</option>
-                                <option>200</option>
-                                <option>220</option>
-                                <option>Otros</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Este campo es obligatorio
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="row">
-                        <div class="col">
-                            <label for="validationCustom07" class="form-label">Pais de Origen:</label>
-                        </div>
-                        <div class="col">
-                        <select class="form-select" id="validationCustom07" required>
-                                <option selected disabled value="">selección.</option>
-                                <option>Colombia</option>
-                                <option>EEUU</option>
-                                <option>Venezuela</option>
-                                <option>Mexico</option>
-                                <option>Brasil</option>
-                                <option>Otros</option>
+                    <div class="col">
+                        <select class="form-select" id="validationCustom02" required>
+                            <option selected disabled value="">selección.</option>
+                            <option>Mazda</option>
+                            <option>Jeep</option>
+                            <option>Ferrary</option>
+                            <option>Ford</option>
+                            <option>Chevrolet</option>
+                            <option>Otros</option>
                         </select>
-                            <div class="invalid-feedback">
-                                Este campo es obligatorio
-                            </div>
+                        <div class="invalid-feedback">
+                            Este campo es obligatorio
                         </div>
+                    </div>
+                </div>
 
-                        <div class="col">
-                            <label for="validationCustom08" class="form-label">¿Tiene accesorios el vehículo?:</label>
+                <div class="row">
+                    <div class="col">
+                        <label for="validationCustom03" class="form-label">Tipo de vehículo?:</label>
+                    </div>
+                    <div class="col">
+                        <select class="form-select" id="validationCustom03" required>
+                            <option selected disabled value="">selección.</option>
+                            <option>Buseta</option>
+                            <option>Microbus</option>
+                            <option>Campero</option>
+                            <option>Camion</option>
+                            <option>Otros</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Este campo es obligatorio
                         </div>
-                        <div class="col">
-                            <select class="form-select" id="validationCustom08">
+                    </div>
+
+                    <div class="col">
+                        <label for="validationCustom04" class="form-label">Modelo del vehículo:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="validationCustom04" required>
+                        <div class="invalid-feedback">
+                            este campo es obligatorio
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="validationCustom05" class="form-label">N° pasajeros:</label>
+                    </div>
+                    <div class="col">
+                        <select class="form-select" id="validationCustom05" required>
+                            <option selected disabled value="">selección.</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>Mayor a 6</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Este campo es obligatorio
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="validationCustom05" class="form-label">Cilindraje:</label>
+                    </div>
+                    <div class="col">
+                        <select class="form-select" id="validationCustom06" required>
+                            <option selected disabled value="">selección.</option>
+                            <option>100</option>
+                            <option>115</option>
+                            <option>200</option>
+                            <option>220</option>
+                            <option>Otros</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Este campo es obligatorio
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="validationCustom07" class="form-label">Pais de Origen:</label>
+                    </div>
+                    <div class="col">
+                        <select class="form-select" id="validationCustom07" required>
+                            <option selected disabled value="">selección.</option>
+                            <option>Colombia</option>
+                            <option>EEUU</option>
+                            <option>Venezuela</option>
+                            <option>Mexico</option>
+                            <option>Brasil</option>
+                            <option>Otros</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Este campo es obligatorio
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <label for="validationCustom08" class="form-label">¿Tiene accesorios el vehículo?:</label>
+                    </div>
+                    <div class="col">
+                        <select class="form-select" id="validationCustom08">
                             <option selected disabled></span></option>
                             <option>Si</option>
                             <option>No</option>
-                            </select>
-                            <div class="invalid-feedback">
-                            </div>
+                        </select>
+                        <div class="invalid-feedback">
                         </div>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <label for="validationCustom09" class="form-label">¿Cúales?:</label>
-                        </div>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="validationCustom09">
-                            <div class="invalid-feedback">
-                                Este campo es obligatorio
-                            </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="validationCustom09" class="form-label">¿Cúales?:</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="validationCustom09">
+                        <div class="invalid-feedback">
+                            Este campo es obligatorio
                         </div>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                <label class="form-check-label" for="invalidCheck">
-                                    Acepto los terminos y condiciones
-                                </label>
-                                <div class="invalid-feedback">
-                                    Debe aceptar los terminos y condiciones para continuar.
-                                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Acepto los terminos y condiciones
+                            </label>
+                            <div class="invalid-feedback">
+                                Debe aceptar los terminos y condiciones para continuar.
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="row">
-                        <p>
-                        <div class="col-12">
-                            <button class="btn btn-primary" id="liveAlertBtn" type="submit">Registrar</button>
-                        </div>
-                    </div>   
+                </div>
+
+                <div class="row">
+                    <p>
+                    <div class="col-12">
+                        <button class="btn btn-primary" id="liveAlertBtn" type="submit">Registrar</button>
+                    </div>
+                </div>
             </form>
             <p>
         </div>
+        <div class="col-sm-4">
+            <h6>Vehículos registrados</h6>
+            <div id="tabla">
 
-        <div class="col " >
-            <table class="table border">
-                    <h6>Vehículos registrados</h6>
-                    <thead>
+                <table id="testTable"
+                    class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
+
+                    <thead class="bg-primary">
                         <tr>
                             <th scope="col">Marca</th>
                             <th scope="col">Modelo</th>
                             <th scope="col">Placa</th>
                             <th scope="col">Cilindraje</th>
+                            <th scope="col">Gestión</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -226,6 +228,7 @@
                             <td>2019</td>
                             <td>SDF485</td>
                             <td>200</td>
+                            <td><i class="bi bi-trash"></i></td>
 
                         </tr>
                         <tr>
@@ -241,22 +244,58 @@
                             <td>SGT875</td>
                             <td>600</td>
                         </tr>
-                    </tbody>
-            </table>
-            
-            <div class="ediguar">
-                <button class="btn btn-primary" type="submit">Editar</button> 
-                <button class="btn btn-primary" type="submit">Eliminar</button>
-            </div>
-            <p>
-            
-        </div>
+                        <tr>
+                            <td>Ford</td>
+                            <td>2022</td>
+                            <td>SGT875</td>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>Ford</td>
+                            <td>2022</td>
+                            <td>SGT875</td>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>Ford</td>
+                            <td>2022</td>
+                            <td>SGT875</td>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>Ford</td>
+                            <td>2022</td>
+                            <td>SGT875</td>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>Ford</td>
+                            <td>2022</td>
+                            <td>SGT875</td>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>Ford</td>
+                            <td>2022</td>
+                            <td>SGT875</td>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>Ford</td>
+                            <td>2022</td>
+                            <td>SGT875</td>
+                            <td>600</td>
+                        </tr>
 
-        <div class="col  ">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-sm-2">
             <div class="row-sm-5" novalidate>
                 <div>
                     <h6>Fecha de registro</h6>
-                    <input type="date" class="form-control" id="validationCustom01"  required>
+                    <input type="date" class="form-control" id="validationCustom01" required>
                     <div class="invalid-feedback">
                         Campo requerido
                     </div>
@@ -264,23 +303,54 @@
 
                 <div class=" notas">
                     <div id="liveAlertPlaceholder"></div>
-           
+
                 </div>
             </div>
-            
+
         </div>
 
 
 
-</div>
+    </div>
 
 
-
-
+    <!---------------------------------------------------------Css inicio------------------------>
     <style>
+        body {
+            background: linear-gradient(to right, #F0FAFC, #EBEBF6);
+        }
 
+        .imagen {
+            margin-left: ;
+            width: 90px;
+            height: 40px;
+            margin-top: 440px;
+            cursor: pointer;
+        }
+
+        #tabla {
+            height: 300px;
+            overflow-y: auto;
+            background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+            border-radius: 10px 10px;
+        }
+
+        table {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        th {
+            color: white;
+        }
+
+        .cabeza {
+            background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+            border-radius: 10px 10px;
+        }
     </style>
-
+    <!---------------------------------------------------------Css fin--------------------------->
+    <!---------------------------------------------------------Js-------------------------------->
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (() => {
@@ -296,34 +366,34 @@
 
                         event.preventDefault()
                         const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-                            const alert = (message, type) => {
+                        const alert = (message, type) => {
                             const wrapper = document.createElement('div')
-                                wrapper.innerHTML = [
+                            wrapper.innerHTML = [
                                 `<div class="alert alert-${type} alert-dismissible" role="alert">`,
                                 `   <div>${message}</div>`,
                                 '   <button type="button" id="closes" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
                                 '</div>'
-                                ].join('')
+                            ].join('')
 
-                                alertPlaceholder.append(wrapper)
-                            }
-                            const alertTrigger = document.getElementById('liveAlertBtn')
-                                if (alertTrigger) {
-                                alertTrigger.addEventListener('click', () => {
+                            alertPlaceholder.append(wrapper)
+                        }
+                        const alertTrigger = document.getElementById('liveAlertBtn')
+                        if (alertTrigger) {
+                            alertTrigger.addEventListener('click', () => {
                                 alert('Vehículo registrado con exito', 'success')
-                                })
-                        }                 
+                            })
+                        }
                     }
                     form.classList.add('was-validated')
 
                 }, false)
 
-                
+
             })
         })()
 
-  
+
 
 
     </script>
-<!--------------------- fin formulario --------------------------------------------------------------->
+    <!--------------------- fin formulario --------------------------------------------------------------->
