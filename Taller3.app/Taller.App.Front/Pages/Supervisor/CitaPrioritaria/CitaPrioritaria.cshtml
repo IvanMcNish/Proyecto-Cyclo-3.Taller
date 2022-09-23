@@ -4,7 +4,7 @@
 }
 
 <div class="bg-primary d-flex flex-row-reverse">
-    <div class="p-2">
+    <div class="p-2 responsive-border">
         <span>Supervisor</span>
         <label>Pedro</label>
     </div>
@@ -22,7 +22,7 @@
 <!--------------------------Inicio formulario-------------------------------------------------------------------->
 
     <div class="row">
-        <div class="col-sm-6 border">
+        <div class="cita col-sm-4 border">
             <div class="col">
                 <div id="tabla "div class="row responsive-border">
                 <h3>Cita prioritaria</h3>
@@ -31,7 +31,7 @@
                 <div>
                     <div class="row">
                         <div class="col">
-                            <select class="form-select" id="validationCustom01" required>
+                            <select class="form-select" id="" required>
                                 <option selected disabled value="">Placa</option>
                                 <option>SWD489</option>
                                 <option>DER625</option>
@@ -45,7 +45,7 @@
                             <label for="">Cliente</label>
                         </div>
                         <div class="col">
-                            <input type="text" class="form-control" id="validationCustom02" placeholder="Nombre del cliente" required>
+                            <input type="text" class="form-control" id="" placeholder="Nombre del cliente" required>
                         </div>
                     </div>
 
@@ -54,7 +54,7 @@
                             <label for="">Tipo</label>
                         </div>
                         <div class="col">
-                            <label class="form-control" placeholder="Tipo de cehículo" for="">tipo de vehículo</label>
+                            <label class="form-control" placeholder="Tipo de vehículo" for="">tipo de vehículo</label>
                         </div>
                     </div>
 
@@ -63,7 +63,7 @@
                             <label for="">Marca</label>
                         </div>
                         <div class="col">
-                            <label class="form-control" placeholder="Tipo de cehículo" for="">Marca del vehículo</label>
+                            <label class="form-control" placeholder="Tipo de vehículo" for="">Marca del vehículo</label>
                         </div>
                     </div>
 
@@ -72,7 +72,7 @@
                             <label for="">Modelo</label>
                         </div>
                         <div class="col">
-                            <label class="form-control" placeholder="Tipo de cehículo" for="">Moodelo del vehículo</label>
+                            <label class="form-control" placeholder="Tipo de vehículo" for="">Modelo del vehículo</label>
                         </div>
                     </div>
 
@@ -81,7 +81,7 @@
                             <label for="">Capacidad</label>
                         </div>
                         <div class="col">
-                            <label class="form-control" placeholder="Tipo de cehículo" for="">Capacidad del vehículo</label>
+                            <label class="form-control" placeholder="Tipo de vehículo" for="">Capacidad del vehículo</label>
                         </div>
                     </div>
                     <div class="row">
@@ -89,7 +89,7 @@
                             <label for="">Cede</label>
                         </div>
                         <div class="col">
-                            <select class="form-select" id="validationCustom01" required>
+                            <select class="form-select" id="" required>
                                 <option selected disabled value="">Marque una opción</option>
                                 <option>Medellin / Cr56c n°85-115</option>
                                 <option>Bogotá / Cr85 n°96-888</option>
@@ -108,20 +108,17 @@
                     </div>
                 </div>
             </div>
-
             <div class="row">
                 <label for="">Caso</label>
                 <div class="container">
                     
-                    <textarea name="" id="" cols="70" rows="3"></textarea>
+                    <textarea name="" id="" cols="40" rows="3"></textarea>
 
                 </div>
-
             </div>
-
         </div>
-
-        <div id="data" class="col">
+      
+        <div id="data" class="col-sm-6">
             <div class="row tecnico">
                 <div class="row">
                     <div class="row base">
@@ -134,7 +131,8 @@
                                         <th scope="col">N° Empleado</th>
                                         <th scope="col">Nombre y apellido</th>
                                         <th scope="col">Turno programado</th>
-                                        <th scope="col">Escpecialidad</th>
+                                        <th scope="col">Especialidad</th>
+                                        <th scope="col"> Gestión</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -143,108 +141,128 @@
                                         <td>Marc Antoni de jesús</td>
                                         <td>8:30am - 5:30pm</td>
                                         <td>Latoneria y pintura</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                     <tr>
                                         <td>WE8574773</td>
                                         <td>José Luis Pelaez</td>
                                         <td>11:30am - 8:30pm</td>
                                         <td>Elétrico</td>
+                                        <td><i class="bi bi-gear"></i></td>
+                                        
+
                                     </tr>
                                     <tr>
                                         <td>RT54875102</td>
                                         <td>José Luis Pelaez</td>
                                         <td>6:30am - 3:30pm</td>
                                         <td>General</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                     <tr>
                                         <td>QA5425353</td>
                                         <td>Marc Antoni de jesús</td>
                                         <td>8:30am - 5:30pm</td>
                                         <td>Latoneria y pintura</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                     <tr>
                                         <td>WE8574773</td>
                                         <td>José Luis Pelaez</td>
                                         <td>11:30am - 8:30pm</td>
                                         <td>Elétrico</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                     <tr>
                                         <td>RT54875102</td>
                                         <td>José Luis Pelaez</td>
                                         <td>6:30am - 3:30pm</td>
                                         <td>General</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                     <tr>
                                         <td>QA5425353</td>
                                         <td>Marc Antoni de jesús</td>
                                         <td>8:30am - 5:30pm</td>
                                         <td>Latoneria y pintura</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                     <tr>
                                         <td>WE8574773</td>
                                         <td>José Luis Pelaez</td>
                                         <td>11:30am - 8:30pm</td>
                                         <td>Elétrico</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                     <tr>
                                         <td>RT54875102</td>
                                         <td>José Luis Pelaez</td>
                                         <td>6:30am - 3:30pm</td>
                                         <td>General</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                     <tr>
                                         <td>QA5425353</td>
                                         <td>Marc Antoni de jesús</td>
                                         <td>8:30am - 5:30pm</td>
                                         <td>Latoneria y pintura</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                     <tr>
                                         <td>WE8574773</td>
                                         <td>José Luis Pelaez</td>
                                         <td>11:30am - 8:30pm</td>
                                         <td>Elétrico</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                     <tr>
                                         <td>RT54875102</td>
                                         <td>José Luis Pelaez</td>
                                         <td>6:30am - 3:30pm</td>
                                         <td>General</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                     <tr>
                                         <td>QA5425353</td>
                                         <td>Marc Antoni de jesús</td>
                                         <td>8:30am - 5:30pm</td>
                                         <td>Latoneria y pintura</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                     <tr>
                                         <td>WE8574773</td>
                                         <td>José Luis Pelaez</td>
                                         <td>11:30am - 8:30pm</td>
                                         <td>Elétrico</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                     <tr>
                                         <td>RT54875102</td>
                                         <td>José Luis Pelaez</td>
                                         <td>6:30am - 3:30pm</td>
                                         <td>General</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                     <tr>
                                         <td>QA5425353</td>
                                         <td>Marc Antoni de jesús</td>
                                         <td>8:30am - 5:30pm</td>
                                         <td>Latoneria y pintura</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                     <tr>
                                         <td>WE8574773</td>
                                         <td>José Luis Pelaez</td>
                                         <td>11:30am - 8:30pm</td>
                                         <td>Elétrico</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                     <tr>
                                         <td>RT54875102</td>
                                         <td>José Luis Pelaez</td>
                                         <td>6:30am - 3:30pm</td>
                                         <td>General</td>
+                                        <td><i class="bi bi-gear"></i></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -256,7 +274,7 @@
 
             </div>
         </div>
-
+    
         <div class="row-sm-6">
             <button id="aceptar" type="button" class="btn btn-primary">Agendar</button>
         </div>
@@ -275,8 +293,9 @@
         }
 
         .cita{
-            background: linear-gradient(to right, #F0FAFC, #EBEBF6);
+           background: linear-gradient(to right, #FFE8C7, #EBEBF6); ;
         }
+
         .tecnico {}
 
         body {
