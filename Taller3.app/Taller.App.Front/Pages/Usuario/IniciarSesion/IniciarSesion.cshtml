@@ -165,12 +165,13 @@
 			<div class="left">
 				<div class="top_link"><a href="#"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Volver a inicio</a></div>
 				<div class="contact">
-					<form action="">
-						<h3>INICIO DE SESION</h3>
-						<input type="text" placeholder="USUARIO">
-						<input type="password" placeholder="CONTRASEÑA">
-						<button type="button" class="submit">INGRESAR</button>
-            <button type="button" class="register">REGISTRARSE</button>
+					<form class="needs-validation" novalidate>
+						<h3>INICIO DE SESIÓN</h3>
+						<input type="text" class="form-control" id="validationCustom01" required placeholder="USUARIO"></input>
+            <input type="password" class="form-control" id="validationCustom02" required placeholder="CONTRASEÑA"></input>
+            <br>
+            <button class="btn btn-primary" id="liveAlertBtn" type="submit">INGRESAR</button>
+            <a class="btn btn-light" href="#" role="button">REGISTRARSE</a>
 					</form>
 				</div>
 			</div>
@@ -183,3 +184,48 @@
 		</div>
 	</section>
     </body>
+
+    <!---------------------------------------------------------Js-------------------------------->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+
+                        event.preventDefault()
+                        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+                        const alert = (message, type) => {
+                            const wrapper = document.createElement('div')
+                            wrapper.innerHTML = [
+                                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                                `   <div>${message}</div>`,
+                                '   <button type="button" id="closes" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                                '</div>'
+                            ].join('')
+
+                            alertPlaceholder.append(wrapper)
+                        }
+                        const alertTrigger = document.getElementById('liveAlertBtn')
+                        if (alertTrigger) {
+                            alertTrigger.addEventListener('click', () => {
+                                alert('Vehículo registrado con exito', 'success')
+                            })
+                        }
+                    }
+                    form.classList.add('was-validated')
+
+                }, false)
+
+
+            })
+        })()
+
+    </script>
+    <!---------------------------------------------------------Js-------------------------------->
