@@ -5,7 +5,8 @@
 
 <style>
 .table{
-     background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+    background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+    border-radius: 10px;
 }
 
 .del {
@@ -38,7 +39,7 @@
 
 
     @* tabla1 *@
-    <div class="row border align-items-center ">
+    <div class="row align-items-center ">
         <div class="col">
             <span>
                 @Model.titulo
@@ -76,7 +77,7 @@
         </div>
 
     </div>
-    <div class="row border align-items-center">
+    <div class="row align-items-center">
         <div class="col ">
             @* Tabla 3 *@
             <span>
@@ -98,7 +99,7 @@
                 </div>
             </div>
         </div>
-        
+        <br>
         <div class="col ">
             <label for="start">Fecha de Cita:</label>
             <br>
@@ -129,6 +130,7 @@
                             <td>@Model.listaMecanicosDispo[i].nombreTec</td>
                             <td>@Model.listaMecanicosDispo[i].fecha</td>
                             <td>@Model.listaMecanicosDispo[i].tipo</td>
+                            <td><i class="ser bi bi-search"></i></td>
                         </tr>
 
 
