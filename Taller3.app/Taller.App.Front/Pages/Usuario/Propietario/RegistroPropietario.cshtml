@@ -3,106 +3,135 @@
 @{
 }
 
+
+
+<!---------------------------- inicio cabeza ------------------------------------------------------->
+<div id="cabeza" class="bg-primary d-flex flex-row-reverse">
+  <div class="p-1">
+    <i id="user" class="bi bi-people-fill"></i>
+    <span>Cliente</span>
+    <label>Andres</label>
+  </div>
+</div>
+<p>
+<!---------------------------- fin cabeza ---------------------------------------------------------->
+
 <!-----------------------------HTML INICIO---------------------------------------------------------->
+  <div class="container">
+    <div id="body-body" class="row general">
 
-  <div class="row general">
+      <div class="col marco">
+        <h6 for="">Ordenes pendientes</h6>
+        <div id="tabla" class="row">
+          <table id="testTable" class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
+            <thead class="bg-primary">
+              <tr>
+                <th scope="col">Marca</th>
+                <th scope="col">Placa</th>
+                <th scope="col">Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mazda</td>
+                <td>DER631</td>
+                <td>Aprobada</td>
+              </tr>
+              <tr>
+                <td>Ford</td>
+                <td>DEF145</td>
+                <td>Pendiente por aprobar</td>
+              </tr>
+              <tr>
+                <td>Chevrolet</td>
+                <td>FSD251</td>
+                <td>Rechazada</td>
+              </tr>
+              <tr>
+                <td>Chevrolet</td>
+                <td>FSD251</td>
+                <td>Rechazada</td>
+              </tr>
+              <tr>
+                <td>Chevrolet</td>
+                <td>FSD251</td>
+                <td>Rechazada</td>
+              </tr>
+              <tr>
+                <td>Chevrolet</td>
+                <td>FSD251</td>
+                <td>Rechazada</td>
+              </tr>
+              <tr>
+                <td>Chevrolet</td>
+                <td>FSD251</td>
+                <td>Rechazada</td>
+              </tr>
+              <tr>
+                <td>Chevrolet</td>
+                <td>FSD251</td>
+                <td>Rechazada</td>
+              </tr>
+              <tr>
+                <td>Chevrolet</td>
+                <td>FSD251</td>
+                <td>Rechazada</td>
+              </tr>
 
-    <div class="col">
-      <div class="row ">
-        <label for="">Ordenes pendientes</label>
-      </div>
-      <p>
-      <div class="row border">
-        <table id="inventario" class="table table-hover">
-          <thead class="table-dark">
-            <tr>
-              <th scope="col">Marca</th>
-              <th scope="col">Placa</th>
-              <th scope="col">Estado</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Mazda</td>
-              <td>DER631</td>
-              <td>Aprobada</td>
-            </tr>
-            <tr>
-              <td>Ford</td>
-              <td>DEF145</td>
-              <td>Pendiente por aprobar</td>
-            </tr>
-            <tr>
-              <td>Chevrolet</td>
-              <td>FSD251</td>
-              <td>Rechazada</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p>
-      <div class="row border">
-        <div class="row">
-          <div class="col-sm-2">
-            <label for="">Orden</label>
-          </div>
-          <div class="col">
-            <table>
-              <tbody>
-                <tr>
-                  <td>Mazda</td>
-                  <td>/</td>
-                  <td>SAS521</td>
-                  <td>/</td>
-                  <td>Rechazada</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+            </tbody>
+          </table>
         </div>
-        <div class="row">
-          <div class="col-sm-2">
-            <label for="">Caso</label>
-          </div>
-          <div class="col">
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                style="height: 100px"></textarea>
-              <label for="floatingTextarea2">Comments</label>
+        
+        <div id="div" class="row">
+          <div style="margin-top:10px;" class="row">
+            <div class="col-sm-2">
+              <label for="">Orden</label>
+            </div>
+            <div class="col">
+              <table>
+                <thead class="bg-primary">
+              <tr>
+                <th scope="col">Marca</th>
+                <th scope="col"><span>/</span>Placa</th>
+                <th scope="col"><span>/</span>Estado</th>
+              </tr>
+            </thead>
+              </table>
             </div>
           </div>
-
+          <div class="row">
+            <div class="col-sm-2">
+              <label for="">Caso</label>
+            </div>
+            <div  class="col">
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                  style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="boton">
+            <button type="button" class="btn btn-primary bu">Aceptar</button>
+            <button type="button" class="btn btn-danger bu">Cancelar</button>
+          </div>
         </div>
+      </div>
 
-        <div class="col">
-
+      <div class="col marco"> 
+          <iframe width="350" height="215" src="https://www.youtube.com/embed/EDSTDHU6oFI" title="YouTube video player"
+            allowfullscreen>
+          </iframe>
+        <br>
+        <div class="row ">
+          <h6>Reagendar</h6>
+          <input type="date" name="" id="">
         </div>
-      </div>
-      <p>
-      <div class="row" id="boton">
-        <button id="button1" type="button" class="btn btn-primary">Aceptar</button>
-        <button id="button" type="button" class="btn btn-danger">Cancelar</button>
-      </div>
-    </div>
-
-    <div class="col" id="video">
-      <div class="row">
-        <iframe width="260" height="215" src="https://www.youtube.com/embed/EDSTDHU6oFI" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-      </div>
-      <br>
-
-      <div class="row ">
-        <label for="">Reagendar</label>
-        <input type="date" name="" id="" >
-      </div>
-      <br>
-      <div class="row" id="orden">
-        <label for="">Orden a trabajar</label>
-        <div class="row">
-            <table class="table table-dark table-hover">
-              <tbody>
+        <br>
+        <div class="row" id="orden">
+          <h6>Orden a trabajar</h6>
+            <table class="table align-middle bg-primary table-hover">
+              <tbody id="cabeza">
                 <tr>
                   <td>Mazda</td>
                   <td>/</td>
@@ -112,26 +141,22 @@
                 </tr>
               </tbody>
             </table>
-          </div>
-      </div>
-
-
-    </div>
-
-    <div class="col">
-      <div class="row">
-        <div class="row border" id="soat">
-          <img  onclick="location.href='https://www.wesura.com/?utm_source=segurossura&utm_medium=banner&utm_campaign=canales-venta-wesura&utm_content=wesura-canales-venta'" width="300" height="215" src="https://th.bing.com/th/id/R.7fe19b30cf5ab62d775c41a5a6396574?rik=U8KvPXYVYvqAMg&riu=http%3a%2f%2fclinicadelosandesips.com%2fwp-content%2fuploads%2f2013%2f04%2fSURA_soat.jpg&ehk=l1DMV1rD1vglDEMTC0toKDNeqzBzLYkhDLHjDtp3srU%3d&risl=&pid=ImgRaw&r=0" alt="soat">
+          
         </div>
+
+
       </div>
 
-      <div class="row alert">
-      
+      <div class="col marco">
+            <img class="border" 
+              onclick="location.href='https://www.wesura.com/?utm_source=segurossura&utm_medium=banner&utm_campaign=canales-venta-wesura&utm_content=wesura-canales-venta'"
+              width="300" height="215"     src="https://th.bing.com/th/id/R.7fe19b30cf5ab62d775c41a5a6396574?rik=U8KvPXYVYvqAMg&riu=http%3a%2f%2fclinicadelosandesips.com%2fwp-content%2fuploads%2f2013%2f04%2fSURA_soat.jpg&ehk=l1DMV1rD1vglDEMTC0toKDNeqzBzLYkhDLHjDtp3srU%3d&risl=&pid=ImgRaw&r=0"
+              alt="soat">
       </div>
 
     </div>
-    
   </div>
+
 
 <!-----------------------------HTML FIN------------------------------------------------------------->
 
@@ -139,46 +164,83 @@
 <!-----------------------------CSS INICIO----------------------------------------------------------->
   <style>
 
-    #button1{
-      width: 30%;
-      margin-left: 50px;
-      bac
+    .marco{
+      margin: 15px;
+    }
+
+    #boton{
+      margin: 5px;
+      display: inline-block;
+      text-align:center;
+      
     }
     
-    #button{
-      width: 30%;
-      margin-left: 40px;
-    }    
-
-    .table{
-      text-align: center;
-      margin-left: 15px;
+    .bu{
+      width: 100px;
     }
-
-    #orden{
-      margin-top: 35px;
-    }
-
-    img{
+   
+    img {
       cursor: pointer;
     }
 
-    #soat{
-      margin-left: 25px;
+    body {
+      background: linear-gradient(to right, #F0FAFC, #EBEBF6);
+    }
+
+    #cabeza {
+      color: white;
+    }
+
+    #user {
+      font-size: 30px;
+      margin-right: 10px;
 
     }
 
-    #btnsoat{
-      width: 150px;
-      margin-left: 90px;
+    #tabla {
+
+      height: 300px;
+      overflow-y: auto;
+      background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+      border-radius: 10px 10px;
     }
 
-    #video{
-      margin-left: 10px;
+    table {
+      text-align: center;
+      font-size: 13px;
     }
 
-    #inventario{
-      width: 93%;
+    th {
+      color: white;
+    }
+
+    .cabeza {
+      background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+      border-radius: 10px 10px;
+    }
+
+    .del {
+      color: red;
+      margin-left: 7px;
+    }
+
+    .edi {
+      color: blue;
+    }
+
+
+
+
+    #body-body {
+
+      background: whitesmoke;
+      border-radius: 10px 10px;
+    }
+
+    #div{
+      margin-top: 10px;
+      margin-bottom: 13px;
+      background: linear-gradient(to right, #FFE8C7, #EBEBF6);
     }
   </style>
 <!-----------------------------CSS FIN-------------------------------------------------------------->
