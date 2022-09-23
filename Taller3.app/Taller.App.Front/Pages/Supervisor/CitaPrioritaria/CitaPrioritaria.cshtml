@@ -22,33 +22,30 @@
 <!--------------------------Inicio formulario-------------------------------------------------------------------->
 
     <div class="row">
-        <div class="col-sm-6 ">
+        <div class="col-sm-6 border">
             <div class="col">
                 <div id="tabla "div class="row responsive-border">
-                    <label for="">Cita prioritaria</label>
+                <h3>Cita prioritaria</h3>
                 </div>
                 <br>
                 <div>
                     <div class="row">
                         <div class="col">
-                            <label for="">Placa</label>
-                        </div>
-                        <div class="col">
                             <select class="form-select" id="validationCustom01" required>
-                                <option selected disabled value="">Buscar</option>
+                                <option selected disabled value="">Placa</option>
                                 <option>SWD489</option>
                                 <option>DER625</option>
                                 <option>SDE968</option>
                             </select>
                         </div>
                     </div>
-
+                    <br>
                     <div class="row">
                         <div class="col">
                             <label for="">Cliente</label>
                         </div>
                         <div class="col">
-                            <input type="text" class="form-control" id="validationCustom02" placeholder="Nombre" required>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Nombre del cliente" required>
                         </div>
                     </div>
 
@@ -277,6 +274,9 @@
             margin-top: 50px;
         }
 
+        .cita{
+            background: linear-gradient(to right, #F0FAFC, #EBEBF6);
+        }
         .tecnico {}
 
         body {
@@ -292,11 +292,12 @@
         }
 
         #tabla {
-            height: 460px;
+            height: 580px;
             overflow-y: auto;
             background: linear-gradient(to right, #FFE8C7, #EBEBF6);
             border-radius: 10px 10px;
         }
+
 
         table {
             text-align: center;

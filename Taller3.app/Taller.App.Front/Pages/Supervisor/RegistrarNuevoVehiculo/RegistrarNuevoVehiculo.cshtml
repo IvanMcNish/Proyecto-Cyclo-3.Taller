@@ -3,8 +3,13 @@
 @{
 }
 <style>
+
+    body {
+        background: linear-gradient(to right, #F0FAFC, #EBEBF6);
+    }
+
     .table {
-         text-align: center;
+        text-align: center;
         height: 200px;
         whidth 100%;
         height: 460px;
@@ -26,6 +31,28 @@
         margin-top: 40px;
     }
 
+    .del {
+        color: red;
+        margin-left: 7px;
+    }
+
+    .edi {
+        color: blue;
+    }
+
+    .registrar{
+        background: linear-gradient(to right, #FFE8C7, #EBEBF6);    
+
+    }
+
+    .regVeh{
+        background: linear-gradient(to right, #FFE8C7, #EBEBF6);  
+    }
+
+    .fecha{
+    background: linear-gradient(to right, #FFE8C7, #EBEBF6);  
+    }
+    
 </style>
 
 
@@ -50,9 +77,10 @@
 
 <div class="container-border">
 
-    <div class="row">
+    <div class="row background: linear-gradient(to right, #FFE8C7, #EBEBF6);">
 
-        <div class="col-sm-6 border">
+        <div class="regVeh col-sm-6 border">
+            <div class="registrar"></div>
             <br>
             <h4>Registrar nuevo vehículo</h4>
             <p>
@@ -76,7 +104,7 @@
                             <option selected disabled value="">Marque una opción.</option>
                             <option>Mazda</option>
                             <option>Jeep</option>
-                            <option>Ferrary</option>
+                            <option>Renault</option>
                             <option>Ford</option>
                             <option>Chevrolet</option>
                             <option>Otros</option>
@@ -141,11 +169,11 @@
                     <div class="col">
                         <select class="form-select" id="validationCustom06" required>
                             <option selected disabled value="">Marque una opción.</option>
-                            <option>100</option>
-                            <option>115</option>
-                            <option>200</option>
-                            <option>220</option>
-                            <option>Otros</option>
+                            <option>1200</option>
+                            <option>1400</option>
+                            <option>1600</option>
+                            <option>1800</option>
+                            <option>Más</option>
                         </select>
                         <div class="invalid-feedback">
                             Este campo es obligatorio
@@ -163,7 +191,7 @@
                             <option selected disabled value="">Marque una opción.</option>
                             <option>Colombia</option>
                             <option>EEUU</option>
-                            <option>Venezuela</option>
+                            <option>Alemania</option>
                             <option>Mexico</option>
                             <option>Brasil</option>
                             <option>Otros</option>
@@ -227,7 +255,7 @@
             </p>
         </div>
 
-        <div class="col-sm-6 border ">
+        <div class="fecha col-sm-6 border ">
             <div class="needs-validation" novalidate>
                 <br>
                 <h4>Fecha de registro</h4>
@@ -271,7 +299,7 @@
                             <th scope="col">Tipo </th>
                             <th scope="col">N. pasajeros</th>
                             <th scope="col">Accesorios adicionales</th>
-                            <th scope="col"> Action</th>
+                            <th scope="col"> Gestión</th>
                              
                         </tr>
                         
@@ -285,10 +313,9 @@
                             <td>Camioneta</td>
                             <td>5</td>
                             <td>Tapetes de lujo</td>
-                            <td> <button class="action">Editar</button>
-                                <form method="POST">
-                                    <button class="action" asp-page-handler="Delete" asp-route-id="">Eliminar</button>
-                                </form>
+                            <td>
+                                <i class="edi bi bi-pencil"></i>
+                                <i class="del bi bi-trash"></i>
                             </td>
 
                         </tr>
@@ -300,10 +327,9 @@
                             <td>Automovil</td>
                             <td>4</td>
                             <td>Rines</td>
-                            <td> <button class="action">Editar</button>
-                                <form method="POST">
-                                    <button class="action" asp-page-handler="Delete" asp-route-id="">Eliminar</button>
-                                </form>
+                            <td>
+                                <i class="edi bi bi-pencil"></i>
+                                <i class="del bi bi-trash"></i>
                             </td>
                         </tr>
                         <tr>
@@ -314,10 +340,9 @@
                             <td>Automovil</td>
                             <td>4</td>
                             <td>Exploradoras</td>
-                            <td> <button class="action">Editar</button>
-                                <form method="POST">
-                                    <button class="action" asp-page-handler="Delete" asp-route-id="">Eliminar</button>
-                                </form>
+                            <td>
+                                <i class="edi bi bi-pencil"></i>
+                                <i class="del bi bi-trash"></i>
                             </td>
                         </tr>
                     </tbody>
