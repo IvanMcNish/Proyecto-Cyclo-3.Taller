@@ -2,6 +2,24 @@
 @model Taller.App.Front.Pages.GestionMecanicoModel
 @{
 }
+
+<style>
+.table{
+     background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+}
+
+.del {
+        color: red;
+        margin-left: 7px;
+    }
+
+    .edi {
+        color: blue;
+    }
+
+
+</style>
+
 <div class="bg-primary d-flex flex-row-reverse">
     <div class="p-2">
         <span>Cliente</span>
@@ -45,30 +63,16 @@
                             <td>@Model.listaMecanicos[i].infoOrden</td>
                             <td>@Model.listaMecanicos[i].fecha</td>
                             <td>@Model.listaMecanicos[i].tipo</td>
+                            <td>
+                                <i class="edi bi bi-pencil"></i>
+                                <i class="del bi bi-trash"></i>
+                                <i class="bi bi-gear"></i>
+                            </td>
                         </tr>
 
                     }
                 </tbody>
             </table>
-        </div>
-        <div class="col">
-            <span>
-                @Model.titulo5
-            </span>
-            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Gestionar
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Asignar</a></li>
-                <li><a class="dropdown-item" href="#">Borrar</a></li>
-                <li><a class="dropdown-item" href="#">Editar</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Agregar nuevo registro</a></li>
-            </ul>
-
         </div>
 
     </div>
@@ -136,3 +140,4 @@
 
     </div>
 </div>
+

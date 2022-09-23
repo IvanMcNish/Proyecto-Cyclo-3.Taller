@@ -20,11 +20,14 @@
     <div id="body-body" class="row">
         <div class="col-sm-3 ">
             <h6>Reporte de trabjo<h6>
-                    <form action="" method="post">
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                style="height: 440px"></textarea>
-                            <label for="floatingTextarea2">Escriba su reporte</label>
+                    <form class="was-validated" validation>
+                        <div class="">
+                            
+                            <textarea style="height: 440px" class="form-control" id="validationTextarea"
+                                placeholder="Agregue información aquí" required></textarea>
+                            <div class="invalid-feedback">
+                                Campo requerido.
+                            </div>
                         </div>
                     </form>
         </div>
@@ -322,14 +325,14 @@
         </div>
     </div>
 </div>
-
 <!---------------------------Html preventiva----------------------------------------------------->
 
 <!---------------------------Css preventiva------------------------------------------------------>
 <style>
-    .mar{
+    .mar {
         margin: 10px;
     }
+
     .ser {
         font-size: 18px;
         color: blue;
@@ -392,6 +395,48 @@
 
 <!---------------------------javascript preventiva----------------------------------------------->
 <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+
+                    event.preventDefault()
+                    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+                    const alert = (message, type) => {
+                        const wrapper = document.createElement('div')
+                        wrapper.innerHTML = [
+                            `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                            `   <div>${message}</div>`,
+                            '   <button type="button" id="closes" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                            '</div>'
+                        ].join('')
+
+                        alertPlaceholder.append(wrapper)
+                    }
+                    const alertTrigger = document.getElementById('liveAlertBtn')
+                    if (alertTrigger) {
+                        alertTrigger.addEventListener('click', () => {
+                            alert('Vehículo registrado con exito', 'success')
+                        })
+                    }
+                }
+                form.classList.add('was-validated')
+
+            }, false)
+
+
+        })
+    })()
+
+
+
 
 </script>
 <!---------------------------javascript preventiva----------------------------------------------->
