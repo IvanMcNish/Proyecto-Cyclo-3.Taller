@@ -5,27 +5,25 @@
 
 
 <!--------------------- inicio cabeza ------------------------------------------------------->
-    <div id="cabeza"  class="bg-primary d-flex flex-row-reverse">
-        <div  class="p-1">
-            <i id="user" class="bi bi-people-fill"></i>
-            <span>Cliente</span>
-            <label>Andres</label> 
-        </div>
+<div id="cabeza" class="bg-primary d-flex flex-row-reverse">
+    <div class="p-1">
+        <i id="user" class="bi bi-people-fill"></i>
+        <span>Cliente</span>
+        <label>Andres</label>
     </div>
-    <p>
-<!--------------------- fin cabeza ---------------------------------------------------------->
+</div>
+<p>
+    <!--------------------- fin cabeza ---------------------------------------------------------->
 
-<!--------------------- inicio formulario --------------------------------------------------->
+    <!--------------------- inicio formulario --------------------------------------------------->
     <div class="container">
 
         <div id="body-body" class="row">
-
             <div class="col-sm-8">
                 <div>
                     <h6>Registro de vehículo</h6>
                 </div>
                 <div class="row">
-
                     <form class="needs-validation border" novalidate>
                         <div class="row">
 
@@ -195,43 +193,41 @@
                 <p>
             </div>
 
-            <p>
-        </div>
-        <div class="col data">
-            <h6>Vehículos registrados</h6>
-            <div id="tabla">
-                <table id="testTable"
-                    class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
+            <div class="col">
+                <h6>Vehículos registrados</h6>
+                <div id="tabla">
+                    <table id="testTable"
+                        class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
 
-                    <thead class="bg-primary">
-                        <tr>
-                            <th scope="col">Marca</th>
-                            <th scope="col">Modelo</th>
-                            <th scope="col">Placa</th>
-                            <th scope="col">Cilindraje</th>
-                            <th scope="col">Gestión</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Mazda</td>
-                            <td>2019</td>
-                            <td>SDF485</td>
-                            <td>200</td>
-                            <td>
-                                <i class="edi bi bi-pencil"></i>
-                                <i class="del bi bi-trash"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Chevrolet</td>
-                            <td>2001</td>
-                            <td>QWE585</td>
-                            <td>500</td>
-                            <td>
-                                <i class="edi bi bi-pencil"></i>
-                                <i class="del bi bi-trash"></i>
-                            </td>
+                        <thead class="bg-primary">
+                            <tr>
+                                <th scope="col">Marca</th>
+                                <th scope="col">Modelo</th>
+                                <th scope="col">Placa</th>
+                                <th scope="col">Cilindraje</th>
+                                <th scope="col">Gestión</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mazda</td>
+                                <td>2019</td>
+                                <td>SDF485</td>
+                                <td>200</td>
+                                <td>
+                                    <i class="edi bi bi-pencil"></i>
+                                    <i class="del bi bi-trash"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Chevrolet</td>
+                                <td>2001</td>
+                                <td>QWE585</td>
+                                <td>500</td>
+                                <td>
+                                    <i class="edi bi bi-pencil"></i>
+                                    <i class="del bi bi-trash"></i>
+                                </td>
 
                             </tr>
                             <tr>
@@ -321,118 +317,118 @@
             </div>
         </div>
     </div>
+
 <!--------------------- Fin formulario ------------------------------------------------------>
 
 <!---------------------------------------------------------Css inicio------------------------>
-    <style>
+<style>
+    body {
+        background: linear-gradient(to right, #F0FAFC, #EBEBF6);
+    }
 
-        body {
-            background: linear-gradient(to right, #F0FAFC, #EBEBF6);
-        }
+    #cabeza {
+        color: white;
+    }
 
-        #cabeza{
-            color: white;
-        }
-        
-        #user{
-            font-size: 30px;
-            margin-right: 10px;
-            
-        }
+    #user {
+        font-size: 30px;
+        margin-right: 10px;
 
-        #tabla {
+    }
 
-            height: 300px;
-            overflow-y: auto;
-            background: linear-gradient(to right, #FFE8C7, #EBEBF6);
-            border-radius: 10px 10px;
-        }
+    #tabla {
 
-        table {
-            text-align: center;
-            font-size: 13px;
-        }
+        height: 300px;
+        overflow-y: auto;
+        background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+        border-radius: 10px 10px;
+    }
 
-        th {
-            color: white;
-        }
+    table {
+        text-align: center;
+        font-size: 13px;
+    }
 
-        .cabeza {
-            background: linear-gradient(to right, #FFE8C7, #EBEBF6);
-            border-radius: 10px 10px;
-        }
+    th {
+        color: white;
+    }
 
-        .del {
-            color: red;
-            margin-left: 7px;
-        }
+    .cabeza {
+        background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+        border-radius: 10px 10px;
+    }
 
-        .edi {
-            color: blue;
-        }
+    .del {
+        color: red;
+        margin-left: 7px;
+    }
 
-        form {
-            background: linear-gradient(to right, #FFE8C7, #EBEBF6);
-            border-radius: 10px 10px;
-        }
+    .edi {
+        color: blue;
+    }
 
-        .gua,
-        .data {
-            margin: 10px
-        }
+    form {
+        background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+        border-radius: 10px 10px;
+    }
 
-        #body-body {
+    .gua,
+    .data {
+        margin: 10px
+    }
 
-            background: whitesmoke;
-            border-radius: 10px 10px;
+    #body-body {
 
-        }
-    </style>
+        background: whitesmoke;
+        border-radius: 10px 10px;
+
+    }
+</style>
 <!---------------------------------------------------------Css fin--------------------------->
 <!---------------------------------------------------------Js-------------------------------->
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (() => {
-            'use strict'
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+        'use strict'
 
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms = document.querySelectorAll('.needs-validation')
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
 
-            // Loop over them and prevent submission
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
 
-                        event.preventDefault()
-                        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-                        const alert = (message, type) => {
-                            const wrapper = document.createElement('div')
-                            wrapper.innerHTML = [
-                                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-                                `   <div>${message}</div>`,
-                                '   <button type="button" id="closes" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-                                '</div>'
-                            ].join('')
+                    event.preventDefault()
+                    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+                    const alert = (message, type) => {
+                        const wrapper = document.createElement('div')
+                        wrapper.innerHTML = [
+                            `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                            `   <div>${message}</div>`,
+                            '   <button type="button" id="closes" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                            '</div>'
+                        ].join('')
 
-                            alertPlaceholder.append(wrapper)
-                        }
-                        const alertTrigger = document.getElementById('liveAlertBtn')
-                        if (alertTrigger) {
-                            alertTrigger.addEventListener('click', () => {
-                                alert('Vehículo registrado con exito', 'success')
-                            })
-                        }
+                        alertPlaceholder.append(wrapper)
                     }
-                    form.classList.add('was-validated')
+                    const alertTrigger = document.getElementById('liveAlertBtn')
+                    if (alertTrigger) {
+                        alertTrigger.addEventListener('click', () => {
+                            alert('Vehículo registrado con exito', 'success')
+                        })
+                    }
+                }
+                form.classList.add('was-validated')
 
-                }, false)
+            }, false)
 
 
-            })
-        })()
+        })
+    })()
 
 
 
 
-    </script>
+</script>
 <!---------------------------------------------------------Js-------------------------------->
