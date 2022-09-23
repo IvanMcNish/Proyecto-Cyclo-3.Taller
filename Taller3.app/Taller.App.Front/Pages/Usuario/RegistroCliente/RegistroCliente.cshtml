@@ -74,7 +74,7 @@
 
                 <!--Registro-->
 
-                <form action="#" class="Registro">
+                <form id="Registro" class="needs-validation border" novalidate>
                      <h4 class="fw-bold text-center">REGISTRO DE USUARIO</h4>
                      <div class="row">
                         <div class="col-sm-6">
@@ -132,7 +132,7 @@
                     <br>
                      <div class="row">
                             <div class="col">
-                                <label for="validationCustom04" class="form-label">Fecha de Nacimiento:</label>
+                                <label for="validationCustom07" class="form-label">Fecha de Nacimiento:</label>
                             </div>
                             <div class="col">
                                 <input type="date" class="form-control" id="validationCustom04" required>
@@ -141,11 +141,11 @@
                                 </div>
                             </div>
                             <br>
-                            <br>   
+                            <br>  
                         </div>
                     <div class="row">
                         <div class="col">
-                            <label for="validationCustom07" class="form-label">Correo Electrónico</label>
+                            <label for="validationCustom08" class="form-label">Correo Electrónico</label>
                         </div>
                         <div class="col">
                             <input type="email" class="form-control" id="validationCustom07" required>
@@ -157,7 +157,7 @@
                     <br>
                     <div class="row">
                         <div class="col">
-                            <label for="validationCustom07" class="form-label">Celular</label>
+                            <label for="validationCustom09" class="form-label">Celular</label>
                         </div>
                         <div class="col">
                             <input type="text" class="form-control" id="validationCustom07" required>
@@ -169,7 +169,7 @@
                     <br>  
                     <div class="row">
                         <div class="col">
-                            <label for="validationCustom07" class="form-label">Dirección de Residencia</label>
+                            <label for="validationCustom10" class="form-label">Dirección de Residencia</label>
                         </div>
                         <div class="col">
                             <input type="text" class="form-control" id="validationCustom07" required>
@@ -181,7 +181,7 @@
                     <br> 
                     <div class="row">
                         <div class="col">
-                            <label for="validationCustom07" class="form-label">Ciudad</label>
+                            <label for="validationCustom11" class="form-label">Ciudad</label>
                         </div>
                         <div class="col">
                             <input type="text" class="form-control" id="validationCustom07" required>
@@ -193,7 +193,7 @@
                     <br>    
                      <div class="row">
                         <div class="col">
-                            <label for="validationCustom07" class="form-label">Contraseña</label>
+                            <label for="validationCustom12" class="form-label">Contraseña</label>
                         </div>
                         <div class="col">
                             <input type="password" class="form-control" id="validationCustom07" required>
@@ -205,7 +205,7 @@
                     <br>  
                     <div class="row">
                         <div class="col">
-                            <label for="validationCustom07" class="form-label">Confirmación de Contraseña</label>
+                            <label for="validationCustom13" class="form-label">Confirmación de Contraseña</label>
                         </div>
                         <div class="col">
                             <input type="password" class="form-control" id="validationCustom07" required>
@@ -226,3 +226,51 @@
     </div>
 
 </body>
+
+<!---------------------------------------------------------Js-------------------------------->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+
+                        event.preventDefault()
+                        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+                        const alert = (message, type) => {
+                            const wrapper = document.createElement('div')
+                            wrapper.innerHTML = [
+                                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                                `   <div>${message}</div>`,
+                                '   <button type="button" id="closes" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                                '</div>'
+                            ].join('')
+
+                            alertPlaceholder.append(wrapper)
+                        }
+                        const alertTrigger = document.getElementById('liveAlertBtn')
+                        if (alertTrigger) {
+                            alertTrigger.addEventListener('click', () => {
+                                alert('Vehículo registrado con exito', 'success')
+                            })
+                        }
+                    }
+                    form.classList.add('was-validated')
+
+                }, false)
+
+
+            })
+        })()
+
+
+
+
+    </script>
+<!---------------------------------------------------------Js-------------------------------->
