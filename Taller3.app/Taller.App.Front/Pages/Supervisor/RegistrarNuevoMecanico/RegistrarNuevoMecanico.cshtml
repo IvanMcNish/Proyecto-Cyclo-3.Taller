@@ -20,10 +20,17 @@
         height: 460px;
         overflow-y: auto;
         background: linear-gradient(to right, #FFE8C7, #EBEBF6);
-   
+
     }
 
-   
+    #tabla {
+
+        height: 300px;
+        overflow-y: auto;
+        background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+        border-radius: 10px 10px;
+    }
+
 
 
     .notas {
@@ -47,14 +54,18 @@
         color: blue;
     }
 
-    .regMecan{
-         background: linear-gradient(to right, #FFE8C7, #EBEBF6);
-         border-radius: 10px;    
+    .regMecan {
+        background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+        border-radius: 10px;
     }
 
     .fecha {
-         background: linear-gradient(to right, #FFE8C7, #EBEBF6);  
-         border-radius: 10px;
+        background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+        border-radius: 10px;
+    }
+
+    .mar{
+        margin-left: 9px;
     }
 </style>
 
@@ -223,7 +234,7 @@
             </p>
         </div>
 
-        <div class="fecha col-sm-6 border ">
+        <div class="fecha col border mar ">
             <div class="col-sm-12">
                 <div class="foto">
                     <img width="100%" height="auto"
@@ -234,26 +245,25 @@
             </div>
         </div>
     </div>
+    <br>
     <div class="row base">
+
+        <h5>Mecánicos registrados</h5>
+
+            @*buscador*@
+        <div class="d-flex h-5 justify-content-left min-vh-0 user-select-none">
+            <br>
+            <div class="h-25 search">
+                <input type="text" class="search-input" placeholder="Buscar por Número..." name="">
+                <a href="#" class="search-icon"> <i class="ser bi bi-search"></i> </a>
+            </div>
+        </div>
+        <br>
+        <br>
         <div id="tabla" class="responsive-border">
-            <div class="overflow-auto"></div>
             <table id="testTable"
                 class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
                 <thead class="bg-primary">
-                    <br>
-                    <h5>Mecánicos registrados</h5>
-                    <br>
-                       
-                        @*buscador*@
-                    <div class="d-flex h-5 justify-content-left min-vh-0 user-select-none">
-                        <br>
-                        <div class="h-25 search">
-                            <input type="text" class="search-input" placeholder="Buscar por Número..." name="">
-                            <a href="#" class="search-icon"> <i class="ser bi bi-search"></i> </a>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
                     <tr>
 
                         <th scope="col">Número de Identificación</th>
@@ -280,7 +290,7 @@
                             <td>@m.FechaNacimiento</td>
                             <td>@m.Rol</td>
                             <td>@m.Contraseña</td>
-                             <td>
+                            <td>
                                 <i class="edi bi bi-pencil"></i>
                                 <i class="del bi bi-trash"></i>
                             </td>
@@ -290,7 +300,7 @@
                         }
                 </tbody>
             </table>
-           
+
 
         </div>
 
@@ -338,11 +348,11 @@
                             <label for="recipient-name" class="col-form-label">Especialidad:</label>
                             <input type="text" class="form-control" id="recipient-name" name="Contraseña">
                         </div>
-                          <div class="  mb-3">
+                        <div class="  mb-3">
                             <label for="recipient-name" class="col-form-label">Rol:</label>
                             <input type="text" class="form-control" id="recipient-name" name="Rol">
                         </div>
-                        
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
