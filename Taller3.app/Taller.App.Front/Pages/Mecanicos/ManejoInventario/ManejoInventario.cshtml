@@ -10,38 +10,47 @@
         background: linear-gradient(to right, #FFE8C7, #EBEBF6);
     }
 
+    #cabeza {
+            color: white;
+    }
+
     .tabla {
         border-radius: 10px;
         background: linear-gradient(to right, #FFE8C7, #EBEBF6);
 
+    }
 
-        .notas {
-            margin-top: 300px;
-        }
+    .notas {
+        margin-top: 300px;
+    }
 
-        .ediguar {
-            margin-top: 80px;
-        }
+    .ediguar {
+        margin-top: 80px;
+    }
 
+    .cabeza {
+        background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+        border-radius: 10px 10px;
+    }
 
+    #user {
+        font-size: 30px;
+        margin-right: 10px;
+
+    }
 </style>
 
 
-<div class="bg-primary d-flex flex-row-reverse">
-    <div class="p-2">
+<!---------------------------Html-head preventiva------------------------------------------------>
+<div id="cabeza" class="bg-primary d-flex flex-row-reverse">
+    <div class="p-1">
+        <i id="user" class="bi bi-people-fill"></i>
         <span>Mecanico</span>
         <label>Martillo</label>
     </div>
-    <div class="p-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-square"
-            viewBox="0 0 16 16">
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-            <path
-                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z" />
-        </svg>
-    </div>
 </div>
 <p>
+    <!---------------------------Html-head preventiva------------------------------------------------>
 
     <!---------------------------Html-User preventiva------------------------------------------------>
 
@@ -50,20 +59,81 @@
 <div class="container-fluid">
     <div class="row">
         <h1>Manejo de inventario</h1>
-        <div class="table col-sm-6">
+        <div class=" col-sm-8">
             <table class="table-responsive">
                 <br>
-                <div class="d-flex h-5 justify-content-left min-vh-0 user-select-none">
+                
+                <thead>
+                    
+                    <br>
+                    <h4>Productos disponibles</h4>
+                    <br>
+                    <div class="table d-flex h-5 justify-content-left min-vh-0 user-select-none">
                     <br>
                     <div class="h-25 search">
                         <input type="text" class="search-input" placeholder="Buscar producto" name="">
                         <a href="#" class="search-icon"> <i class="ser bi bi-search"></i> </a>
                     </div>
-                </div>
-                <thead>
+                    </div>
                     <br>
-                    <h4>Productos disponibles</h4>
                     <div id="tabla" class="row">
+                        <table id="testTable"
+                            class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
+                            <thead class="bg-primary">
+                                <tr>
+                                    <th scope="col">Codigo del producto</th>
+                                    <th scope="col">Producto</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Gestión</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A505</td>
+                                    <td>Filto de aire</td>
+                                    <td>50</td>
+                                    <td>
+                                        <i class="del bi bi-trash"></i>
+                                        <i class="bi bi-gear"></i>
+                                    
+                                    </td> 
+                                </tr>
+                                <tr>
+                                    <td>A506</td>
+                                    <td>Filtro de aceite</td>
+                                    <td>30</td>
+                                    <td><i class="del bi bi-trash"></i>
+                                        <i class="bi bi-gear"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>B808</td>
+                                    <td>Neumaticos</td>
+                                    <td>40</td>
+                                    <td>
+                                        <i class="del bi bi-trash"></i>
+                                        <i class="bi bi-gear"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>E666</td>
+                                    <td>Exploradoras</td>
+                                    <td>20</td>
+                                    <td>
+                                        <i class="del bi bi-trash"></i>
+                                        <i class="bi bi-gear"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tabla col-sm-4 border">
+                        <table class="tabla">
+                            <br>
+                            <h4>Productos solicitados</h4>
+                            <div id="tabla" class="row">
                         <table id="testTable"
                             class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
                             <thead class="bg-primary">
@@ -77,24 +147,18 @@
                                 <tr>
                                     <td>A505</td>
                                     <td>Filto de aire</td>
-                                    <td>50</td>
+                                    <td>1</td>
                                 </tr>
                                 <tr>
                                     <td>A506</td>
                                     <td>Filtro de aceite</td>
-                                    <td>30</td>
+                                    <td>1</td>
                                 </tr>
                                 <tr>
                                     <td>B808</td>
                                     <td>Neumaticos</td>
-                                    <td>40</td>
+                                    <td>2</td>
                                 </tr>
-                                <tr>
-                                    <td>E666</td>
-                                    <td>Exploradoras</td>
-                                    <td>20</td>
-                                </tr>
-                                <tr>
 
                             </tbody>
                         </table>
@@ -140,7 +204,7 @@
                         </table>
                     </div>
 
-          
+
         </div>
-       
+
     </div>

@@ -7,14 +7,14 @@
 <div id="cabeza" class="bg-primary d-flex flex-row-reverse">
     <div class="p-1">
         <i id="user" class="bi bi-people-fill"></i>
-        <span>Cliente</span>
+        <span>Mecánico</span>
         <label>Andres</label>
     </div>
 </div>
 <p>
-    <!--------------------- fin cabeza ---------------------------------------------------------->
+<!--------------------- fin cabeza ---------------------------------------------------------->
 
-    <!--------------------------Inicio formulario ----------------------------------------------------->
+<!--------------------------Inicio formulario ----------------------------------------------------->
 <div class="container">
 
     <div id="body-body" class="row">
@@ -328,115 +328,115 @@
 <!---------------------------Html preventiva----------------------------------------------------->
 
 <!---------------------------Css preventiva------------------------------------------------------>
-<style>
-    .mar {
-        margin: 10px;
-    }
+    <style>
+        .mar {
+            margin: 10px;
+        }
 
-    .ser {
-        font-size: 18px;
-        color: blue;
-    }
+        .ser {
+            font-size: 18px;
+            color: blue;
+        }
 
-    .cerrarguardar {
-        margin-top: 100px;
-        margin-left: 110px;
-    }
+        .cerrarguardar {
+            margin-top: 100px;
+            margin-left: 110px;
+        }
 
 
-    body {
-        background: linear-gradient(to right, #F0FAFC, #EBEBF6);
-    }
+        body {
+            background: linear-gradient(to right, #F0FAFC, #EBEBF6);
+        }
 
-    #cabeza {
-        color: white;
-    }
+        #cabeza {
+            color: white;
+        }
 
-    #user {
-        font-size: 30px;
-        margin-right: 10px;
+        #user {
+            font-size: 30px;
+            margin-right: 10px;
 
-    }
+        }
 
-    #tabla {
-        height: 250px;
-        overflow-y: auto;
-        background: linear-gradient(to right, #FFE8C7, #EBEBF6);
-        border-radius: 10px 10px;
-    }
+        #tabla {
+            height: 250px;
+            overflow-y: auto;
+            background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+            border-radius: 10px 10px;
+        }
 
-    table {
-        text-align: center;
-        font-size: 13px;
-    }
+        table {
+            text-align: center;
+            font-size: 13px;
+        }
 
-    th {
-        color: white;
-    }
+        th {
+            color: white;
+        }
 
-    .cabeza {
-        background: linear-gradient(to right, #FFE8C7, #EBEBF6);
-        border-radius: 10px 10px;
-    }
+        .cabeza {
+            background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+            border-radius: 10px 10px;
+        }
 
-    .pul {
-        background: linear-gradient(to right, #FFE8C7, #EBEBF6);
-        border-radius: 10px 10px;
-        height: 150px;
-        overflow-y: auto;
-    }
+        .pul {
+            background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+            border-radius: 10px 10px;
+            height: 150px;
+            overflow-y: auto;
+        }
 
-    #body-body {
-        background: whitesmoke;
-        border-radius: 10px 10px;
-    }
-</style>
+        #body-body {
+            background: whitesmoke;
+            border-radius: 10px 10px;
+        }
+    </style>
 <!---------------------------Css preventiva------------------------------------------------------>
 
 <!---------------------------javascript preventiva----------------------------------------------->
-<script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (() => {
-        'use strict'
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
 
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        const forms = document.querySelectorAll('.needs-validation')
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
 
-        // Loop over them and prevent submission
-        Array.from(forms).forEach(form => {
-            form.addEventListener('submit', event => {
-                if (!form.checkValidity()) {
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
 
-                    event.preventDefault()
-                    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-                    const alert = (message, type) => {
-                        const wrapper = document.createElement('div')
-                        wrapper.innerHTML = [
-                            `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-                            `   <div>${message}</div>`,
-                            '   <button type="button" id="closes" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-                            '</div>'
-                        ].join('')
+                        event.preventDefault()
+                        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+                        const alert = (message, type) => {
+                            const wrapper = document.createElement('div')
+                            wrapper.innerHTML = [
+                                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                                `   <div>${message}</div>`,
+                                '   <button type="button" id="closes" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                                '</div>'
+                            ].join('')
 
-                        alertPlaceholder.append(wrapper)
+                            alertPlaceholder.append(wrapper)
+                        }
+                        const alertTrigger = document.getElementById('liveAlertBtn')
+                        if (alertTrigger) {
+                            alertTrigger.addEventListener('click', () => {
+                                alert('Vehículo registrado con exito', 'success')
+                            })
+                        }
                     }
-                    const alertTrigger = document.getElementById('liveAlertBtn')
-                    if (alertTrigger) {
-                        alertTrigger.addEventListener('click', () => {
-                            alert('Vehículo registrado con exito', 'success')
-                        })
-                    }
-                }
-                form.classList.add('was-validated')
+                    form.classList.add('was-validated')
 
-            }, false)
+                }, false)
 
 
-        })
-    })()
+            })
+        })()
 
 
 
 
-</script>
+    </script>
 <!---------------------------javascript preventiva----------------------------------------------->
