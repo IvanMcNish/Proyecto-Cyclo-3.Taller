@@ -3,81 +3,40 @@
 @{
 }
 
-<style>
-    .table {
-        text-align: center;
-        border: 1px solid black;
-    }
-
-    .tabla {
-        border: 1px solid black;
-        
-    }
-
-
-    .notas {
-        margin-top: 300px;
-    }
-
-    .ediguar {
-        margin-top: 40px;
-      
-    }
-
-    .foto{
-        margin-top: 20px;
-    }
-
-    .form-group col{
-        text-align: center;
-    }
-   
-</style>
-
-
-<div class="bg-primary d-flex flex-row-reverse">
-    <div class="p-2">
-        <span>Mecanico </span>
+<!---------------------------Html-head preventiva------------------------------------------------>
+<div id="cabeza" class="bg-primary d-flex flex-row-reverse">
+    <div class="p-1">
+        <i id="user" class="bi bi-people-fill"></i>
+        <span>Mecanico</span>
         <label>Martillo</label>
     </div>
-    <div class="p-2 responsive-border">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-square"
-            viewBox="0 0 16 16">
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-            <path
-                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z" />
-        </svg>
-    </div>
 </div>
-
 <p>
-
-
-    <!---------------------------Html-User preventiva------------------------------------------------>
+<!---------------------------Html-head preventiva------------------------------------------------>
 
     <!---------------------------Html preventiva----------------------------------------------------->
 
-<div class="container">
-    <div class="row">
-            <h1>Historial de trabajo </h1>
-        <div class="col-sm-5">  
-            <div class="table-responsive border">
-                <table class="table">
-                    <thead>
-                        <br>
-                        <h4>Ordenes trabajadas</h4>
-                        <div class= "input-group rounded">
-                            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                            <span class="input-group-text border-0" id="search-addon">
-                                <i class="fas fa-search"></i>
-                            </span>
-                        </div>
-                        <br>
+<div id="body-body" class="container">
+    <div   class="row">
+
+        <div class="col-sm-4 ">
+            <h5>Ordenes trabajadas</h5>
+            <br>
+            <form class="d-flex border" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <br>
+            <div class="row" id="tabla">
+                <table id="testTable"
+                    class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
+                    <thead class="bg-primary">
                         <tr>
-                            <th>Placa del vehículo</th>
-                            <th>Identificación Mecánico Encargado</th>
-                            <th>Nombre Mecánico Encargado</th>
-                            <th>Fecha de trabajo asignado </th>
+                            <th>Placa</th>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Fecha asignado</th>
+                            <th>Gestión</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -86,6 +45,7 @@
                             <td>7254896</td>
                             <td>Martillo </td>
                             <td>30/08/22</td>
+                            <td><i class="bi bi-gear ser"></i></td>
                         </tr>
 
                         <tr>
@@ -93,6 +53,7 @@
                             <td>7254896</td>
                             <td>Martillo </td>
                             <td>26/08/22</td>
+                            <td><i class="bi bi-gear ser"></i></td>
                         </tr>
 
                         <tr>
@@ -100,60 +61,256 @@
                             <td>7254896</td>
                             <td>Martillo </td>
                             <td>20/08/22</td>
+                            <td><i class="bi bi-gear ser"></i></td>
                         </tr>
-                        
+                        <tr>
+                            <td>JTG897</td>
+                            <td>7254896</td>
+                            <td>Martillo </td>
+                            <td>20/08/22</td>
+                            <td><i class="bi bi-gear ser"></i></td>
+                        </tr>
+                        <tr>
+                            <td>JTG897</td>
+                            <td>7254896</td>
+                            <td>Martillo </td>
+                            <td>20/08/22</td>
+                            <td><i class="bi bi-gear ser"></i></td>
+                        </tr>
+                        <tr>
+                            <td>JTG897</td>
+                            <td>7254896</td>
+                            <td>Martillo </td>
+                            <td>20/08/22</td>
+                            <td><i class="bi bi-gear ser"></i></td>
+                        </tr>
+                        <tr>
+                            <td>JTG897</td>
+                            <td>7254896</td>
+                            <td>Martillo </td>
+                            <td>20/08/22</td>
+                            <td><i class="bi bi-gear ser"></i></td>
+                        </tr>
+                        <tr>
+                            <td>JTG897</td>
+                            <td>7254896</td>
+                            <td>Martillo </td>
+                            <td>20/08/22</td>
+                            <td><i class="bi bi-gear ser"></i></td>
+                        </tr>
+                        <tr>
+                            <td>JTG897</td>
+                            <td>7254896</td>
+                            <td>Martillo </td>
+                            <td>20/08/22</td>
+                            <td><i class="bi bi-gear ser"></i></td>
+                        </tr>
+                        <tr>
+                            <td>JTG897</td>
+                            <td>7254896</td>
+                            <td>Martillo </td>
+                            <td>20/08/22</td>
+                            <td><i class="bi bi-gear ser"></i></td>
+                        </tr>
+                        <tr>
+                            <td>JTG897</td>
+                            <td>7254896</td>
+                            <td>Martillo </td>
+                            <td>20/08/22</td>
+                            <td><i class="bi bi-gear ser"></i></td>
+                        </tr>
+                        <tr>
+                            <td>JTG897</td>
+                            <td>7254896</td>
+                            <td>Martillo </td>
+                            <td>20/08/22</td>
+                            <td><i class="bi bi-gear ser"></i></td>
+                        </tr>
+                        <tr>
+                            <td>JTG897</td>
+                            <td>7254896</td>
+                            <td>Martillo </td>
+                            <td>20/08/22</td>
+                            <td><i class="bi bi-gear ser"></i></td>
+                        </tr>
+                        <tr>
+                            <td>JTG897</td>
+                            <td>7254896</td>
+                            <td>Martillo </td>
+                            <td>20/08/22</td>
+                            <td><i class="bi bi-gear ser"></i></td>
+                        </tr>
+                        <tr>
+                            <td>JTG897</td>
+                            <td>7254896</td>
+                            <td>Martillo </td>
+                            <td>20/08/22</td>
+                            <td><i class="bi bi-gear ser"></i></td>
+                        </tr>
+
                     </tbody>
                 </table>
-            </div> 
-        </div>       
-        <div class="col-sm-4 border">
-                <table class="tabla">
-                    <br>
-                    <h4>Datos de orden </h4>
-                    <br>
-                    <div class="card">
-                        <div class="card-header">
-                            Descripción de Orden 
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Placa:</li>
-                            <li class="list-group-item">Marca del vehículo: </li>
-                            <li class="list-group-item">Color del vehículo:</li>
-                            <li class="text area">Caso:</li>
-                            <div class="form-text col">
-                            <label for="exampleInputReportedetrabajo" >Reporte de trabajo:</label>
-                            <input type="text" class="form-control" id="exampleInputReportedetrabajo" placeholder="Ingrese su Reporte de trabajo Aquí">
-                            </div>
-                            </div>
-                        </ul>
-                    </div>
-                    
-                    <div class="ediguar">
-                    <button class="btn btn-primary" type="submit">Reabrir Caso</button>
-                    
-                   
-                    </div>
-                </table>    
+            </div>
+
+
+
+
+
+
+
         </div>
-        
-        <div class="col-sm-3 border">
-                <div class="needs-validation" novalidate>
-                    <br>
-                    <h4>Fecha de Solicitud</h4>
-                    <input type="date" class="form-control" id="validationCustom01" required>
-                    
+
+        <div class="col-sm-5 mar ">
+            <div>
+                <div class="row">
+                    <h5 for="">Caso</h5>
                 </div>
-                 <div class="col-sm-12">
-                    <div class="foto">
-                         <img width="100%" height="auto"  src="https://images.pexels.com/photos/4489737/pexels-photo-4489737.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-                         
+
+                <div class="row pul">
+                    <div class="col ">
+                        <div class="row">
+                            <div class="col">
+                                <label for="validationCustom07" class="form-label">Nombre:</label>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col">
+                                <label for="validationCustom07" class="form-label">Contacto:</label>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col">
+                                <label for="validationCustom07" class="form-label">Vehículo:</label>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col">
+                                <label for="validationCustom07" class="form-label">Nota de revisión:</label>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col">
+                                <label for="validationCustom07" class="form-label">Caso:</label>
+                            </div>
+                        </div>
                     </div>
-                    <br>
-            </div> 
+
+                    <div class="col ">
+                        <div class="row">
+                            <div class="col">
+                                <label for="validationCustom07" class="form-label">José:</label>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col">
+                                <label for="validationCustom07" class="form-label">7873553535:</label>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col">
+                                <label for="validationCustom07" class="form-label">Ford</label>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col">
+                                <label for="validationCustom07" class="form-label">El carro solo les falla las lueces
+                                    delantera</label>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col">
+                                <label for="validationCustom07" class="form-label">Se realizaba cambio de llantas pero
+                                    de
+                                    repente sono algo de bajo del carro y luego se balanceaba solo</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ediguar">
+                <button id="liveAlertBtn" class="btn btn-primary" type="submit">Reabrir Caso</button>
+            </div>
         </div>
+
+
+        <div class="col">
+            <img width="100%" height="auto"
+                src="https://images.pexels.com/photos/4489737/pexels-photo-4489737.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="">
+        </div>
+
+
     </div>
-</div>
 
-          
+    <!---------------------------Html preventiva----------------------------------------------------->
 
+    <!----------------------------Css-User preventiva------------------------------------------------>
+    <style>
+
+        .ediguar{
+            display: block;
+            margin-top: 100px;
             
+        }
+
+        .mar {
+            margin-left: 9px;
+        }
+
+        .ser {
+            font-size: 18px;
+            color: blue;
+        }
+
+        body {
+            background: linear-gradient(to right, #F0FAFC, #EBEBF6);
+        }
+
+        #cabeza {
+            color: white;
+        }
+
+        #user {
+            font-size: 30px;
+            margin-right: 10px;
+
+        }
+
+        #tabla {
+            height: 250px;
+            overflow-y: auto;
+            background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+            border-radius: 10px 10px;
+        }
+
+        table {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        th {
+            color: white;
+        }
+
+        .cabeza {
+            background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+            border-radius: 10px 10px;
+        }
+
+        .pul {
+            background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+            border-radius: 10px 10px;
+            height: 200px;
+            overflow-y: auto;
+        }
+
+        #body-body {
+            background: whitesmoke;
+            border-radius: 10px 10px;
+        }
+    </style>
+    <!----------------------------Css-User preventiva------------------------------------------------>
+
+    <!-----------------------------Js-User preventiva------------------------------------------------>
+    <!-----------------------------Js-User preventiva------------------------------------------------>
