@@ -6,27 +6,24 @@
 <style>
     .table {
         text-align: center;
-        border: 1px solid black;
+        border-radius: 10px;
+        background: linear-gradient(to right, #FFE8C7, #EBEBF6);
     }
 
     .tabla {
-        border: 1px solid black;
-    }
+        border-radius: 10px;
+        background: linear-gradient(to right, #FFE8C7, #EBEBF6);
 
 
-    .notas {
-        margin-top: 300px;
-    }
+        .notas {
+            margin-top: 300px;
+        }
 
-    .ediguar {
-        margin-top: 80px;
-        m;
-    }
+        .ediguar {
+            margin-top: 80px;
+        }
 
-    .foto{
-        margin-top: 40px;
-    }
-   
+
 </style>
 
 
@@ -50,104 +47,100 @@
 
     <!---------------------------Html preventiva----------------------------------------------------->
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-            <h1>Manejo de inventario</h1>
-        <div class="col-sm-4 border">
+        <h1>Manejo de inventario</h1>
+        <div class="table col-sm-6">
             <table class="table-responsive">
+                <br>
+                <div class="d-flex h-5 justify-content-left min-vh-0 user-select-none">
+                    <br>
+                    <div class="h-25 search">
+                        <input type="text" class="search-input" placeholder="Buscar producto" name="">
+                        <a href="#" class="search-icon"> <i class="ser bi bi-search"></i> </a>
+                    </div>
+                </div>
                 <thead>
                     <br>
                     <h4>Productos disponibles</h4>
-                    <tr>
-                        <th>Codigo del Producto</th>
-                        <th>Producto</th>
-                        <th>Cantidad</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1213</td>
-                        <td>Filtro de aire</td>
-                        <td>30</td>
-                    </tr>
+                    <div id="tabla" class="row">
+                        <table id="testTable"
+                            class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
+                            <thead class="bg-primary">
+                                <tr>
+                                    <th scope="col">Codigo del producto</th>
+                                    <th scope="col">Producto</th>
+                                    <th scope="col">Cantidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A505</td>
+                                    <td>Filto de aire</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>A506</td>
+                                    <td>Filtro de aceite</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>B808</td>
+                                    <td>Neumaticos</td>
+                                    <td>40</td>
+                                </tr>
+                                <tr>
+                                    <td>E666</td>
+                                    <td>Exploradoras</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
 
-                    <tr>
-                        <td>1214</td>
-                        <td>Filtro de aceite</td>
-                        <td>50</td>
-                    </tr>
-
-                    <tr>
-                        <td>2015</td>
-                        <td>Neumatico</td>
-                        <td>60</td>
-                    </tr>
-                     <tr>
-                        <td>1514</td>
-                        <td>Pastas de frenos</td>
-                        <td>20</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>        
-        <div class="col-sm-4 border">
-                <table class="tabla">
-                    <br>
-                    <h4>Productos a solicitar </h4>
-                        <label for="validationCustom04" class="form-label"> Codigo del Producto:</label>
-                    <div class="col">
-                        <input type="text" class="form-control" id="validationCustom04" required>
-                        <div class="invalid-feedback">
-                            este campo es obligatorio
-                        </div>
+                            </tbody>
+                        </table>
                     </div>
-                    <br>
-                   <div class="col">
-                        <label for="validationCustom04" class="form-label"> Producto:</label>
+                    <div class="tabla col-sm-6 border">
+                        <table class="tabla">
+                            <br>
+                            <h4>Productos a solicitar </h4>
+                            <label for="validationCustom04" class="form-label"> Codigo del Producto:</label>
+                            <div class="col">
+                                <input type="text" class="form-control" id="validationCustom04" required>
+                                <div class="invalid-feedback">
+                                    este campo es obligatorio
+                                </div>
+                            </div>
+                            <br>
+                            <div class="col">
+                                <label for="validationCustom04" class="form-label"> Producto:</label>
+                            </div>
+                            <div>
+                                <select class="form-select" id="validationCustom03" required>
+                                    <option selected disabled value=""></option>
+                                    <option>Filtro Aceite</option>
+                                    <option>Filtro de aire</option>
+                                    <option>Neumatico</option>
+                                    <option>Pastas de freno</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="col">
+                                <label for="validationCustom04" class="form-label"> Cantidad:</label>
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" id="validationCustom04" required>
+                            </div>
+                            <br>
+                            <div class="ediguar">
+                                <button class="btn btn-primary" type="submit">Solicitar</button>
+                                <button class="btn btn-primary" type="submit">Eliminar</button>
+                            </div>
+                            <br>
+                        </table>
                     </div>
-                    <div>
-                        <select class="form-select" id="validationCustom03" required>
-                            <option selected disabled value=""></option>
-                            <option>Filtro Aceite</option>
-                            <option>Filtro de aire</option>
-                            <option>Neumatico</option>
-                            <option>Pastas de freno</option>
-                            <option>Otro</option>
-                        </select>
-                    </div>
-                    <br>
-                    <div class="col">
-                        <label for="validationCustom04" class="form-label"> Cantidad:</label>
-                    </div>
-                    <div class="col">
-                        <input type="number" class="form-control" id="validationCustom04" required>
-                    </div>
-                    
-                    <div class="ediguar">
-                    <button class="btn btn-primary" type="submit">Solicitar</button>
-                    <button class="btn btn-primary" type="submit">Eliminar</button>
-                    </div>
-                </table>    
-        </div>
-        
-        <div class="col-sm-4 border">
-                <div class="needs-validation" novalidate>
-                    <br>
-                    <h4>Fecha de Solicitud</h4>
-                    <input type="date" class="form-control" id="validationCustom01" required>
-                    
-                </div>
-                 <div class="col-sm-12">
-                    <div class="foto">
-                         <img width="100%" height="auto"  src="https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=600)" alt="">
-                         
-                    </div>
-                    <br>
-            </div> 
-        </div>
-    </div>
-</div>
 
           
-
-            
+        </div>
+       
+    </div>
