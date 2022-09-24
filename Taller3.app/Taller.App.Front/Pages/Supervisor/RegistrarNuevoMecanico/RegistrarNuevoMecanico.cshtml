@@ -64,13 +64,12 @@
         border-radius: 10px;
     }
 
-    .mar{
+    .mar {
         margin-left: 9px;
     }
 
     th {
         color: white;
-        
 </style>
 
 <div id="cabeza" class="bg-primary d-flex flex-row-reverse">
@@ -114,12 +113,18 @@
                 </div>
                 <div class="row">
                     <div class="col">
+                        <label for="MecanicoNombre" class="col-form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="NombreMecanico" name="Nombre">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
                         <label for="validationCustom02" class="form-label">Numero de Identificación:</label>
                     </div>
                     <br>
                     <br>
                     <div class="col">
-                        <input type="text" class="form-control" id="validationCustom02" required>
+                        <input type="text" class="form-control" id="IdMecanico" name="MecanicoId" required>
                         <div class="invalid-feedback">
                             Campo requerido
                         </div>
@@ -253,6 +258,9 @@
     <div class="row base">
 
         <h5>Mecánicos registrados</h5>
+            @*boton para agregar mostrar formulario y agregar a la tabla*@
+        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#IdModalMecanico"
+            data-bs-whatever="@@getbootstrap">Agregar</button>
 
             @*buscador*@
         <div class="d-flex h-5 justify-content-left min-vh-0 user-select-none">
@@ -276,7 +284,7 @@
                         <th scope="col">Fecha de Nacimiento</th>
                         <th scope="col">nivel de Estudio</th>
                         <th scope="col">Especialidad</th>
-                        <th scope="col">Gestión</th>
+                        <th scope="col">Gestións</th>
 
                     </tr>
                 </thead>
@@ -296,7 +304,9 @@
                             <td>@m.Contraseña</td>
                             <td>
                                 <i class="edi bi bi-pencil"></i>
-                                <i class="del bi bi-trash"></i>
+                                <form method="POST">
+                                    <button class="action" asp-page-handler="Delete" asp-route-MecanicoId="@m.MecanicoId">Eliminar</button>
+                                </form>
                             </td>
 
                         </tr>

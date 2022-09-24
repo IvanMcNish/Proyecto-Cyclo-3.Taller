@@ -12,6 +12,9 @@ namespace Taller.App.Persistencia
         public virtual DbSet<Mecanico> Mecanicos {get;set;}
 
         public virtual DbSet<Revision> Revisiones {get;set;}
+
+        //public virtual DbSet<Vehiculo> Vehiculos {get;set;}
+
          protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             try{
@@ -21,5 +24,15 @@ namespace Taller.App.Persistencia
                 
                 }
         }
+    
+        protected override void OnModelCreating (ModelBuilder modelBuilder)
+        {
+           // modelBuilder.Entity<Vehiculo>()
+          //  .HasOne(b => b.Clientes)
+           // .WithOne(i => i.Vehiculo)
+           // .HasForeignKey<Vehiculo>(b => b.ClientesId);
+
+        }
     }
+
 }
