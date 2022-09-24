@@ -50,20 +50,81 @@
 <div class="container-fluid">
     <div class="row">
         <h1>Manejo de inventario</h1>
-        <div class="table col-sm-6">
+        <div class=" col-sm-8">
             <table class="table-responsive">
                 <br>
-                <div class="d-flex h-5 justify-content-left min-vh-0 user-select-none">
+                
+                <thead>
+                    
+                    <br>
+                    <h4>Productos disponibles</h4>
+                    <br>
+                    <div class="table d-flex h-5 justify-content-left min-vh-0 user-select-none">
                     <br>
                     <div class="h-25 search">
                         <input type="text" class="search-input" placeholder="Buscar producto" name="">
                         <a href="#" class="search-icon"> <i class="ser bi bi-search"></i> </a>
                     </div>
-                </div>
-                <thead>
+                    </div>
                     <br>
-                    <h4>Productos disponibles</h4>
                     <div id="tabla" class="row">
+                        <table id="testTable"
+                            class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
+                            <thead class="bg-primary">
+                                <tr>
+                                    <th scope="col">Codigo del producto</th>
+                                    <th scope="col">Producto</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Gestión</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A505</td>
+                                    <td>Filto de aire</td>
+                                    <td>50</td>
+                                    <td>
+                                        <i class="del bi bi-trash"></i>
+                                        <i class="bi bi-gear"></i>
+                                    
+                                    </td> 
+                                </tr>
+                                <tr>
+                                    <td>A506</td>
+                                    <td>Filtro de aceite</td>
+                                    <td>30</td>
+                                    <td><i class="del bi bi-trash"></i>
+                                        <i class="bi bi-gear"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>B808</td>
+                                    <td>Neumaticos</td>
+                                    <td>40</td>
+                                    <td>
+                                        <i class="del bi bi-trash"></i>
+                                        <i class="bi bi-gear"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>E666</td>
+                                    <td>Exploradoras</td>
+                                    <td>20</td>
+                                    <td>
+                                        <i class="del bi bi-trash"></i>
+                                        <i class="bi bi-gear"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tabla col-sm-4 border">
+                        <table class="tabla">
+                            <br>
+                            <h4>Productos solicitados</h4>
+                            <div id="tabla" class="row">
                         <table id="testTable"
                             class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
                             <thead class="bg-primary">
@@ -77,69 +138,22 @@
                                 <tr>
                                     <td>A505</td>
                                     <td>Filto de aire</td>
-                                    <td>50</td>
+                                    <td>1</td>
                                 </tr>
                                 <tr>
                                     <td>A506</td>
                                     <td>Filtro de aceite</td>
-                                    <td>30</td>
+                                    <td>1</td>
                                 </tr>
                                 <tr>
                                     <td>B808</td>
                                     <td>Neumaticos</td>
-                                    <td>40</td>
+                                    <td>2</td>
                                 </tr>
-                                <tr>
-                                    <td>E666</td>
-                                    <td>Exploradoras</td>
-                                    <td>20</td>
-                                </tr>
-                                <tr>
 
                             </tbody>
                         </table>
                     </div>
-                    <div class="tabla col-sm-6 border">
-                        <table class="tabla">
-                            <br>
-                            <h4>Productos a solicitar </h4>
-                            <label for="validationCustom04" class="form-label"> Codigo del Producto:</label>
-                            <div class="col">
-                                <input type="text" class="form-control" id="validationCustom04" required>
-                                <div class="invalid-feedback">
-                                    este campo es obligatorio
-                                </div>
-                            </div>
-                            <br>
-                            <div class="col">
-                                <label for="validationCustom04" class="form-label"> Producto:</label>
-                            </div>
-                            <div>
-                                <select class="form-select" id="validationCustom03" required>
-                                    <option selected disabled value=""></option>
-                                    <option>Filtro Aceite</option>
-                                    <option>Filtro de aire</option>
-                                    <option>Neumatico</option>
-                                    <option>Pastas de freno</option>
-                                    <option>Otro</option>
-                                </select>
-                            </div>
-                            <br>
-                            <div class="col">
-                                <label for="validationCustom04" class="form-label"> Cantidad:</label>
-                            </div>
-                            <div class="col">
-                                <input type="number" class="form-control" id="validationCustom04" required>
-                            </div>
-                            <br>
-                            <div class="ediguar">
-                                <button class="btn btn-primary" type="submit">Solicitar</button>
-                                <button class="btn btn-primary" type="submit">Eliminar</button>
-                            </div>
-                            <br>
-                        </table>
-                    </div>
-
           
         </div>
        
