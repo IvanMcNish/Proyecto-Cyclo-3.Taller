@@ -3,6 +3,14 @@
 @{
 }
 <style>
+    #cabeza {
+        color: white;
+    }
+
+    #user {
+        font-size: 30px;
+        margin-right: 10px;
+    }
 
     body {
         background: linear-gradient(to right, #F0FAFC, #EBEBF6);
@@ -56,19 +64,11 @@
     
 </style>
 
-
-<div class="bg-primary d-flex flex-row-reverse">
-    <div class="p-2">
-        <span>Supervisor</span>
-        <label>Carlos</label>
-    </div>
-    <div class="p-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-square"
-            viewBox="0 0 16 16">
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-            <path
-                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z" />
-        </svg>
+<div id="cabeza" class="bg-primary d-flex flex-row-reverse">
+    <div class="p-1">
+        <i id="user" class="bi bi-people-fill"></i>
+        <span>Cliente</span>
+        <label>Andres</label>
     </div>
 </div>
 <p>
@@ -76,14 +76,14 @@
 
     <!--------------------- inicio formulario --------------------------------------------------------------->
 
-<div class="container-border">
+<div class="container-fluid">
 
     <div class="row background: linear-gradient(to right, #FFE8C7, #EBEBF6);">
 
         <div class="regVeh col-sm-6 border-responsive">
             <div class="registrar"></div>
             <br>
-            <h4>Registrar nuevo vehículo</h4>
+            <h4>Registrar Nuevo Vehículo</h4>
             <p>
             <form class="needs-validation" novalidate>
                 <div class="row">
@@ -98,11 +98,11 @@
                     </div>
                     <br>
                     <div class="col">
-                        <label for="validationCustom02" class="form-label">Marca de vehículo:</label>
+                        <label for="validationCustom02" class="form-label">Marca de Vehículo:</label>
                     </div>
                     <div class="col">
                         <select class="form-select" id="validationCustom02" required>
-                            <option selected disabled value="">Marque una opción.</option>
+                            <option selected disabled value="">Seleccione</option>
                             <option>Mazda</option>
                             <option>Jeep</option>
                             <option>Renault</option>
@@ -118,11 +118,11 @@
                 <br>
                     <div class="row">
                     <div class="col">
-                        <label for="validationCustom03" class="form-label">Tipo de vehículo?:</label>
+                        <label for="validationCustom03" class="form-label">Tipo de Vehículo:</label>
                     </div>
                     <div class="col">
                         <select class="form-select" id="validationCustom03" required>
-                            <option selected disabled value="">Marque una opción.</option>
+                            <option selected disabled value="">Seleccione</option>
                             <option>Buseta</option>
                             <option>Microbus</option>
                             <option>Campero</option>
@@ -136,23 +136,23 @@
                     </div>
                     <br>
                     <div class="col">
-                        <label for="validationCustom04" class="form-label">Modelo del vehículo:</label>
+                        <label for="validationCustom04" class="form-label">Modelo del Vehículo:</label>
                     </div>
                     <div class="col">
                         <input type="text" class="form-control" id="validationCustom04" required>
                         <div class="invalid-feedback">
-                            este campo es obligatorio
+                            Este campo es obligatorio
                         </div>
                     </div>
                 </div>
                 <br>
                 <div class="row">
                     <div class="col">
-                        <label for="validationCustom05" class="form-label">N° pasajeros:</label>
+                        <label for="validationCustom05" class="form-label">N° Pasajeros:</label>
                     </div>
                     <div class="col">
                         <select class="form-select" id="validationCustom05" required>
-                            <option selected disabled value="">Marque una opción.</option>
+                            <option selected disabled value="">Seleccione</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
@@ -169,7 +169,7 @@
                     </div>
                     <div class="col">
                         <select class="form-select" id="validationCustom06" required>
-                            <option selected disabled value="">Marque una opción.</option>
+                            <option selected disabled value="">Seleccione</option>
                             <option>1200</option>
                             <option>1400</option>
                             <option>1600</option>
@@ -184,12 +184,12 @@
                 <br>
                 <div class="row">
                     <div class="col">
-                        <label for="validationCustom07" class="form-label">Pais de Origen:</label>
+                        <label for="validationCustom07" class="form-label">País de Origen:</label>
                     </div>
                     <br>
                     <div class="col">
                         <select class="form-select" id="validationCustom07" required>
-                            <option selected disabled value="">Marque una opción.</option>
+                            <option selected disabled value="">Seleccione</option>
                             <option>Colombia</option>
                             <option>EEUU</option>
                             <option>Alemania</option>
@@ -203,12 +203,12 @@
                     </div>
                     <br>
                     <div class="col">
-                        <label for="validationCustom08" class="form-label">¿Tiene accesorios el vehículo?:</label>
+                        <label for="validationCustom08" class="form-label">¿El vehículo tiene accesorios?:</label>
                     </div>
                     <br>
                     <div class="col">
                         <select class="form-select" id="validationCustom08">
-                            <option selected disabled value="">No obligatorio.</option>
+                            <option selected disabled value="">Seleccione</option>
                             <option>Si</option>
                             <option>No</option>
                         </select>
@@ -237,10 +237,10 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                             <label class="form-check-label" for="invalidCheck">
-                                Acepto los terminos y condiciones
+                                Acepto los Términos y Condiciones
                             </label>
                             <div class="invalid-feedback">
-                                Debe aceptar los terminos y condiciones para continuar.
+                                Debe aceptar los Términos y Condiciones para continuar.
                             </div>
                         </div>
                     </div>
@@ -272,7 +272,7 @@
             <table id="testTable"
                 class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
                     <br>
-                    <h4>Vehículos registrados</h4>
+                    <h4>Vehículos Registrados</h4>
                     <br>
 
                     @*buscador*@
