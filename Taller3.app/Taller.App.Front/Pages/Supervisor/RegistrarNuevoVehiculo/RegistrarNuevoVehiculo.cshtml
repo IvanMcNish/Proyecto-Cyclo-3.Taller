@@ -3,6 +3,12 @@
 @{
 }
 <style>
+
+    #tabla{
+        overflow-y: auto;
+        height: 150px;
+    }
+
     #cabeza {
         color: white;
     }
@@ -23,9 +29,16 @@
         overflow-y: auto;
         background: linear-gradient(to right, #FFE8C7, #EBEBF6);
         border-radius: 10px;
-    
+
     }
 
+    .mar{
+        margin-left: 9px;
+    }
+
+    th {
+        color: white;
+    }
     .notas {
         margin-top: 300px;
     }
@@ -34,7 +47,7 @@
         margin-top: 40px;
     }
 
-    .foto{
+    .foto {
         margin-top: 40px;
     }
 
@@ -47,21 +60,20 @@
         color: blue;
     }
 
-    .registrar{
-        background: linear-gradient(to right, #FFE8C7, #EBEBF6);    
+    .registrar {
+        background: linear-gradient(to right, #FFE8C7, #EBEBF6);
 
     }
 
-    .regVeh{
-        background: linear-gradient(to right, #FFE8C7, #EBEBF6);  
+    .regVeh {
+        background: linear-gradient(to right, #FFE8C7, #EBEBF6);
         border-radius: 10px;
     }
 
-    .fecha{
-    background: linear-gradient(to right, #FFE8C7, #EBEBF6);  
-    border-radius: 10px;
+    .fecha {
+        background: linear-gradient(to right, #FFE8C7, #EBEBF6);
+        border-radius: 10px;
     }
-    
 </style>
 
 <div id="cabeza" class="bg-primary d-flex flex-row-reverse">
@@ -116,7 +128,7 @@
                     </div>
                 </div>
                 <br>
-                    <div class="row">
+                <div class="row">
                     <div class="col">
                         <label for="validationCustom03" class="form-label">Tipo de Vehículo:</label>
                     </div>
@@ -256,16 +268,24 @@
             </p>
         </div>
 
-        <div class="fecha col-sm-6 border ">
+        <div class="fecha col border mar">
             <div class="col-sm-12">
-                    <div class="foto">
-                         <img width="100%" height="auto" src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-                         
-                    </div>
-                    <br>
-            </div> 
-        </div>
+                <div class="foto">
+                    <img width="100%" height="auto"
+                        src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">
 
+                </div>
+                <br>
+            </div>
+        </div>
+        <p>
+        <div class="row base">
+            <br>
+            <h5>Vehículos Registrados</h5>
+            <br>
+
+<<<<<<< HEAD
        <div class="row base">
         <div id="tabla" class="responsive-border">
             <table id="testTable"
@@ -283,6 +303,20 @@
                     </div>
                     <br>
                     <br>
+=======
+                @*buscador*@
+            <div class="d-flex h-5 justify-content-left min-vh-0 user-select-none">
+                <div class="h-25 search">
+                    <input type="text" class="search-input" placeholder="Buscar por Número..." name="">
+                    <a href="#" class="search-icon"> <i class="ser bi bi-search"></i> </a>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div id="tabla">
+                <table class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
+                    
+>>>>>>> fea3586fb551d2b1df1b374c42a4da744d093107
                     <thead class="bg-primary">
                         <tr>
                             <th scope="col">Placa</th>
@@ -293,9 +327,9 @@
                             <th scope="col">N. pasajeros</th>
                             <th scope="col">Accesorios adicionales</th>
                             <th scope="col"> Gestión</th>
-                             
+
                         </tr>
-                        
+
                     </thead>
                     <tbody>
                         <tr>
@@ -313,7 +347,7 @@
 
                         </tr>
                         <tr>
-                           <td>JHR589</td>
+                            <td>JHR589</td>
                             <td>Ford</td>
                             <td>2021</td>
                             <td>1800</td>
@@ -339,18 +373,16 @@
                             </td>
                         </tr>
                     </tbody>
-            </table>
-           
+                </table>
+
+            </div>
+
         </div>
-
     </div>
-</div>
 
 
 
-    <style>
-
-    </style>
+   
 
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -375,7 +407,7 @@
 
         const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 
-            const alert = (message, type) => {
+        const alert = (message, type) => {
             const wrapper = document.createElement('div')
             wrapper.innerHTML = [
                 `<div class="alert alert-${type} alert-dismissible" role="alert">`,
@@ -385,15 +417,15 @@
             ].join('')
 
             alertPlaceholder.append(wrapper)
-            }
+        }
 
-            const alertTrigger = document.getElementById('liveAlertBtn')
-            if (alertTrigger) {
+        const alertTrigger = document.getElementById('liveAlertBtn')
+        if (alertTrigger) {
             alertTrigger.addEventListener('click', () => {
                 alert('Vehículo registrado con exito', 'success')
             })
-            }    
+        }
 
 
     </script>
-<!--------------------- fin formulario --------------------------------------------------------------->
+    <!--------------------- fin formulario --------------------------------------------------------------->
