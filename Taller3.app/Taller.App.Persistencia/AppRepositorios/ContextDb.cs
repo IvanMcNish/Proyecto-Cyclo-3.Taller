@@ -15,12 +15,13 @@ namespace Taller.App.Persistencia
 
         public virtual DbSet<Cliente> Clientes {get;set;}
 
-       public virtual DbSet<Vehiculo> Vehiculos {get;set;}
+        public virtual DbSet<Vehiculo> Vehiculos {get;set;}
 
          protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             try{
                 optionsBuilder.UseSqlServer("Server=tcp:server-tallertic-4.database.windows.net,1433;Initial Catalog=bd_tallertic;Persist Security Info=False;User ID=admintic;Password=Tallermintic4;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+                
                 }
             catch(System.Exception)
             {

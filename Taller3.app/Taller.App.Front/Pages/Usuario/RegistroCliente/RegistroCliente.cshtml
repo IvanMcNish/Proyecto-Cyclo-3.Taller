@@ -1,5 +1,5 @@
 ﻿@page
-@model Taller.App.Front.Pages.RegistrarInfoNuevoUsuarioModel
+@model Taller.App.Front.Pages.RegistroClienteModel
 @{
 }
 
@@ -45,14 +45,14 @@
     }
 </style>
 
-    <div id="cabeza" class="bg-primary d-flex flex-row-reverse">
-        <div class="p-1">
-            <i id="user" class="bi bi-people-fill"></i>
-            <span>Cliente</span>
-            <label>Andres</label>
-        </div>
+<div id="cabeza" class="bg-primary d-flex flex-row-reverse">
+    <div class="p-1">
+        <i id="user" class="bi bi-people-fill"></i>
+        <span>Cliente</span>
+        <label>Andres</label>
     </div>
-    <p>
+</div>
+<p>
 
 
 
@@ -74,12 +74,12 @@
                     <!--Registro-->
 
 
-                    <form class="needs-validation" novalidate>
+                    <form method="post" class="needs-validation" novalidate>
                         <h4 class="fw-bold text-center">REGISTRO DE USUARIO</h4>
                         <div class="row">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <label for="validationCustom01" class="form-label">Tipo de Documento:</label>
+                                    <label for="validationCustom06" class="form-label">Tipo de Documento:</label>
                                 </div>
                                 <div class="col-sm-6">
                                     <select class="form-select" id="validationCustom01" required>
@@ -98,10 +98,11 @@
                             <br>
                             <div class="row">
                                 <div class="col">
-                                    <label for="validationCustom02" class="form-label">Número de Identificación:</label>
+                                    <label for="validationCustom06" class="form-label" >Número de
+                                        Identificación:</label>
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" id="validationCustom02" required>
+                                    <input type="text" class="form-control" id="validationCustom02" name="ClienteId"required>
                                     <div class="invalid-feedback">
                                         Campo requerido
                                     </div>
@@ -111,16 +112,17 @@
                             <br>
                             <div class="row">
                                 <div class="col">
-                                    <label for="validationCustom03" class="form-label">Nombre Completo</label>
+                                    <label for="validationCustom06" class="form-label">Nombre Completo</label>
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" id="validationCustom05" required>
+                                    <input type="text" class="form-control" name="Nombre" id="validationCustom05"
+                                        required>
                                     <div class="invalid-feedback">
                                         Campo requerido
                                     </div>
                                 </div>
                             </div>
-                                                       
+
                             <br>
                             <br>
                             <div class="row">
@@ -128,7 +130,8 @@
                                     <label for="validationCustom05" class="form-label">Fecha de Nacimiento:</label>
                                 </div>
                                 <div class="col">
-                                    <input type="date" class="form-control" id="validationCustom04" required>
+                                    <input type="date" class="form-control" name="FechaNacimiento"
+                                        id="validationCustom04" required>
                                     <div class="invalid-feedback">
                                         Campo requerido
                                     </div>
@@ -141,7 +144,8 @@
                                     <label for="validationCustom06" class="form-label">Correo Electrónico</label>
                                 </div>
                                 <div class="col">
-                                    <input type="email" class="form-control" id="validationCustom07" required>
+                                    <input type="email" class="form-control" name="Rol" id="validationCustom07"
+                                        required>
                                     <div class="invalid-feedback">
                                         Campo requerido
                                     </div>
@@ -151,10 +155,10 @@
                             <br>
                             <div class="row">
                                 <div class="col">
-                                    <label for="validationCustom07" class="form-label">Celular</label>
+                                    <label for="validationCustom07" class="form-label" >Celular</label>
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" id="validationCustom07" required>
+                                    <input type="text" class="form-control" id="validationCustom07" name="Telefono" required>
                                     <div class="invalid-feedback">
                                         Campo requerido
                                     </div>
@@ -167,7 +171,8 @@
                                     <label for="validationCustom089" class="form-label">Dirección de Residencia</label>
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" id="validationCustom07" required>
+                                    <input type="text" class="form-control" name="Direccion" id="validationCustom07"
+                                        required>
                                     <div class="invalid-feedback">
                                         Campo requerido
                                     </div>
@@ -180,7 +185,8 @@
                                     <label for="validationCustom09" class="form-label">Ciudad</label>
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" id="validationCustom07" required>
+                                    <input type="text" class="form-control" name="Ciudad" id="validationCustom07"
+                                        required>
                                     <div class="invalid-feedback">
                                         Campo requerido
                                     </div>
@@ -190,10 +196,11 @@
                             <br>
                             <div class="row">
                                 <div class="col">
-                                    <label for="validationCustom10" class="form-label">Contraseña</label>
+                                    <label for="validationCustom10" class="form-label"
+                                        name="Contraseña">Contraseña</label>
                                 </div>
                                 <div class="col">
-                                    <input type="password" class="form-control" id="validationCustom07" required>
+                                    <input type="password" class="form-control" id="validationCustom07" name="contraseña" required>
                                     <div class="invalid-feedback">
                                         Campo requerido
                                     </div>
@@ -201,28 +208,249 @@
                             </div>
                             <br>
                             <br>
-                            <div class="row">
+                             <div class="row">
                                 <div class="col">
-                                    <label for="validationCustom11" class="form-label">Confirmación de
-                                        Contraseña</label>
+                                <label for="validationCustom11" class="form-label">Confirmación de
+                                Contraseña</label>
                                 </div>
                                 <div class="col">
-                                    <input type="password" class="form-control" id="validationCustom07" required>
-                                    <div class="invalid-feedback">
-                                        Campo requerido
-                                    </div>
+                                <input type="password" class="form-control" id="validationCustom07" required>
+                                <div class="invalid-feedback">
+                                Campo requerido
                                 </div>
-                            </div>
+                                </div>
+                                </div> 
                             <br>
                             <br>
 
-                            <div class="button col-sm-12 text-center">
-                                <button class="btn btn-primary" id="liveAlertBtn" type="submit">Registrar</button>
-                                <a class="btn btn-secondary" href="#" role="button">Volver</a>
+                            <div class="col-12">
+                                 <button class="btn btn-primary" id="liveAlertBtn" type="submit">Registrar</button> 
+                                <button type="submit" class="btn btn-primary" asp-page-handler="Add">Guardar</button>
                             </div>
                         </div>
 
                     </form>
+
+        @* <div class=" col-sm border">
+            <div>
+                <h5>Registrar nuevo mecanico</h5>
+            </div>
+            <p>
+            <form method="POST" class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="validationCustom01" class="form-label">Tipo de Documento:</label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-sm-6">
+                            <select class="form-select" id="validationCustom01" required>
+                                <option selected disabled value="">Marque una opción.</option>
+                                <option>Cedula ciudadanía</option>
+                                <option>Cedula Extranjería</option>
+                                <option>Otros</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Este campo es obligatorio
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="validationCustom01" class="form-label">Nombre:</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="NombreCliente" name="Nombre" required>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label for="validationCustom02" class="form-label">Numero de Identificación:</label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col">
+                            <input type="text" class="form-control" id="idCliente" name="ClienteId" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="validationCustom03" class="form-label">Celular:</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="TelefonoCliente" name="Telefono" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="validationCustom04" class="form-label">Fecha de Nacimiento:</label>
+                        </div>
+                        <div class="col">
+                            <input type="date" class="form-control" id="IdFecha" name="FechaNacimiento" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="validationCustom06" class="form-label">Nivel de Estudio:</label>
+                        </div>
+                        <div class="col">
+
+                            <select class="form-select" id="validationCustom06" aria-label="Default select example"
+                                name="Direccion" required>
+                                <option selected disabled value="">Marque una opción.</option>
+                                <option>Bachiller</option>
+                                <option>Técnico</option>
+                                <option>Tecnólogo</option>
+                                <option>Profesional</option>
+                                <option>Especialista</option>
+                                <option>Otros</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Este campo es obligatorio
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="validationCustom07" class="form-label">Contraseña:</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="recipient-name" name="Contraseña" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="validationCustom08" class="form-label">Correo:</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="recipient-name" name="Rol" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="validationCustom08" class="form-label">Ciudad:</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="recipient-name" name="Ciudad" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+                        
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Acepto los terminos y condiciones
+                                </label>
+                                <div class="invalid-feedback">
+                                    Debe aceptar los términos y condiciones para continuar.
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="row">
+                       
+                        <div class="col-12">
+                                        @* <button class="btn btn-primary" id="liveAlertBtn" type="submit">Registrar</button> 
+                            <button type="submit" class="btn btn-primary" asp-page-handler="Add">Guardar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div> *@
+
+    
+
+        @* tabla de clientes *@
+        @* <div id="tabla" class="responsive-border">
+            <table id="testTable"
+                class="table table-hover table-sm align-middle caption-top table-bordered border-primary">
+                <thead class="bg-primary">
+                    <tr>
+
+                        <th scope="col">Número de Identificación</th>
+                        <th scope="col">Direccion</th>
+                        <th scope="col">Ciudad</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Fecha de Nacimiento</th>
+                        <th scope="col">Contraseña</th>
+                        <th scope="col">Correo Electronico</th>
+                        <th scope="col">Gestion</th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                        @foreach (var c in @Model.ListaCliente )
+                        {
+
+                           
+
+                        <tr>
+                            <td>@c.ClienteId</td>
+                            <td>@c.Direccion</td>
+                            <td>@c.Ciudad</td>
+                            <td>@c.Nombre</td>
+                            <td>@c.Telefono</td>
+                            <td>@c.FechaNacimiento</td>
+                            <td>@c.Contraseña</td>
+                            <td>@c.Rol</td>
+                            <td>
+                                <i class="edi bi bi-pencil"></i>
+                                <form method="POST">
+                                    <button class="action" asp-page-handler="Delete"
+                                    asp-route-ClienteId="@c.ClienteId">Eliminar</button>
+                                </form>
+                            </td>
+
+                        </tr>
+
+                        }
+                </tbody>
+            </table>
+
+
+        </div> *@
 
                 </div>
             </div>

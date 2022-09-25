@@ -14,16 +14,26 @@ namespace Taller.App.Consola
             new Persistencia.ContextDb()
         );
 
+        private static RepositorioCliente repoCliente = new RepositorioCliente(
+         new Persistencia.ContextDb()
+     );
+
         static void Main(string[] args)
         {
-            
-           AgregarMecanico();
-           //ObtenerMecanicos();
-           //BuscarMecanico();
-           //EditarMecanico("23");
-           //EliminarMecanico("25");
-        }
 
+            // AgregarMecanico();
+            // ObtenerMecanicos();
+            //BuscarMecanico();
+            //EditarMecanico("23");
+            //EliminarMecanico("25");
+
+            //AgregarCliente();
+            //ObtenerCliente();
+            //BuscarCliente();
+            //EditarCliente("1");
+            EliminarCliente("1");
+        }
+        //--------------------- mecanicos --------------------------------------------------------------->
         static void AgregarMecanico()
         {
             var mecanico = new Mecanico
@@ -54,12 +64,14 @@ namespace Taller.App.Consola
                 Console.WriteLine(mecanico.Rol.ToString());
             }
         }
-        static void BuscarMecanico(){
-           var mecanico = repoMecanico.BuscarMecanico("29");
-           Console.WriteLine("Prueba: " + mecanico.Nombre);
+        static void BuscarMecanico()
+        {
+            var mecanico = repoMecanico.BuscarMecanico("29");
+            Console.WriteLine("Prueba: " + mecanico.Nombre);
         }
 
-        static void EditarMecanico(string Id){
+        static void EditarMecanico(string Id)
+        {
             var mecanico = new Mecanico
             {
                 MecanicoId = "",
@@ -76,9 +88,72 @@ namespace Taller.App.Consola
             repoMecanico.EditarMecanico(mecanico, Id);
         }
 
-        static void EliminarMecanico(string Id){
-                
-                repoMecanico.EliminarMecanico(Id);
+        static void EliminarMecanico(string Id)
+        {
+
+            repoMecanico.EliminarMecanico(Id);
+
+        }
+        //--------------------- clientes --------------------------------------------------------------->
+        static void AgregarCliente()
+        {
+            var cliente = new Cliente
+            {
+                ClienteId = "1",
+                Nombre = "pal mamonuo",
+                FechaNacimiento = "10/05/2021",
+                Direccion = "calle latoneria",
+                Ciudad = "Bucara",
+                Telefono = "12456789",
+                Contraseña = "42345",
+                Rol = "correo@taller.com",
+            };
+            repoCliente.AgregarCliente(cliente);
+        }
+
+        static void ObtenerCliente()
+        {
+
+            //Console.WriteLine(repoMecanico.ObtenerMecanicos().ToString());
+
+
+            foreach (Cliente cliente in repoCliente.ObtenerCliente())
+            {
+                //Response.Write();
+                Console.WriteLine(cliente.Nombre.ToString());
+                Console.WriteLine(cliente.Telefono.ToString());
+                Console.WriteLine(cliente.Contraseña.ToString());
+                Console.WriteLine(cliente.Rol.ToString());
+            }
+        }
+
+        static void BuscarCliente()
+        {
+            var cliente = repoCliente.BuscarCliente("1");
+            Console.WriteLine("Prueba: " + cliente.Nombre);
+        }
+        static void EditarCliente(string Id)
+        {
+            var cliente = new Cliente
+            {
+                ClienteId = "",
+                Nombre = "carlos",
+                FechaNacimiento = "15",
+                Direccion = " calle bachiller",
+                Ciudad = " tabogo",
+                Telefono = "123",
+                Contraseña = "123",
+                Rol = "jefeoperaciones@com.com",
+            };
+
+
+
+            repoCliente.EditarCliente(cliente, Id);
+        }
+        static void EliminarCliente(string Id)
+        {
+
+            repoCliente.EliminarCliente(Id);
 
         }
     }

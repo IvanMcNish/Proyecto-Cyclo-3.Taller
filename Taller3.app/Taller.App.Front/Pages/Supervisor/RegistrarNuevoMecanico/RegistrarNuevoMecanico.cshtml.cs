@@ -36,6 +36,7 @@ namespace Taller.App.Front.Pages
             }
             catch(System.Exception)
             {
+             
                 throw;
             }
         }
@@ -49,6 +50,7 @@ namespace Taller.App.Front.Pages
             }
             catch(System.Exception)
             {
+                
                 throw;
             }
         }

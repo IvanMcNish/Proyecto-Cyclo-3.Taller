@@ -86,161 +86,162 @@
 
 <div class="container-fluid">
     <div class="row">
-  <!--------------------- inicio formulario --------------------------------------------------------------->
-      
-          <div class="regMecan col-sm-6 border">
+        <!--------------------- inicio formulario --------------------------------------------------------------->
+
+        <div class="regMecan col-sm-6 border">
             <div>
                 <h5>Registrar nuevo mecanico</h5>
             </div>
             <p>
             <form method="post" class="needs-validation" novalidate>
                 <div class="row">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <label for="validationCustom01" class="form-label">Tipo de Documento:</label>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="col-sm-6">
-                        <select class="form-select" id="validationCustom01" required>
-                            <option selected disabled value="">Marque una opción.</option>
-                            <option>Cedula ciudadanía</option>
-                            <option>Cedula Extranjería</option>
-                            <option>Otros</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Este campo es obligatorio
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="validationCustom01" class="form-label">Tipo de Documento:</label>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <label for="validationCustom01" class="form-label">Nombre:</label>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" id="NombreMecanico" name="Nombre"required>
-                    </div>
-                </div>
-                 <br>
-                    <br>
-                <div class="row">
-                    <div class="col">
-                        <label for="validationCustom02" class="form-label">Numero de Identificación:</label>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="col">
-                        <input type="text" class="form-control" id="IdMecanico" name="MecanicoId" required>
-                        <div class="invalid-feedback">
-                            Campo requerido
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="validationCustom03" class="form-label">Celular:</label>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" id="TelefonoMecanico" name="Telefono"required>
-                        <div class="invalid-feedback">
-                            Campo requerido
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="validationCustom04" class="form-label">Fecha de Nacimiento:</label>
-                    </div>
-                    <div class="col">
-                       <input type="date" class="form-control" id="IdFecha" name="FechaNacimiento"required>
-                        <div class="invalid-feedback">
-                            Campo requerido
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                </div>
-            
-                <div class="row">
-                    <div class="col">
-                        <label for="validationCustom06" class="form-label">Nivel de Estudio:</label>
-                    </div>
-                    <div class="col">
-                      
-                        <select class="form-select" id="validationCustom06" aria-label="Default select example" name="NivelEstudio"required>
-                            <option selected disabled value="">Marque una opción.</option>
-                            <option>Bachiller</option>
-                            <option>Técnico</option>
-                            <option>Tecnólogo</option>
-                            <option>Profesional</option>
-                            <option>Especialista</option>
-                            <option>Otros</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Este campo es obligatorio
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="validationCustom07" class="form-label">Especialidad:</label>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" id="recipient-name" name="Contraseña"required>
-                        <div class="invalid-feedback">
-                            Campo requerido
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="validationCustom08" class="form-label">Rol:</label>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" id="recipient-name" name="Rol"required>
-                        <div class="invalid-feedback">
-                            Campo requerido
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                            <label class="form-check-label" for="invalidCheck">
-                                Acepto los terminos y condiciones
-                            </label>
+                        <br>
+                        <br>
+                        <div class="col-sm-6">
+                            <select class="form-select" id="validationCustom01" required>
+                                <option selected disabled value="">Marque una opción.</option>
+                                <option>Cedula ciudadanía</option>
+                                <option>Cedula Extranjería</option>
+                                <option>Otros</option>
+                            </select>
                             <div class="invalid-feedback">
-                                Debe aceptar los términos y condiciones para continuar.
+                                Este campo es obligatorio
                             </div>
                         </div>
                     </div>
-                    <br>
-                    <br>
-                </div>
-                <div class="row">
-                    <p>
-                    <div class="col-12">
-                        @* <button class="btn btn-primary" id="liveAlertBtn" type="submit">Registrar</button> *@
-                        <button type="submit" class="btn btn-primary" asp-page-handler="Add">Guardar</button>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="validationCustom01" class="form-label">Nombre:</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="NombreMecanico" name="Nombre" required>
+                        </div>
                     </div>
-                </div>
-                    
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label for="validationCustom02" class="form-label">Numero de Identificación:</label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col">
+                            <input type="text" class="form-control" id="IdMecanico" name="MecanicoId" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="validationCustom03" class="form-label">Celular:</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="TelefonoMecanico" name="Telefono" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="validationCustom04" class="form-label">Fecha de Nacimiento:</label>
+                        </div>
+                        <div class="col">
+                            <input type="date" class="form-control" id="IdFecha" name="FechaNacimiento" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="validationCustom06" class="form-label">Nivel de Estudio:</label>
+                        </div>
+                        <div class="col">
+
+                            <select class="form-select" id="validationCustom06" aria-label="Default select example"
+                                name="NivelEstudio" required>
+                                <option selected disabled value="">Marque una opción.</option>
+                                <option>Bachiller</option>
+                                <option>Técnico</option>
+                                <option>Tecnólogo</option>
+                                <option>Profesional</option>
+                                <option>Especialista</option>
+                                <option>Otros</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Este campo es obligatorio
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="validationCustom07" class="form-label">Especialidad:</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="recipient-name" name="Contraseña" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="validationCustom08" class="form-label">Rol:</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="recipient-name" name="Rol" required>
+                            <div class="invalid-feedback">
+                                Campo requerido
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Acepto los terminos y condiciones
+                                </label>
+                                <div class="invalid-feedback">
+                                    Debe aceptar los términos y condiciones para continuar.
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <p>
+                        <div class="col-12">
+                                        @* <button class="btn btn-primary" id="liveAlertBtn" type="submit">Registrar</button> *@
+                            <button type="submit" class="btn btn-primary" asp-page-handler="Add">Guardar</button>
+                        </div>
+                    </div>
+
                 </div>
             </form>
-            </div>
+        </div>
 
 
-  <!--------------------- columna imagen --------------------------------------------------------------->
+        <!--------------------- columna imagen --------------------------------------------------------------->
         <div class="fecha col border mar ">
             <div class="col-sm-12">
                 <div class="foto">
@@ -257,7 +258,7 @@
     <div class="row base">
 
         <h5>Mecánicos registrados</h5>
-     
+
 
             @*buscador*@
         <div class="d-flex h-5 justify-content-left min-vh-0 user-select-none">
@@ -302,7 +303,8 @@
                             <td>
                                 <i class="edi bi bi-pencil"></i>
                                 <form method="POST">
-                                    <button class="action" asp-page-handler="Delete" asp-route-MecanicoId="@m.MecanicoId">Eliminar</button>
+                                    <button class="action" asp-page-handler="Delete"
+                                    asp-route-MecanicoId="@m.MecanicoId">Eliminar</button>
                                 </form>
                             </td>
 

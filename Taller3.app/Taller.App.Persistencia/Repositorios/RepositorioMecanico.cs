@@ -22,6 +22,7 @@ namespace Taller.App.Persistencia
             var mecanicoNuevo = this.dbContext.Mecanicos.Add(m);
             this.dbContext.SaveChanges();
             return mecanicoNuevo.Entity;
+        
 
         }
 
