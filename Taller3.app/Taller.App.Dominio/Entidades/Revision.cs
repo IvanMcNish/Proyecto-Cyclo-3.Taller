@@ -11,6 +11,8 @@ namespace Taller.App.Dominio.Entidades
 
         public string Fecha {get;set;}
         public string MecacnicoId {get;set;}
+
+        //public Mecanico Mecanico {get;set;}
         
     }
 }

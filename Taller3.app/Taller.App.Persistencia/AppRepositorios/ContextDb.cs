@@ -13,24 +13,27 @@ namespace Taller.App.Persistencia
 
         public virtual DbSet<Revision> Revisiones {get;set;}
 
-        //public virtual DbSet<Vehiculo> Vehiculos {get;set;}
+        public virtual DbSet<Cliente> Clientes {get;set;}
+
+       public virtual DbSet<Vehiculo> Vehiculos {get;set;}
 
          protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             try{
                 optionsBuilder.UseSqlServer("Server=tcp:server-tallertic-4.database.windows.net,1433;Initial Catalog=bd_tallertic;Persist Security Info=False;User ID=admintic;Password=Tallermintic4;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
                 }
-            catch{
-                
+            catch(System.Exception)
+            {
+                Console.WriteLine("Ocurrio un error en Onconfiguring");
                 }
         }
     
         protected override void OnModelCreating (ModelBuilder modelBuilder)
         {
-           // modelBuilder.Entity<Vehiculo>()
-          //  .HasOne(b => b.Clientes)
-           // .WithOne(i => i.Vehiculo)
-           // .HasForeignKey<Vehiculo>(b => b.ClientesId);
+            //  modelBuilder.Entity<Revision>()
+            // .HasOne(b => b.Mecanico)
+            // .WithOne(i => i.Revision)
+            // .HasForeignKey<Revision>(b => b.MecacnicoId);
 
         }
     }

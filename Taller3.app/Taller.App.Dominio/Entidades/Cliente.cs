@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace Taller.App.Dominio.Entidades
 {
-    public class Clientes:Persona
+    public class Cliente:Persona
     {
-        public string ClientesId {get;set;}
+        public string ClienteId {get;set;}
 
         public string Direccion { get; set; }
 

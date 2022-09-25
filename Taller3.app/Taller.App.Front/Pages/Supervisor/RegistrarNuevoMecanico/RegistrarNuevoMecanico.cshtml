@@ -86,13 +86,15 @@
 
 <div class="container-fluid">
     <div class="row">
-
-        <div class="regMecan col-sm-6 border">
+  <!--------------------- inicio formulario --------------------------------------------------------------->
+      
+          <div class="regMecan col-sm-6 border">
             <div>
                 <h5>Registrar nuevo mecanico</h5>
             </div>
             <p>
-            <form class="needs-validation" novalidate>
+            <form method="post" class="needs-validation" novalidate>
+                <div class="row">
                 <div class="row">
                     <div class="col-sm-6">
                         <label for="validationCustom01" class="form-label">Tipo de Documento:</label>
@@ -112,11 +114,15 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-sm-6">
+                        <label for="validationCustom01" class="form-label">Nombre:</label>
+                    </div>
                     <div class="col">
-                        <label for="MecanicoNombre" class="col-form-label">Nombre:</label>
-                        <input type="text" class="form-control" id="NombreMecanico" name="Nombre">
+                        <input type="text" class="form-control" id="NombreMecanico" name="Nombre"required>
                     </div>
                 </div>
+                 <br>
+                    <br>
                 <div class="row">
                     <div class="col">
                         <label for="validationCustom02" class="form-label">Numero de Identificación:</label>
@@ -135,7 +141,7 @@
                         <label for="validationCustom03" class="form-label">Celular:</label>
                     </div>
                     <div class="col">
-                        <input type="tel" class="form-control" id="validationCustom03" required>
+                        <input type="text" class="form-control" id="TelefonoMecanico" name="Telefono"required>
                         <div class="invalid-feedback">
                             Campo requerido
                         </div>
@@ -148,7 +154,7 @@
                         <label for="validationCustom04" class="form-label">Fecha de Nacimiento:</label>
                     </div>
                     <div class="col">
-                        <input type="date" class="form-control" id="validationCustom04" required>
+                       <input type="date" class="form-control" id="IdFecha" name="FechaNacimiento"required>
                         <div class="invalid-feedback">
                             Campo requerido
                         </div>
@@ -156,25 +162,14 @@
                     <br>
                     <br>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="validationCustom05" class="form-label">Correo Electrónico:</label>
-                    </div>
-                    <div class="col">
-                        <input type="email" class="form-control" id="validationCustom05" required>
-                        <div class="invalid-feedback">
-                            Campo requerido
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                </div>
+            
                 <div class="row">
                     <div class="col">
                         <label for="validationCustom06" class="form-label">Nivel de Estudio:</label>
                     </div>
                     <div class="col">
-                        <select class="form-select" id="validationCustom06" required>
+                      
+                        <select class="form-select" id="validationCustom06" aria-label="Default select example" name="NivelEstudio"required>
                             <option selected disabled value="">Marque una opción.</option>
                             <option>Bachiller</option>
                             <option>Técnico</option>
@@ -195,7 +190,7 @@
                         <label for="validationCustom07" class="form-label">Especialidad:</label>
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" id="validationCustom07" required>
+                        <input type="text" class="form-control" id="recipient-name" name="Contraseña"required>
                         <div class="invalid-feedback">
                             Campo requerido
                         </div>
@@ -205,10 +200,10 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <label for="validationCustom08" class="form-label">Dirección Física:</label>
+                        <label for="validationCustom08" class="form-label">Rol:</label>
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" id="validationCustom08" required>
+                        <input type="text" class="form-control" id="recipient-name" name="Rol"required>
                         <div class="invalid-feedback">
                             Campo requerido
                         </div>
@@ -235,14 +230,17 @@
                 <div class="row">
                     <p>
                     <div class="col-12">
-                        <button class="btn btn-primary" id="liveAlertBtn" type="submit">Registrar</button>
-                        <button class="btn btn-primary" id="liveAlertBtn" type="submit">Actualizar</button>
+                        @* <button class="btn btn-primary" id="liveAlertBtn" type="submit">Registrar</button> *@
+                        <button type="submit" class="btn btn-primary" asp-page-handler="Add">Guardar</button>
                     </div>
                 </div>
+                    
+                </div>
             </form>
-            </p>
-        </div>
+            </div>
 
+
+  <!--------------------- columna imagen --------------------------------------------------------------->
         <div class="fecha col border mar ">
             <div class="col-sm-12">
                 <div class="foto">
@@ -255,12 +253,11 @@
         </div>
     </div>
     <br>
+    <!--------------------- tabla mecanicos --------------------------------------------------------------->
     <div class="row base">
 
         <h5>Mecánicos registrados</h5>
-            @*boton para agregar mostrar formulario y agregar a la tabla*@
-        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#IdModalMecanico"
-            data-bs-whatever="@@getbootstrap">Agregar</button>
+     
 
             @*buscador*@
         <div class="d-flex h-5 justify-content-left min-vh-0 user-select-none">
@@ -326,58 +323,7 @@
 
 </div>
     @*FORMULARIO MODAL MECANICO*@
-<div class="modal fade" id="IdModalMecanico" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Agregar Mecanico</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class=" modal-body">
-                <form method="post">
-                    <div class="  mb-3">
-                        <label for="idMecanico" class="col-form-label">Id:</label>
-                        <input type="text" class="form-control" id="IdMecanico" name="MecanicoId">
-                    </div>
-                    <div class="  mb-3">
-                        <label for="MecanicoNombre" class="col-form-label">Nombre:</label>
-                        <input type="text" class="form-control" id="NombreMecanico" name="Nombre">
-                    </div>
-                    <div class="  mb-3">
-                        <label for="TelefonoMecanico" class="col-form-label">Telefono:</label>
-                        <input type="text" class="form-control" id="TelefonoMecanico" name="Telefono">
-                    </div>
-                    <div class=" mb-3">
-                        <label for="NivelMecanico" class="col-form-label">Nivel de Estudios:</label>
-                        <select class="form-select" aria-label="Default select example" name="NivelEstudio">
-                            <option value="1">Bachiller</option>
-                            <option value="1">Tecnico</option>
-                            <option value="1">Profesional</option>
-                        </select>
-                        <div class="  mb-3">
-                            <label for="recipient-name" class="col-form-label">Fecha de Nacimiento:</label>
-                            <input type="date" class="form-control" id="IdFecha" name="FechaNacimiento">
-                        </div>
-                        <div class="  mb-3">
-                            <label for="recipient-name" class="col-form-label">Especialidad:</label>
-                            <input type="text" class="form-control" id="recipient-name" name="Contraseña">
-                        </div>
-                        <div class="  mb-3">
-                            <label for="recipient-name" class="col-form-label">Rol:</label>
-                            <input type="text" class="form-control" id="recipient-name" name="Rol">
-                        </div>
 
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="submit" class="btn btn-primary" asp-page-handler="Add">Guardar</button>
-                    </div>
-                </form>
-            </div>
-
-        </div>
-    </div>
-</div>
 
 <style>
 
