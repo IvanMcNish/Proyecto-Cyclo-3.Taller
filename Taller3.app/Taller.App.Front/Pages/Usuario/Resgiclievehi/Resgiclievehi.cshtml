@@ -24,7 +24,7 @@
                     <h6>Registro de vehículo</h6>
                 </div>
                 <div class="row">
-                    <form class="needs-validation border" novalidate>
+                    <form method="POST" class="needs-validation border" novalidate>
                         <div class="row">
 
                             <div class="col">
@@ -32,7 +32,7 @@
                                 <label for="validationCustom01" class="form-label">Placa:</label>
                             </div>
                             <div class="col">
-                                <input placeholder="WWWW123" type="text" class="form-control" id="validationCustom01"
+                                <input placeholder="WWWW123" type="text" class="form-control" name="ID" id="validationCustom01"
                                     required>
                                 <div class="invalid-feedback">
                                     Campo requerido
@@ -42,11 +42,11 @@
                                 <label for="validationCustom02" class="form-label">Marca de vehículo:</label>
                             </div>
                             <div class="col">
-                                <select class="form-select" id="validationCustom02" required>
+                                <select class="form-select" id="validationCustom02" name="Marca" required>
                                     <option selected disabled value="">selección.</option>
                                     <option>Mazda</option>
                                     <option>Jeep</option>
-                                    <option>Ferrary</option>
+                                    <option>Ferrari</option>
                                     <option>Ford</option>
                                     <option>Chevrolet</option>
                                     <option>Otros</option>
@@ -58,7 +58,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col">
+                            @* <div class="col">
                                 <label for="validationCustom03" class="form-label">Tipo de vehículo?:</label>
                             </div>
                             <div class="col">
@@ -73,48 +73,29 @@
                                 <div class="invalid-feedback">
                                     Este campo es obligatorio
                                 </div>
-                            </div>
+                            </div> *@
 
                             <div class="col">
                                 <label for="validationCustom04" class="form-label">Modelo del vehículo:</label>
                             </div>
                             <div class="col">
-                                <input placeholder="2019" type="text" class="form-control" id="validationCustom04" required>
+                                <input placeholder="2019" type="text" class="form-control" id="validationCustom04" name="Modelo" required>
                                 <div class="invalid-feedback">
                                     este campo es obligatorio
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-                                <label for="validationCustom05" class="form-label">N° pasajeros:</label>
-                            </div>
-                            <div class="col">
-                                <select class="form-select" id="validationCustom05" required>
-                                    <option selected disabled value="">selección.</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>Mayor a 6</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Este campo es obligatorio
                                 </div>
                             </div>
                             <div class="col">
                                 <label for="validationCustom05" class="form-label">Cilindraje:</label>
                             </div>
                             <div class="col">
-                                <select class="form-select" id="validationCustom06" required>
+                                <select class="form-select" id="validationCustom05" name="Cilindraje" required>
                                     <option selected disabled value="">selección.</option>
-                                    <option>100</option>
-                                    <option>115</option>
-                                    <option>200</option>
-                                    <option>220</option>
-                                    <option>Otros</option>
+                                    <option>1200</option>
+                                    <option>2300</option>
+                                    <option>1400</option>
+                                    <option>405</option>
+                                    <option>1600</option>
+                                    <option>Mayor a 3000</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Este campo es obligatorio
@@ -124,43 +105,22 @@
 
                         <div class="row">
                             <div class="col">
-                                <label for="validationCustom07" class="form-label">Pais de Origen:</label>
+                                <label for="validationCustom05" class="form-label">Cliente:</label>
                             </div>
                             <div class="col">
-                                <select class="form-select" id="validationCustom07" required>
-                                    <option selected disabled value="">selección.</option>
-                                    <option>Colombia</option>
-                                    <option>EEUU</option>
-                                    <option>Venezuela</option>
-                                    <option>Mexico</option>
-                                    <option>Brasil</option>
-                                    <option>Otros</option>
+                                <select class="form-select" id="validationCustom06" name="ClienteId" required>
+                                    
+                                    
+                                     @foreach (var m in @Model.ListaCliente )
+                                        {
+                                            <option value="@m.ClienteId">@m.Nombre</option>
+                                        }
+                                    
+                                    
+                                    
+                                    
+                                  
                                 </select>
-                                <div class="invalid-feedback">
-                                    Este campo es obligatorio
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <label for="validationCustom08" class="form-label">¿Tiene accesorios el vehículo?:</label>
-                            </div>
-                            <div class="col">
-                                <select class="form-select" id="validationCustom08">
-                                    <option selected disabled value="">selección.</option>
-                                    <option>Si</option>
-                                    <option>No</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <label for="validationCustom09" class="form-label">¿Cúales?:</label>
-                            </div>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="validationCustom09">
                                 <div class="invalid-feedback">
                                     Este campo es obligatorio
                                 </div>
@@ -184,7 +144,7 @@
                         <div class="row">
                             <p>
                             <div class="col-12">
-                                <button class="gua btn btn-primary" id="liveAlertBtn" type="submit">Registrar</button>
+                                <button type="submit" class="btn btn-primary" asp-page-handler="Add">Guardar</button>
                             </div>
                         </div>
                     </form>
@@ -201,116 +161,37 @@
 
                         <thead class="bg-primary">
                             <tr>
+                                <th scope="col">Placa</th>
                                 <th scope="col">Marca</th>
                                 <th scope="col">Modelo</th>
-                                <th scope="col">Placa</th>
                                 <th scope="col">Cilindraje</th>
+                                <th scope="col">Cliente</th>
                                 <th scope="col">Gestión</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Mazda</td>
-                                <td>2019</td>
-                                <td>SDF485</td>
-                                <td>200</td>
-                                <td>
-                                    <i class="edi bi bi-pencil"></i>
-                                    <i class="del bi bi-trash"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Chevrolet</td>
-                                <td>2001</td>
-                                <td>QWE585</td>
-                                <td>500</td>
-                                <td>
-                                    <i class="edi bi bi-pencil"></i>
-                                    <i class="del bi bi-trash"></i>
-                                </td>
+                           @foreach (var c in @Model.listaVehiculos)
+                        {
 
-                            </tr>
-                            <tr>
-                                <td>Ford</td>
-                                <td>2022</td>
-                                <td>SGT875</td>
-                                <td>600</td>
-                                <td>
-                                    <i class="edi bi bi-pencil"></i>
-                                    <i class="del bi bi-trash"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Ford</td>
-                                <td>2022</td>
-                                <td>SGT875</td>
-                                <td>600</td>
-                                <td>
-                                    <i class="edi bi bi-pencil"></i>
-                                    <i class="del bi bi-trash"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Ford</td>
-                                <td>2022</td>
-                                <td>SGT875</td>
-                                <td>600</td>
-                                <td>
-                                    <i class="edi bi bi-pencil"></i>
-                                    <i class="del bi bi-trash"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Ford</td>
-                                <td>2022</td>
-                                <td>SGT875</td>
-                                <td>600</td>
-                                <td>
-                                    <i class="edi bi bi-pencil"></i>
-                                    <i class="del bi bi-trash"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Ford</td>
-                                <td>2022</td>
-                                <td>SGT875</td>
-                                <td>600</td>
-                                <td>
-                                    <i class="edi bi bi-pencil"></i>
-                                    <i class="del bi bi-trash"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Ford</td>
-                                <td>2022</td>
-                                <td>SGT875</td>
-                                <td>600</td>
-                                <td>
-                                    <i class="edi bi bi-pencil"></i>
-                                    <i class="del bi bi-trash"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Ford</td>
-                                <td>2022</td>
-                                <td>SGT875</td>
-                                <td>600</td>
-                                <td>
-                                    <i class="edi bi bi-pencil"></i>
-                                    <i class="del bi bi-trash"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Ford</td>
-                                <td>2022</td>
-                                <td>SGT875</td>
-                                <td>600</td>
-                                <td>
-                                    <i class="edi bi bi-pencil"></i>
-                                    <i class="del bi bi-trash"></i>
-                                </td>
-                            </tr>
+                           
 
+                        <tr>
+                            <td>@c.ID</td>
+                            <td>@c.Marca</td>
+                            <td>@c.Modelo</td>
+                            <td>@c.Cilindraje</td>
+                            <td>@c.ClienteId</td>
+                            <td>
+                                <i class="edi bi bi-pencil"></i>
+                                <form method="POST">
+                                    <button class="action" asp-page-handler="Delete"
+                                    asp-route-ID="@c.ID">Eliminar</button>
+                                </form>
+                            </td>
+
+                        </tr>
+
+                        }
                         </tbody>
                     </table>
                 </div>
